@@ -593,14 +593,21 @@ input[type='radio'] {
 .side-block-rubric h2 {
   color: #373737;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 21px;
+  font-weight: 700;
   line-height: 33px; }
 
 /* line 29, sass/components/page-elements/_blog-page.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }
+
+/* line 34, sass/components/page-elements/_blog-page.scss */
+.menu .leaf a {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 21px;
+  color: #373737; }
 
 /* line 1, sass/components/page-elements/_business-invite.scss */
 .pane-title {
@@ -1312,14 +1319,21 @@ input[type='radio'] {
 .side-block-rubric h2 {
   color: #373737;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 21px;
+  font-weight: 700;
   line-height: 33px; }
 
 /* line 29, sass/components/page-elements/_blog-page.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }
+
+/* line 34, sass/components/page-elements/_blog-page.scss */
+.menu .leaf a {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 21px;
+  color: #373737; }
 
 /* line 1, sass/components/page-elements/_business-invite.scss */
 .pane-title {
