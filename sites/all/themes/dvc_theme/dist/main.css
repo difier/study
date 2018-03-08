@@ -604,7 +604,7 @@ input[type='radio'] {
   list-style-type: none; }
 
 /* line 35, sass/components/page-elements/_blog-page.scss */
-.menu .leaf a {
+.side-block-menu .menu .leaf a {
   border-bottom: 1px solid silver;
   color: #373737;
   display: block;
@@ -1335,7 +1335,7 @@ input[type='radio'] {
   list-style-type: none; }
 
 /* line 35, sass/components/page-elements/_blog-page.scss */
-.menu .leaf a {
+.side-block-menu .menu .leaf a {
   border-bottom: 1px solid silver;
   color: #373737;
   display: block;
