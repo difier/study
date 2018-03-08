@@ -10,6 +10,7 @@
   font-size: 27px;
   font-weight: $bold;
   line-height: 35px;
+  padding-bottom: 24px;
 }
 
 .side-block-rubric {
@@ -32,8 +33,12 @@
 }
 
 .menu .leaf a {
-  font-weight: $normal;
-  text-decoration: none;
-  font-size: 21px;
+  border-bottom: 1px solid silver;
   color: #373737;
+  display: block;
+  font-size: 21px;
+  font-weight: $normal;
+  line-height: 33px;
+  padding-bottom: 2px;
+  text-decoration: none;
 }

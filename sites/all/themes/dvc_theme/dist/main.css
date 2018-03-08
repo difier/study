@@ -581,15 +581,16 @@ input[type='radio'] {
   font-family: "Roboto", sans-serif;
   font-size: 27px;
   font-weight: 700;
-  line-height: 35px; }
+  line-height: 35px;
+  padding-bottom: 24px; }
 
-/* line 15, sass/components/page-elements/_blog-page.scss */
+/* line 16, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric {
   background-color: #fff;
   padding: 31px 30px 41px 30px;
   margin-bottom: 30px; }
 
-/* line 21, sass/components/page-elements/_blog-page.scss */
+/* line 22, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric h2 {
   color: #373737;
   font-family: "Roboto", sans-serif;
@@ -597,17 +598,21 @@ input[type='radio'] {
   font-weight: 700;
   line-height: 33px; }
 
-/* line 29, sass/components/page-elements/_blog-page.scss */
+/* line 30, sass/components/page-elements/_blog-page.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }
 
-/* line 34, sass/components/page-elements/_blog-page.scss */
+/* line 35, sass/components/page-elements/_blog-page.scss */
 .menu .leaf a {
-  font-weight: 400;
-  text-decoration: none;
+  border-bottom: 1px solid silver;
+  color: #373737;
+  display: block;
   font-size: 21px;
-  color: #373737; }
+  font-weight: 400;
+  line-height: 33px;
+  padding-bottom: 2px;
+  text-decoration: none; }
 
 /* line 1, sass/components/page-elements/_business-invite.scss */
 .pane-title {
@@ -1307,15 +1312,16 @@ input[type='radio'] {
   font-family: "Roboto", sans-serif;
   font-size: 27px;
   font-weight: 700;
-  line-height: 35px; }
+  line-height: 35px;
+  padding-bottom: 24px; }
 
-/* line 15, sass/components/page-elements/_blog-page.scss */
+/* line 16, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric {
   background-color: #fff;
   padding: 31px 30px 41px 30px;
   margin-bottom: 30px; }
 
-/* line 21, sass/components/page-elements/_blog-page.scss */
+/* line 22, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric h2 {
   color: #373737;
   font-family: "Roboto", sans-serif;
@@ -1323,17 +1329,21 @@ input[type='radio'] {
   font-weight: 700;
   line-height: 33px; }
 
-/* line 29, sass/components/page-elements/_blog-page.scss */
+/* line 30, sass/components/page-elements/_blog-page.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }
 
-/* line 34, sass/components/page-elements/_blog-page.scss */
+/* line 35, sass/components/page-elements/_blog-page.scss */
 .menu .leaf a {
-  font-weight: 400;
-  text-decoration: none;
+  border-bottom: 1px solid silver;
+  color: #373737;
+  display: block;
   font-size: 21px;
-  color: #373737; }
+  font-weight: 400;
+  line-height: 33px;
+  padding-bottom: 2px;
+  text-decoration: none; }
 
 /* line 1, sass/components/page-elements/_business-invite.scss */
 .pane-title {
