@@ -13,16 +13,16 @@
   a {
     border: 1px solid transparent;
     color: #373737;
-    font-family: "Proxima Nova";
+    font-family: $main-font;
     font-size: 17px;
     font-style: none;
-    font-weight: 400;
+    font-weight: $normal;
     line-height: 24px;
     padding: 10px 17px;
     text-decoration: none;
 
     &:hover {
-      border: 1px solid #29a693;
+      border: 1px solid color(borderColorHover);
       color: color(linkHover);
       text-align: center;
     }
@@ -36,6 +36,39 @@
       list-style: none;
       margin: 0;
       padding: 0;
+    }
+  }
+
+  .active-trail {
+    position: relative;
+
+    > .menu {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 200px;
+      border: 1px solid color(borderBtn);
+      background: #fff;
+      padding: 5px;
+      z-index: 999;
+    }
+  }
+
+  .active-trail:last-of-type {
+    > .menu {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  .active-trail > .menu {
+    display: none;
+  }
+
+  .active-trail:hover {
+    > .menu {
+      display: block;
+      margin-bottom: 10px;
     }
   }
 }

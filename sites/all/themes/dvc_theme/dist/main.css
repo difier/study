@@ -676,7 +676,7 @@ footer .region-footer {
 .main-menu a {
   border: 1px solid transparent;
   color: #373737;
-  font-family: "Proxima Nova";
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-style: none;
   font-weight: 400;
@@ -700,6 +700,35 @@ footer .region-footer {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+/* line 42, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail {
+  position: relative; }
+
+/* line 45, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail > .menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 200px;
+  border: 1px solid #29a693;
+  background: #fff;
+  padding: 5px;
+  z-index: 999; }
+
+/* line 58, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail:last-of-type > .menu {
+  left: auto;
+  right: 0; }
+
+/* line 64, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail > .menu {
+  display: none; }
+
+/* line 69, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail:hover > .menu {
+  display: block;
+  margin-bottom: 10px; }
 
 /* line 1, sass/components/page-elements/_header.scss */
 .header {
@@ -855,6 +884,7 @@ footer .region-footer {
 
 /* line 1, sass/components/page-elements/_logo.scss */
 .logo {
+  margin-left: 15px;
   margin-right: 4%;
   margin-top: 21px;
   width: 26%; }
@@ -1407,7 +1437,7 @@ footer .region-footer {
 .main-menu a {
   border: 1px solid transparent;
   color: #373737;
-  font-family: "Proxima Nova";
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-style: none;
   font-weight: 400;
@@ -1431,6 +1461,35 @@ footer .region-footer {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+/* line 42, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail {
+  position: relative; }
+
+/* line 45, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail > .menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 200px;
+  border: 1px solid #29a693;
+  background: #fff;
+  padding: 5px;
+  z-index: 999; }
+
+/* line 58, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail:last-of-type > .menu {
+  left: auto;
+  right: 0; }
+
+/* line 64, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail > .menu {
+  display: none; }
+
+/* line 69, sass/components/page-elements/_heade-menu.scss */
+.main-menu .active-trail:hover > .menu {
+  display: block;
+  margin-bottom: 10px; }
 
 /* line 1, sass/components/page-elements/_header.scss */
 .header {
@@ -1586,6 +1645,7 @@ footer .region-footer {
 
 /* line 1, sass/components/page-elements/_logo.scss */
 .logo {
+  margin-left: 15px;
   margin-right: 4%;
   margin-top: 21px;
   width: 26%; }
