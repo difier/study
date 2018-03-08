@@ -1,0 +1,10 @@
+name = Features Panels
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_handlers][] = term_view__panel_context_3ef7a5c8-73e8-45ab-9e06-58c361d55bb0
+features[page_manager_pages][] = main_page
+project path = sites/all/modules/features

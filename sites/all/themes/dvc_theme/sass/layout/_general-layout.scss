@@ -1,0 +1,48 @@
+$susy-columns: 12;
+$susy-gutter-width: 15px;
+$susy: (
+  columns: $susy-columns,
+  gutter-position: inside-static,
+  column-width: 120px,
+  gutter: $susy-gutter-width / 120px,
+);
+
+@include breakpoint($md) {
+
+  // When two sidebars exists
+  .two-sidebars {
+    .first-sidebar {
+      @include span(3 first);
+    }
+
+    .second-sidebar {
+      @include span(3 last);
+    }
+
+    .main-content {
+      @include span(6);
+    }
+  }
+
+  // When only first sidebar exists
+  .sidebar-first {
+    .first-sidebar {
+      @include span(3);
+    }
+
+    .main-content {
+      @include span(9 last);
+    }
+  }
+
+  // When only second sidebar exists
+  .sidebar-second {
+    .second-sidebar {
+      @include span(3 last);
+    }
+
+    .main-content {
+      @include span(9 first);
+    }
+  }
+}

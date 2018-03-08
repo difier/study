@@ -1,0 +1,283 @@
+<?php
+
+/**
+ * @file
+ *  Provide main module for custom functionality.
+ */
+
+define('USER_ROLE_EDITOR', 4);
+
+define('TAXONOMY_VOCABULARY_BLOG_CATEGORIES', 3);
+define('TAXONOMY_VOCABULARY_TAGS', 1);
+
+module_load_include('inc', 'custom', 'custom.pages');
+module_load_include('inc', 'custom', 'custom.form');
+module_load_include('inc', 'custom', 'custom');
+module_load_include('inc', 'custom', 'custom.block');
+
+
+/**
+ * Implements hook_menu().
+ */
+function custom_menu() {
+  $items['admin/config/custom/variables'] = array(
+    'title' => 'Variables',
+    'description' => 'Different variables.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_admin_common_variables_config_form'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  $items['admin/config/webform_email'] = array(
+    'title' => 'Form settings',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_admin_webform_email_form'),
+    'access arguments' => array('access administration pages'),
+  );
+
+  return $items;
+}
+
+/**
+ * Generate custom form custom_admin_webform_email_form
+ *
+ * @param $form
+ * @param $form_state
+ * @return mixed
+ */
+function custom_admin_webform_email_form($form, &$form_state) {
+  $node = node_load(52);
+  $email = $node->webform['emails'][1]['email'];
+
+  $form['e_mail_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('E-mail'),
+    '#default_value' => $email,
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Send')
+  );
+
+  return $form;
+}
+
+/**
+ * Submit custom_admin_webform_email_form
+ *
+ * @param $form
+ * @param $form_state
+ */
+function custom_admin_webform_email_form_submit($form, &$form_state) {
+  $webform52 = node_load(52);
+  $webform28 = node_load(28);
+
+  $webform52->webform['emails'][1]['email'] = $form_state['values']['e_mail_text'];
+  $webform28->webform['emails'][1]['email'] = $form_state['values']['e_mail_text'];
+
+  node_save($webform52);
+  node_save($webform28);
+}
+
+
+/**
+ * Helper function for get settings array.
+ */
+function custom_settings_array() {
+  return array(
+    'scripts' => array(
+      'title' => t('Site scripts'),
+      'vk_comment' => array(
+        'title' => t('Vk comments'),
+        'type' => 'textarea'
+      ),
+      'vk_groups' => array(
+        'title' => t('Vk Groups'),
+        'type' => 'textarea'
+      ),
+      'social_groups' => array(
+        'title' => t('Social Groups'),
+        'type' => 'textarea'
+      ),
+      'share' => array(
+        'title' => t('Share links'),
+        'type' => 'textarea'
+      ),
+      'js_scripts' => array(
+        'title' => t('JS scripts'),
+        'type' => 'textarea'
+      ),
+    ),
+  );
+}
+
+/**
+ * Menu callback form.
+ */
+function custom_admin_common_variables_config_form($form, &$form_state) {
+  $form = array();
+  $form['#tree'] = TRUE;
+
+  foreach (custom_settings_array() as $group => $fields) {
+    $form[$group] = array(
+      '#tree' => TRUE,
+      '#type' => 'fieldset',
+      '#title' => $fields['title'],
+      '#collapsible' => TRUE,
+      '#collapsed' => FALSE,
+    );
+
+    $vars = variable_get('custom_admin_common_variables', array());
+    foreach ($fields as $name => $field_data) {
+      // $field_data['name'] = !empty($field_data['name']) ? $field_data['name'] : '';
+      if ($name != 'title') {
+        $form[$group][$name] = array(
+          '#type' => empty($field_data['type']) ? 'textfield' : $field_data['type'],
+          '#title' => $field_data['title'],
+          '#default_value' => !empty($vars[$group][$name]) ? $vars[$group][$name] : '',
+        );
+      }
+    }
+  }
+  $form['#submit'][] = 'custom_admin_common_variables_save';
+
+  return system_settings_form($form);
+}
+
+/**
+ * Form submit.
+ */
+function custom_admin_common_variables_save(&$form, &$form_state) {
+  $vars = variable_get('custom_admin_common_variables', array());
+
+  foreach (custom_settings_array() as $group => $fields) {
+    foreach ($fields as $name => $field_data) {
+      if ($name != 'title') {
+        $vars[$group][$name] = $form_state['values'][$group][$name];
+      }
+    }
+  }
+
+  variable_set('custom_admin_common_variables', $vars);
+  cache_clear_all('*', 'cache', TRUE);
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_block_info() {
+  $blocks['vk_groups'] = array(
+    'info' => t('VK Groups'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  $blocks['vk_comment'] = array(
+    'info' => t('VK Comment'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  $blocks['social_groups'] = array(
+    'info' => t('Social Groups'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  $blocks['shared'] = array(
+    'info' => t('Shared'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function custom_block_view($delta = '') {
+  $block = array();
+  $contents = variable_get('custom_admin_common_variables', array());
+
+  switch ($delta) {
+    case 'vk_groups':
+      $block['subject'] = '';
+      $block['content'] = $contents['scripts']['vk_groups'];
+      break;
+    case 'vk_comment':
+      $block['subject'] = '';
+      $block['content'] = $contents['scripts']['vk_comment'];
+      break;
+    case 'social_groups':
+      $block['subject'] = '';
+      $block['content'] = $contents['scripts']['social_groups'];
+      break;
+    case 'shared':
+      $block['subject'] = '';
+      $block['content'] = $contents['scripts']['share'];
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function custom_views_query_alter(&$view, &$query) {
+  if ($view->name == 'blog' && $view->current_display == 'block_1') {
+    $node = node_load(arg(1));
+    $query->where[1]['conditions'][2]['value'] = $node->nid;
+    $query->where[1]['conditions'][3]['value'] = $node->field_blog_categories[LANGUAGE_NONE][0]['tid'];
+  }
+}
+
+/**
+ * Implements hook_node_access().
+ */
+function custom_node_access($node, $op, $account) {
+  if (isset($node->nid) && $node->nid == 42) {
+    if (user_has_role(USER_ROLE_EDITOR, $account) && $op == 'view') {
+      return NODE_ACCESS_ALLOW;
+    }
+    return NODE_ACCESS_DENY;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    // Add redirect to main page after save block.
+    case 'bean_form':
+      $form['actions']['submit']['#submit'][] = 'custom_bean_form_submit';
+      break;
+    case 'article_node_form':
+    case 'page_node_form':
+      $form['#after_build'][] = 'custom_after_build_node_form';
+      break;
+  }
+}
+
+/**
+ * Custom after build for node form
+ *
+ * @param $form
+ * @param $form_state
+ * @return mixed
+ */
+function custom_after_build_node_form($form, $form_state) {
+  // Hide meta-tag page title.
+  hide($form['additional_settings']['group']['#groups']['additional_settings'][4][LANGUAGE_NONE]['basic']['title']);
+  hide($form['additional_settings']['group']['#groups']['additional_settings'][5][LANGUAGE_NONE]['basic']['title']);
+  return $form;
+}
+
+/**
+ * Custom bean form submit
+ *
+ * @param $form
+ * @param $form_state
+ */
+function custom_bean_form_submit($form, $form_state) {
+  drupal_goto('main');
+}

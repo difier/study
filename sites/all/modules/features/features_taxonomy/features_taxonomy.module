@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Features Taxonomy feature.
+ */
+
+include_once 'features_taxonomy.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Features BEAN feature.
+ */
+
+include_once 'features_bean.features.inc';

@@ -1,0 +1,12 @@
+name = Features Date Format
+core = 7.x
+package = Features
+dependencies[] = fe_date
+dependencies[] = features
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[fe_date_custom_date_formats][] = d.m.Y
+features[fe_date_date_format_types][] = day_month_year_dot_style
+features[features_api][] = api:2
+features[variable][] = date_format_day_month_year_dot_style
+project path = sites/all/modules/features

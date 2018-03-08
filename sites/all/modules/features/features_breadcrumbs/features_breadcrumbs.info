@@ -1,0 +1,14 @@
+name = Features Breadcrumbs
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = path_breadcrumbs
+features[ctools][] = path_breadcrumbs:path_breadcrumbs:1
+features[features_api][] = api:2
+features[path_breadcrumbs][] = blog
+features[path_breadcrumbs][] = blog_term
+features[path_breadcrumbs][] = list_me
+features[path_breadcrumbs][] = node_article
+features[path_breadcrumbs][] = node_page
+features[path_breadcrumbs][] = registration_node
+project path = sites/all/modules/features

@@ -1,0 +1,53 @@
+input,
+button,
+input *,
+button * {
+  appearance: none;
+  outline: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+
+// select,
+// input[type='file'],
+// input[type='password'],
+// input[type='text'] {
+// }
+
+// input[type='submit'],
+// button {
+// }
+
+// select {
+// }
+
+select:hover {
+  cursor: pointer;
+}
+
+// textarea {
+// }
+
+input[type='checkbox'] {
+  appearance: checkbox;
+
+  // + label {
+  // }
+
+  // &:checked + label {
+  // }
+}
+
+input[type='radio'] {
+  appearance: radio;
+
+  // + label {
+  // }
+
+  // &:checked + label {
+  // }
+}

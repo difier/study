@@ -1,0 +1,85 @@
+//fast font-family
+=font($alias, $name, $weight: normal, $style: normal)
+  @font-face
+    font-family: $alias
+    src: url("../fonts/" + $name + ".eot")
+    src: url("../fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $name + ".woff") format("woff"), url("../fonts/" + $name + ".ttf") format("truetype")
+    font-weight: $weight
+    font-style: $style
+
+@function parseInt($n)
+  @return $n / ($n * 0 + 1)
+
+=rem($property, $values)
+  $px: ()
+  $rem: ()
+  @each $value in $values
+    @if $value == 0 or $value == auto
+      $px: append($px, $value)
+      $rem: append($rem, $value)
+    @else
+      $unit: unit($value)
+      $val: parseInt($value)
+      @if $unit == "px"
+        $px: append($px, $value)
+        $rem: append($rem, $val / 16 + rem)
+      @if $unit == "rem"
+        $px: append($px, $val * 16 + px)
+        $rem: append($rem, $value)
+  @if $px == $rem
+    #{$property}: $px
+  @else
+    #{$property}: $px
+    #{$property}: $rem
+
+=placeholder
+  &:-ms-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+  &::placeholder
+    @content
+
+=scrollbar
+  & ::-moz-scrollbar
+    @content
+  & ::-webkit-scrollbar
+    @content
+  & ::scrollbar
+    @content
+
+=scrollbar-track
+  & ::-moz-scrollbar-track
+    @content
+  & ::-webkit-scrollbar-track
+    @content
+  & ::scrollbar-track
+    @content
+
+=scrollbar-thumb
+  & ::-moz-scrollbar-thumb
+    @content
+  & ::-webkit-scrollbar-thumb
+    @content
+  & ::scrollbar-thumb
+    @content
+
+=scrollbar-track-piece
+  & ::-moz-scrollbar-track-piece
+    @content
+  & ::-webkit-scrollbar-track-piece
+    @content
+  & ::scrollbar-track-piece
+    @content
+
+=clr
+  &:after
+    content: ""
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden

@@ -1,0 +1,34 @@
+<?php
+
+/**
+ *  @file
+ *  Provide main module for custom functionality.
+ */
+
+  module_load_include('inc', 'custom_default_module','custom_default_module.pages');
+  module_load_include('inc', 'custom_default_module','custom_default_module.form');
+  module_load_include('inc', 'custom_default_module','custom_default_module');
+  module_load_include('inc', 'custom_default_module','custom_default_module.block');
+
+
+/**
+ * Implements hook_menu().
+ */
+function custom_default_module_menu() {
+  $items['page-not-found'] = array(
+    'title'            => 'Page not found',
+    'page callback'    => 'custom_default_module_not_found',
+    'access callback'  => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ * Callback function for page 404.
+ */
+function custom_default_module_not_found() {
+  $output  = '<div>' . t('The requested page "@path" could not be found.', array('@path' => request_uri())) . '</div>';
+  $output .= l(t('Back to portal'), $_SERVER['HTTP_REFERER']);
+  return $output;
+}

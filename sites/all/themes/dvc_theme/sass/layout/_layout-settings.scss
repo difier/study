@@ -1,0 +1,38 @@
+@mixin padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@mixin row {
+  @include clr;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@mixin main-container {
+  @include padding;
+
+  @include breakpoint($sm) {
+    @include container($container-sm);
+  }
+
+  @include breakpoint($md) {
+    @include container($container-md);
+  }
+
+  @include breakpoint($lg) {
+    @include container($container-lg);
+  }
+}
+
+.padding {
+  @include padding;
+}
+
+.row {
+  @include row;
+}
+
+.container {
+  @include main-container;
+}

@@ -1,0 +1,19 @@
+  .pane-title {
+    font-family: $main-font;
+    font-size: 27px;
+    font-weight: $bold;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  .pane-content {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.field-name-field-block-text .even p:first-of-type {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}

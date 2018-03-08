@@ -1,0 +1,41 @@
+name = Dev-Company Theme
+description = Susy theme using libSass
+core = 7.x
+version = 7.3
+engine = phptemplate
+project = dvc_theme
+datestamp = 1447187950
+screenshot = screenshot.jpg
+
+stylesheets[all][] = dist/main.min.css
+stylesheets[all][] = stylesheets/main.css
+;stylesheets[all][] = dist/main.css
+
+regions[pre_header]     = Before header
+regions[header]         = Header
+regions[content_top]    = Content Top
+regions[content_bot]    = Content Bot
+regions[content]        = Content
+regions[inner_content]  = Inner content
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[help]           = Help
+regions[footer]         = Footer
+regions[footer_first]   = First Bottom
+regions[footer_second]  = Second Bottom
+regions[footer_third]   = Third Bottom
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+settings[breadcrumbs] = 1
+
+scripts[] = dist/main.js
+;scripts[] = dist/main.min.js

@@ -1,0 +1,108 @@
+.side-block-account {
+  background-color: #fff;
+  margin-bottom: 30px;
+  margin-top: 47px;
+  padding: 10px;
+  text-align: center;
+
+  .field-name-field-pd-image > .field-items > .field-item {
+    display: flex;
+    justify-content: center;
+    width: 138px;
+    height: 138px;
+    margin-left: auto;
+    margin-right: auto;
+
+    > img {
+      border-radius: 50%;
+    }
+  }
+
+  .field-name-field-pd-name-and-last-name {
+
+    .even {
+      color: black;
+      font-size: 21px;
+      font-weight: $normal;
+      line-height: 20px;
+      padding-top: 17px;
+      padding-bottom: 13px;
+  }
+}
+  .field-name-field-pd-email a {
+    color: #373737;
+    text-decoration: none;
+}
+  .field-name-field-pd-status,
+  .field-name-field-pd-phone,
+  .field-name-field-pd-email {
+
+    .even, .odd, a {
+      color: #373737;
+      font-size: 15px;
+      font-weight: $normal;
+      line-height: 23px;
+    }
+}
+
+  .field-name-field-pd-social-links {
+    margin-bottom: 20px;
+    margin-top: 16px;
+
+    .field-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .field-item {
+      margin-right: 4px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 0;
+      height: 31px;
+      width: 31px;
+    }
+
+    a[href*="vk.com"] {
+      background: url('../images/icons/vk.png') no-repeat;
+    }
+
+    a[href*="instagram.com"] {
+      background: url('../images/icons/instagram.png') no-repeat;
+    }
+
+    a[href*="ok.ru"] {
+      background: url('../images/icons/ok.png') no-repeat;
+    }
+
+    a[href*="youtube.com"] {
+      background: url('../images/icons/youtube.png') no-repeat;
+    }
+  }
+}
+
+
+.field-name-field-pd-btn a {
+  align-items: center;
+  background-color: #29a693;
+  border: 1px solid #29a693;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 44px;
+  min-width: 180px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+

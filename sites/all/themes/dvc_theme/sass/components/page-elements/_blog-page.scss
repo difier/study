@@ -1,0 +1,32 @@
+.not-front .main-content,
+.front .main-content {
+  padding-top: 29px;
+  padding-left: 31px;
+}
+
+.main-content > h1 {
+  color: #373737;
+  font-family: $main-font;
+  font-size: 27px;
+  font-weight: $bold;
+  line-height: 35px;
+}
+
+.side-block-rubric {
+  background-color: #fff;
+  padding: 31px 30px 41px 30px;
+  margin-bottom: 30px;
+}
+
+.side-block-rubric h2 {
+  color: #373737;
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.menu .leaf {
+  list-style-image: none;
+  list-style-type: none;
+}

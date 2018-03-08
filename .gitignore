@@ -1,0 +1,10 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+stats/*
+sites/all/themes/*/node_modules
+sites/all/themes/*/bower_components
+sites/all/themes/*/stylesheets
