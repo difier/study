@@ -4,29 +4,29 @@
 }
 
 .node-type-webform h1 {
+  @include rem(font-size, 27px);
+  @include rem(line-height, 35px);
+  @include rem(padding-left, 53px);
+  @include rem(padding-top, 28px);
   color: color(text);
-  font-size: 27px;
   font-weight: $bold;
-  line-height: 35px;
-  padding-left: 53px;
-  padding-top: 28px;
 }
 
 .node-webform {
-  padding: 28px 33px 50px 53px;
+  @include rem(padding, 28px 33px 50px 53px);
 
   .field-name-field-before-text span {
+    @include rem(font-size, 16px);
+    @include rem(line-height, 26px);
     color: color(text);
-    font-size: 16px;
     font-weight: $normal;
-    line-height: 26px;
   }
 
   .webform-component--first-col input,
   .webform-component--second-col input {
-    height: 40px;
-    padding-left: 16px;
-    width: 240px;
+    @include rem(height, 40px);
+    @include rem(padding-left, 16px);
+    @include rem(width, 240px);
   }
 
   .webform-component--first-col input:focus,
@@ -35,11 +35,11 @@
   }
 
   .webform-component--first-col {
-    margin-right: 29px;
+    @include rem(margin-right, 29px);
   }
 
   .webform-component--second-col {
-    margin-right: 61px;
+    @include rem(margin-right, 61px);
   }
 
   .webform-client-form-28 > div {
@@ -60,12 +60,12 @@
   }
 
 .field-name-field-field-after-text {
-  font-size: 16px;
+  @include rem(font-size, 16px);
+  @include rem(line-height, 26px);
   font-weight: $normal;
-  line-height: 26px;
 
     .field-label {
-      font-size: 0px;
+      @include rem(font-size, 0px);
     }
   }
 }

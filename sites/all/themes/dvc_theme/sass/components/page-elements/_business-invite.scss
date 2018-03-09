@@ -1,19 +1,19 @@
 .pane-title {
+  @include rem(font-size, 27px);
+  @include rem(line-height, 35px);
+  @include rem(margin-bottom, 25px);
   font-family: $main-font;
-  font-size: 27px;
   font-weight: $bold;
-  line-height: 35px;
-  margin-bottom: 25px;
 }
 
 .pane-content {
-  font-size: 16px;
-  margin-bottom: 50px;
+  @include rem(font-size, 16px);
+  @include rem(margin-bottom, 50px);
 }
 
 .field-name-field-block-text .even p:first-of-type {
+  @include rem(font-size, 16px);
+  @include rem(line-height, 26px);
+  @include rem(margin-bottom, 30px);
   font-family: $main-font;
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 30px;
 }

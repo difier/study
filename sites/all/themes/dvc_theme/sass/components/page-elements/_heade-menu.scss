@@ -1,7 +1,7 @@
 .main-menu {
+  @include rem(font-size, 16px);
+  @include rem(line-height, 24px);
   color: color(text);
-  font-size: 16px;
-  line-height: 24px;
   margin-left: auto;
 
   .last collapsed {
@@ -10,15 +10,15 @@
   }
 
 a {
+  @include rem(font-size, 17px);
+  @include rem(line-height, 24px);
+  @include rem(padding, 10px 17px);
   border: 1px solid transparent;
   color: color(text);
   display: block;
   font-family: $main-font;
-  font-size: 17px;
   font-style: none;
   font-weight: $normal;
-  line-height: 24px;
-  padding: 10px 17px;
   text-align: center;
   text-decoration: none;
 
@@ -44,13 +44,13 @@ ul {
   position: relative;
 
   > .menu {
+    @include rem(padding, 5px);
+    @include rem(top, 40px);
+    @include rem(width, 200px);
     background: #fff;
     border: 1px solid color(borderBtn);
     left: 0;
-    padding: 5px;
     position: absolute;
-    top: 40px;
-    width: 200px;
     z-index: 999;
   }
 }
@@ -68,8 +68,8 @@ ul {
 
 .active-trail:hover {
   > .menu {
+    @include rem(margin-bottom, 10px);
     display: block;
-    margin-bottom: 10px;
   }
  }
 }

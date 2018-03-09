@@ -1,23 +1,23 @@
 .view-blog .views-row {
-  margin-bottom: 55px;
+  @include rem(margin-bottom, 55px);
 }
 
 .view-mode-teaser .field-name-title a {
+  @include rem(font-size, 21px);
+  @include rem(line-height, 27px);
   color: #29a693;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 27px;
+  font-weight: $bold;
   text-decoration: underline;
 }
 
 .field-name-node-link a {
-  background-color: color(borderBtn);
+  @include rem(font-size, 18px);
+  @include rem(line-height, 27px);
+  background-color: color(bgColorLink);
   border: 1px solid color(borderBtn);
   color: #ffffff;
   display: block;
-  font-size: 18px;
   font-weight: $light;
-  line-height: 27px;
   padding: 8px 21px;
   text-decoration: none;
 }
@@ -27,7 +27,7 @@
 }
 
 .group-left {
-  margin-bottom: 14px;
+  @include rem(margin-bottom, 14px);
 }
 
 .group-wrapper2 {
@@ -38,12 +38,12 @@
     }
   }
 
-.group-wrapper .fieldset-wrapper{
-  margin-left: 30px;
+.group-wrapper .fieldset-wrapper {
+  @include rem(margin-left, 30px);
 }
 
 .field-name-count-view {
-  margin-bottom: 24px;
+  @include rem(margin-bottom, 24px);
 }
 
 .field-name-field-blog-categories {
@@ -60,18 +60,18 @@
 
 .field-name-count-view,
 .field-name-post-date {
-  margin-right: 17px;
-  padding-left: 18px;
+  @include rem(margin-right, 17px);
+  @include rem(padding-left, 18px);
   position: relative;
 
     &:before {
+      @include rem(height, 14px);
+      @include rem(width, 14px);
       content: "";
       display: block;
-      height: 14px;
       left: 0;
       position: absolute;
       top: 0;
-      width: 14px;
     }
   }
 
@@ -96,11 +96,11 @@
 
 
 .all-articles a {
+  @include rem(font-size, 18px);
+  @include rem(line-height, 20px);
+  @include rem(margin-bottom, 33px);
   color: #29a693;
-  font-size: 18px;
   font-weight: $normal;
-  line-height: 20px;
-  margin-bottom: 33px;
   text-decoration: underline;
 }
 

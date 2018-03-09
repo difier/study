@@ -1,6 +1,6 @@
 footer {
-  padding-bottom: 20px;
-  padding-top: 25px;
+  @include rem(padding-bottom, 20px);
+  @include rem(padding-top, 25px);
 
   .region-footer {
     display: flex;

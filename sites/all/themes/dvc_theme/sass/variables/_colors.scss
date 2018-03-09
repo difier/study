@@ -18,16 +18,18 @@ $chroma: add-colors((
 $chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
 $chroma: add-colors('functional', (
   // Colors used in the main content area.
-  text:             'black',
-  white:            'white',
-  linkHover:        'lightgreen',
-  borderBtn:        'lightgreen',
   bgColorBtn:       'lightgreen',
-  borderInput:      'lightgreen',
   bgColorHover:     'lightergreen',
+  bgColorLink:      'lightgreen',
+  borderBtn:        'lightgreen',
+  borderBtnHover:   'lightergreen',
   borderColorHover: 'lightgreen',
+  borderInput:      'lightgreen',
+  ColorForLink:     'lightgreen',
+  linkHover:        'lightgreen',
+  text:             'black',
   textColorHover:   'lightergreen',
-  borderBtnHover:   'lightergreen'
+  white:            'white',
 
 ));
 

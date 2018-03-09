@@ -1,17 +1,17 @@
 .side-block-account {
+  @include rem(margin-bottom, 30px);
+  @include rem(margin-top, 47px);
+  @include rem(padding, 10px);
   background-color: #fff;
-  margin-bottom: 30px;
-  margin-top: 47px;
-  padding: 10px;
   text-align: center;
 
   .field-name-field-pd-image > .field-items > .field-item {
+    @include rem(height, 138px);
+    @include rem(width, 138px);
     display: flex;
-    height: 138px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 138px;
 
     > img {
       border-radius: 50%;
@@ -21,12 +21,12 @@
   .field-name-field-pd-name-and-last-name {
 
     .even {
+      @include rem(font-size, 21px);
+      @include rem(line-height, 20px);
+      @include rem(padding-bottom, 13px);
+      @include rem(padding-top, 17px);
       color: black;
-      font-size: 21px;
       font-weight: $normal;
-      line-height: 20px;
-      padding-top: 17px;
-      padding-bottom: 13px;
   }
 }
   .field-name-field-pd-email a {
@@ -38,16 +38,16 @@
   .field-name-field-pd-email {
 
     .even, .odd, a {
+      @include rem(font-size, 15px);
+      @include rem(line-height, 23px);
       color: color(text);
-      font-size: 15px;
       font-weight: $normal;
-      line-height: 23px;
     }
 }
 
   .field-name-field-pd-social-links {
-    margin-bottom: 20px;
-    margin-top: 16px;
+    @include rem(margin-bottom, 20px);
+    @include rem(margin-top, 16px);
 
     .field-items {
       display: flex;
@@ -56,7 +56,7 @@
     }
 
     .field-item {
-      margin-right: 4px;
+      @include rem(margin-right, 4px);
 
       &:last-of-type {
         margin-right: 0;
@@ -64,10 +64,10 @@
     }
 
     a {
+      @include rem(height, 31px);
+      @include rem(width, 31px);
       display: block;
       font-size: 0;
-      height: 31px;
-      width: 31px;
     }
 
     a[href*="vk.com"] {
@@ -90,17 +90,17 @@
 
 
 .field-name-field-pd-btn a {
+  @include rem(min-height, 44px);
+  @include rem(min-width, 180px);
+  @include rem(padding, 5px);
   align-items: center;
-  background-color: #29a693;
+  background-color: color(bgColorLink);
   border: 1px solid #29a693;
   color: #fff;
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  min-height: 44px;
-  min-width: 180px;
-  padding: 5px;
   text-align: center;
   text-decoration: none;
 }

@@ -1,31 +1,31 @@
 .not-front .main-content,
 .front .main-content {
-  margin-top: 47px;
-  padding-left: 31px;
-  padding-top: 29px;
+  @include rem(margin-top, 47px);
+  @include rem(padding-left, 31px);
+  @include rem(padding-top, 29px);
 }
 
 .main-content > h1 {
+  @include rem(font-size, 27px);
+  @include rem(line-height, 35px);
+  @include rem(padding-bottom, 24px);
   color: color(text);
   font-family: $main-font;
-  font-size: 27px;
   font-weight: $bold;
-  line-height: 35px;
-  padding-bottom: 24px;
 }
 
 .side-block-rubric {
+  @include rem(margin-bottom, 30px);
+  @include rem(padding, 31px 30px 41px 30px);
   background-color: #fff;
-  margin-bottom: 30px;
-  padding: 31px 30px 41px 30px;
 }
 
 .side-block-rubric h2 {
+  @include rem(font-size, 21px);
+  @include rem(line-height, 33px);
   color: color(text);
   font-family: $main-font;
-  font-size: 21px;
   font-weight: $bold;
-  line-height: 33px;
 }
 
 .menu .leaf {
@@ -34,13 +34,13 @@
 }
 
 .side-block-menu .menu .leaf a {
+  @include rem(font-size, 21px);
+  @include rem(line-height, 33px);
+  @include rem(padding-bottom, 2px);
   border-bottom: 1px solid silver;
   color: color(text);
   display: block;
-  font-size: 21px;
   font-weight: $normal;
-  line-height: 33px;
-  padding-bottom: 2px;
   text-decoration: none;
 
   &:hover {
