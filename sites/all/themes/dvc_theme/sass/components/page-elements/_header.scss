@@ -1,14 +1,14 @@
 .header{
   background: #fff;
-  height: 91px;
-  margin-bottom: 47px;
+  min-height: 91px;
+  padding-top: 25px;
+  padding-bottom: 26px;
 
   .header-inner {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0;
   }
 
   .region-header {
