@@ -614,6 +614,11 @@ input[type='radio'] {
   padding-bottom: 2px;
   text-decoration: none; }
 
+/* line 45, sass/components/page-elements/_blog-page.scss */
+.side-block-menu .menu .leaf a:hover {
+  border-bottom: 1px solid #29a693;
+  color: #56b7a9; }
+
 /* line 1, sass/components/page-elements/_business-invite.scss */
 .pane-title {
   font-family: "Roboto", sans-serif;
@@ -707,13 +712,13 @@ footer .region-footer {
 
 /* line 45, sass/components/page-elements/_heade-menu.scss */
 .main-menu .active-trail > .menu {
+  background: #fff;
+  border: 1px solid #29a693;
+  left: 0;
+  padding: 5px;
   position: absolute;
   top: 30px;
-  left: 0;
   width: 200px;
-  border: 1px solid #29a693;
-  background: #fff;
-  padding: 5px;
   z-index: 999; }
 
 /* line 58, sass/components/page-elements/_heade-menu.scss */
@@ -1375,6 +1380,11 @@ input[type='radio'] {
   padding-bottom: 2px;
   text-decoration: none; }
 
+/* line 45, sass/components/page-elements/_blog-page.scss */
+.side-block-menu .menu .leaf a:hover {
+  border-bottom: 1px solid #29a693;
+  color: #56b7a9; }
+
 /* line 1, sass/components/page-elements/_business-invite.scss */
 .pane-title {
   font-family: "Roboto", sans-serif;
@@ -1468,13 +1478,13 @@ footer .region-footer {
 
 /* line 45, sass/components/page-elements/_heade-menu.scss */
 .main-menu .active-trail > .menu {
+  background: #fff;
+  border: 1px solid #29a693;
+  left: 0;
+  padding: 5px;
   position: absolute;
   top: 30px;
-  left: 0;
   width: 200px;
-  border: 1px solid #29a693;
-  background: #fff;
-  padding: 5px;
   z-index: 999; }
 
 /* line 58, sass/components/page-elements/_heade-menu.scss */

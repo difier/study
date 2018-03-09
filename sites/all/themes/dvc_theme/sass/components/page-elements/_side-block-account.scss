@@ -30,7 +30,7 @@
   }
 }
   .field-name-field-pd-email a {
-    color: #373737;
+    color: color(text);
     text-decoration: none;
 }
   .field-name-field-pd-status,
@@ -38,7 +38,7 @@
   .field-name-field-pd-email {
 
     .even, .odd, a {
-      color: #373737;
+      color: color(text);
       font-size: 15px;
       font-weight: $normal;
       line-height: 23px;

@@ -5,7 +5,7 @@
 }
 
 .main-content > h1 {
-  color: #373737;
+  color: color(text);
   font-family: $main-font;
   font-size: 27px;
   font-weight: $bold;
@@ -20,7 +20,7 @@
 }
 
 .side-block-rubric h2 {
-  color: #373737;
+  color: color(text);
   font-family: $main-font;
   font-size: 21px;
   font-weight: $bold;
@@ -34,11 +34,16 @@
 
 .side-block-menu .menu .leaf a {
   border-bottom: 1px solid silver;
-  color: #373737;
+  color: color(text);
   display: block;
   font-size: 21px;
   font-weight: $normal;
   line-height: 33px;
   padding-bottom: 2px;
   text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid color(borderColorHover);
+    color: color(textColorHover);
+  }
 }

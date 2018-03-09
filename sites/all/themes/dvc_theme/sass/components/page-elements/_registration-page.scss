@@ -4,7 +4,7 @@
 }
 
 .node-type-webform h1 {
-  color: #373737;
+  color: color(text);
   font-size: 27px;
   font-weight: $bold;
   line-height: 35px;
@@ -16,7 +16,7 @@
   padding: 28px 33px 50px 53px;
 
   .field-name-field-before-text span {
-    color: #373737;
+    color: color(text);
     font-size: 16px;
     font-weight: $normal;
     line-height: 26px;
