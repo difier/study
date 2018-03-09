@@ -565,16 +565,16 @@ input[type='radio'] {
   margin-right: -15px;
   margin-top: -29px; }
 
-/* line 7, sass/components/page-elements/_baner-slider.scss */
+/* line 6, sass/components/page-elements/_baner-slider.scss */
 .baner-slider .field-items img {
   width: 100%; }
 
 /* line 1, sass/components/page-elements/_blog-page.scss */
 .not-front .main-content,
 .front .main-content {
-  padding-top: 29px;
+  margin-top: 47px;
   padding-left: 31px;
-  margin-top: 47px; }
+  padding-top: 29px; }
 
 /* line 8, sass/components/page-elements/_blog-page.scss */
 .main-content > h1 {
@@ -588,8 +588,8 @@ input[type='radio'] {
 /* line 17, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric {
   background-color: #fff;
-  padding: 31px 30px 41px 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding: 31px 30px 41px 30px; }
 
 /* line 23, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric h2 {
@@ -667,9 +667,9 @@ footer .region-footer {
 
 /* line 1, sass/components/page-elements/_heade-menu.scss */
 .main-menu {
+  color: #373737;
   font-size: 16px;
   line-height: 24px;
-  color: #373737;
   margin-left: auto; }
 
 /* line 7, sass/components/page-elements/_heade-menu.scss */
@@ -680,15 +680,15 @@ footer .region-footer {
 .main-menu a {
   border: 1px solid transparent;
   color: #373737;
+  display: block;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-style: none;
   font-weight: 400;
   line-height: 24px;
   padding: 10px 17px;
-  text-decoration: none;
-  display: block;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
 
 /* line 25, sass/components/page-elements/_heade-menu.scss */
 .main-menu a:hover {
@@ -1000,11 +1000,11 @@ footer .region-footer {
 /* line 8, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-image > .field-items > .field-item {
   display: flex;
-  justify-content: center;
-  width: 138px;
   height: 138px;
+  justify-content: center;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 138px; }
 
 /* line 16, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-image > .field-items > .field-item > img {
@@ -1045,8 +1045,8 @@ footer .region-footer {
 /* line 52, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-items {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 /* line 58, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-item {
@@ -1332,16 +1332,16 @@ input[type='radio'] {
   margin-right: -15px;
   margin-top: -29px; }
 
-/* line 7, sass/components/page-elements/_baner-slider.scss */
+/* line 6, sass/components/page-elements/_baner-slider.scss */
 .baner-slider .field-items img {
   width: 100%; }
 
 /* line 1, sass/components/page-elements/_blog-page.scss */
 .not-front .main-content,
 .front .main-content {
-  padding-top: 29px;
+  margin-top: 47px;
   padding-left: 31px;
-  margin-top: 47px; }
+  padding-top: 29px; }
 
 /* line 8, sass/components/page-elements/_blog-page.scss */
 .main-content > h1 {
@@ -1355,8 +1355,8 @@ input[type='radio'] {
 /* line 17, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric {
   background-color: #fff;
-  padding: 31px 30px 41px 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding: 31px 30px 41px 30px; }
 
 /* line 23, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric h2 {
@@ -1434,9 +1434,9 @@ footer .region-footer {
 
 /* line 1, sass/components/page-elements/_heade-menu.scss */
 .main-menu {
+  color: #373737;
   font-size: 16px;
   line-height: 24px;
-  color: #373737;
   margin-left: auto; }
 
 /* line 7, sass/components/page-elements/_heade-menu.scss */
@@ -1447,15 +1447,15 @@ footer .region-footer {
 .main-menu a {
   border: 1px solid transparent;
   color: #373737;
+  display: block;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-style: none;
   font-weight: 400;
   line-height: 24px;
   padding: 10px 17px;
-  text-decoration: none;
-  display: block;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
 
 /* line 25, sass/components/page-elements/_heade-menu.scss */
 .main-menu a:hover {
@@ -1767,11 +1767,11 @@ footer .region-footer {
 /* line 8, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-image > .field-items > .field-item {
   display: flex;
-  justify-content: center;
-  width: 138px;
   height: 138px;
+  justify-content: center;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 138px; }
 
 /* line 16, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-image > .field-items > .field-item > img {
@@ -1812,8 +1812,8 @@ footer .region-footer {
 /* line 52, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-items {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 /* line 58, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-item {

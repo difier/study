@@ -7,11 +7,11 @@
 
   .field-name-field-pd-image > .field-items > .field-item {
     display: flex;
-    justify-content: center;
-    width: 138px;
     height: 138px;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    width: 138px;
 
     > img {
       border-radius: 50%;
@@ -51,8 +51,8 @@
 
     .field-items {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .field-item {
