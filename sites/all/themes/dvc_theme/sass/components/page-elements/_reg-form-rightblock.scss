@@ -24,5 +24,6 @@
 }
 
 .side-block-reg {
-  @include rem(margin-bottom, 30px);
+  @include rem(margin-bottom, 20px);
+  display: none;
 }

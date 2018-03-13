@@ -3,8 +3,7 @@ footer {
   @include rem(padding-top, 25px);
 
   .region-footer {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
   }
 }
 

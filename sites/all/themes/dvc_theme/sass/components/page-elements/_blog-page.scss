@@ -1,6 +1,7 @@
 .not-front .main-content,
 .front .main-content {
-  @include rem(padding-left, 31px);
+  @include rem(padding-left, 15px);
+  // @include rem(padding-right, 15px);
   @include rem(padding-top, 29px);
   @include rem(margin-top, 16px);
 }
@@ -8,7 +9,7 @@
 .main-content > h1 {
   @include rem(font-size, 27px);
   @include rem(line-height, 35px);
-  @include rem(padding-bottom, 24px);
+  // @include rem(padding-bottom, 24px);
   color: color(text);
   font-family: $main-font;
   font-weight: $bold;

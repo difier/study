@@ -705,8 +705,10 @@ input[type='radio'] {
 
 /* line 1, sass/components/page-elements/_baner-slider.scss */
 .baner-slider {
-  margin-left: -31px;
-  margin-left: -1.9375rem;
+  margin-left: -15px;
+  margin-left: -0.9375rem;
+  margin-right: -15px;
+  margin-right: -0.9375rem;
   margin-top: -29px;
   margin-top: -1.8125rem; }
 
@@ -718,26 +720,24 @@ input[type='radio'] {
 /* line 1, sass/components/page-elements/_blog-page.scss */
 .not-front .main-content,
 .front .main-content {
-  padding-left: 31px;
-  padding-left: 1.9375rem;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
   padding-top: 29px;
   padding-top: 1.8125rem;
   margin-top: 16px;
   margin-top: 1rem; }
 
-/* line 8, sass/components/page-elements/_blog-page.scss */
+/* line 9, sass/components/page-elements/_blog-page.scss */
 .main-content > h1 {
   font-size: 27px;
   font-size: 1.6875rem;
   line-height: 35px;
   line-height: 2.1875rem;
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem;
   color: #373737;
   font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
-/* line 17, sass/components/page-elements/_blog-page.scss */
+/* line 18, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
@@ -745,7 +745,7 @@ input[type='radio'] {
   padding: 1.9375rem 1.875rem 2.5625rem 1.875rem;
   background-color: #fff; }
 
-/* line 23, sass/components/page-elements/_blog-page.scss */
+/* line 24, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric h2 {
   font-size: 21px;
   font-size: 1.3125rem;
@@ -755,12 +755,12 @@ input[type='radio'] {
   font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
-/* line 31, sass/components/page-elements/_blog-page.scss */
+/* line 32, sass/components/page-elements/_blog-page.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }
 
-/* line 36, sass/components/page-elements/_blog-page.scss */
+/* line 37, sass/components/page-elements/_blog-page.scss */
 .side-block-menu .menu .leaf a {
   font-size: 21px;
   font-size: 1.3125rem;
@@ -774,7 +774,7 @@ input[type='radio'] {
   font-weight: 400;
   text-decoration: none; }
 
-/* line 46, sass/components/page-elements/_blog-page.scss */
+/* line 47, sass/components/page-elements/_blog-page.scss */
 .side-block-menu .menu .leaf a:hover {
   border-bottom: 1px solid #29a693;
   color: #56b7a9; }
@@ -793,9 +793,11 @@ input[type='radio'] {
 /* line 9, sass/components/page-elements/_business-invite.scss */
 .pane-content {
   margin-bottom: 22px;
-  margin-bottom: 1.375rem; }
+  margin-bottom: 1.375rem;
+  padding-right: 31px;
+  padding-right: 1.9375rem; }
 
-/* line 13, sass/components/page-elements/_business-invite.scss */
+/* line 14, sass/components/page-elements/_business-invite.scss */
 .field-name-field-block-text .even p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
@@ -834,8 +836,7 @@ footer {
 
 /* line 5, sass/components/page-elements/_footer.scss */
 footer .region-footer {
-  display: flex;
-  justify-content: space-between; }
+  text-align: center; }
 
 /* line 1, sass/components/page-elements/_heade-menu.scss */
 .content .menu {
@@ -961,9 +962,9 @@ footer .region-footer {
   line-height: 23px;
   line-height: 1.4375rem;
   color: #29a693;
-  float: right;
   font-weight: 400;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-align: center; }
 
 /* line 1, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
@@ -1117,8 +1118,9 @@ footer .region-footer {
 
 /* line 26, sass/components/page-elements/_reg-form-rightblock.scss */
 .side-block-reg {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: none; }
 
 /* line 1, sass/components/page-elements/_registration-page.scss */
 .breadcrumb .inline,
@@ -1208,10 +1210,10 @@ footer .region-footer {
 
 /* line 1, sass/components/page-elements/_side-block-account.scss */
 .side-block-account {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
   margin-top: 17px;
   margin-top: 1.0625rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   padding: 10px;
   padding: 0.625rem;
   background-color: #fff;
@@ -1329,7 +1331,8 @@ footer .region-footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 67%; }
 
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {
@@ -1638,8 +1641,10 @@ input[type='radio'] {
 
 /* line 1, sass/components/page-elements/_baner-slider.scss */
 .baner-slider {
-  margin-left: -31px;
-  margin-left: -1.9375rem;
+  margin-left: -15px;
+  margin-left: -0.9375rem;
+  margin-right: -15px;
+  margin-right: -0.9375rem;
   margin-top: -29px;
   margin-top: -1.8125rem; }
 
@@ -1651,26 +1656,24 @@ input[type='radio'] {
 /* line 1, sass/components/page-elements/_blog-page.scss */
 .not-front .main-content,
 .front .main-content {
-  padding-left: 31px;
-  padding-left: 1.9375rem;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
   padding-top: 29px;
   padding-top: 1.8125rem;
   margin-top: 16px;
   margin-top: 1rem; }
 
-/* line 8, sass/components/page-elements/_blog-page.scss */
+/* line 9, sass/components/page-elements/_blog-page.scss */
 .main-content > h1 {
   font-size: 27px;
   font-size: 1.6875rem;
   line-height: 35px;
   line-height: 2.1875rem;
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem;
   color: #373737;
   font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
-/* line 17, sass/components/page-elements/_blog-page.scss */
+/* line 18, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
@@ -1678,7 +1681,7 @@ input[type='radio'] {
   padding: 1.9375rem 1.875rem 2.5625rem 1.875rem;
   background-color: #fff; }
 
-/* line 23, sass/components/page-elements/_blog-page.scss */
+/* line 24, sass/components/page-elements/_blog-page.scss */
 .side-block-rubric h2 {
   font-size: 21px;
   font-size: 1.3125rem;
@@ -1688,12 +1691,12 @@ input[type='radio'] {
   font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
-/* line 31, sass/components/page-elements/_blog-page.scss */
+/* line 32, sass/components/page-elements/_blog-page.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }
 
-/* line 36, sass/components/page-elements/_blog-page.scss */
+/* line 37, sass/components/page-elements/_blog-page.scss */
 .side-block-menu .menu .leaf a {
   font-size: 21px;
   font-size: 1.3125rem;
@@ -1707,7 +1710,7 @@ input[type='radio'] {
   font-weight: 400;
   text-decoration: none; }
 
-/* line 46, sass/components/page-elements/_blog-page.scss */
+/* line 47, sass/components/page-elements/_blog-page.scss */
 .side-block-menu .menu .leaf a:hover {
   border-bottom: 1px solid #29a693;
   color: #56b7a9; }
@@ -1726,9 +1729,11 @@ input[type='radio'] {
 /* line 9, sass/components/page-elements/_business-invite.scss */
 .pane-content {
   margin-bottom: 22px;
-  margin-bottom: 1.375rem; }
+  margin-bottom: 1.375rem;
+  padding-right: 31px;
+  padding-right: 1.9375rem; }
 
-/* line 13, sass/components/page-elements/_business-invite.scss */
+/* line 14, sass/components/page-elements/_business-invite.scss */
 .field-name-field-block-text .even p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
@@ -1767,8 +1772,7 @@ footer {
 
 /* line 5, sass/components/page-elements/_footer.scss */
 footer .region-footer {
-  display: flex;
-  justify-content: space-between; }
+  text-align: center; }
 
 /* line 1, sass/components/page-elements/_heade-menu.scss */
 .content .menu {
@@ -1894,9 +1898,9 @@ footer .region-footer {
   line-height: 23px;
   line-height: 1.4375rem;
   color: #29a693;
-  float: right;
   font-weight: 400;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-align: center; }
 
 /* line 1, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
@@ -2050,8 +2054,9 @@ footer .region-footer {
 
 /* line 26, sass/components/page-elements/_reg-form-rightblock.scss */
 .side-block-reg {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: none; }
 
 /* line 1, sass/components/page-elements/_registration-page.scss */
 .breadcrumb .inline,
@@ -2141,10 +2146,10 @@ footer .region-footer {
 
 /* line 1, sass/components/page-elements/_side-block-account.scss */
 .side-block-account {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
   margin-top: 17px;
   margin-top: 1.0625rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   padding: 10px;
   padding: 0.625rem;
   background-color: #fff;
@@ -2262,7 +2267,8 @@ footer .region-footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 67%; }
 
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {

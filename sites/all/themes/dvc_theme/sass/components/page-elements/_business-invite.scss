@@ -8,6 +8,7 @@
 
 .pane-content {
   @include rem(margin-bottom, 22px);
+  @include rem(padding-right, 31px);
 }
 
 .field-name-field-block-text .even p:first-of-type {
