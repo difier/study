@@ -7,7 +7,6 @@
     "breakpoint-sass": "^2.7.1",
     "select2": "^4.0.6-rc.1",
     "slick-carousel": "^1.8.1",
-    "slicknav": "^1.0.8",
     "susy": "^2.2.12"
   },
   "config": {
@@ -34,7 +33,8 @@
     "gulp.spritesmith": "~6.3.0",
     "jshint": "^2.8.0",
     "node-sass": "^4.7.2",
-    "readable-stream": "~2.1.4"
+    "readable-stream": "~2.1.4",
+    "slicknav": "^1.0.8"
   },
   "scripts": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete && gulp compile"

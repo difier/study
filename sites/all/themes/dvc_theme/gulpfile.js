@@ -17,7 +17,7 @@ var cssFiles = [
   './node_modules/slick-carousel/slick/slick.css',
   './node_modules/slick-carousel/slick/slick-theme.css',
   './node_modules/select2/dist/css/select2.min.css',
-  './node_modules/slicknav/dist/slicknav.min.css',
+  './node_modules/slicknav/dist/slicknav.css',
   './dist/main.css',
   './stylesheets/main.css'
 ];

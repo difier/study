@@ -1,8 +1,8 @@
 .not-front .main-content,
 .front .main-content {
-  @include rem(margin-top, 47px);
   @include rem(padding-left, 31px);
   @include rem(padding-top, 29px);
+  @include rem(margin-top, 16px);
 }
 
 .main-content > h1 {

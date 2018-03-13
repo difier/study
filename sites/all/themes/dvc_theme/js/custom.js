@@ -6,6 +6,17 @@
     }
   };
 
+  Drupal.behaviors.slickMeny = {
+    attach: function (context, settings) {
+      this.slicknav('.main-menu .menu:first', context);
+    },
+    slicknav: function(el, context) {
+      $(el, context).slicknav({
+        appendTo: '.main-menu'
+      });
+    }
+  };
+
   // Drupal.behaviors.svg = {
   //   attach: function (context, settings) {
   //     this.svgParse('svg-name', '.selector' , 'dvc_theme', context);

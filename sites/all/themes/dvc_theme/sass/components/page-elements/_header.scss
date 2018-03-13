@@ -1,8 +1,5 @@
 .header{
-  @include rem(min-height, 91px);
-  @include rem(padding-bottom, 26px);
-  @include rem(padding-top, 25px);
-  background: #fff;
+  background: color (backgroundColor);
 
   .header-inner {
     align-items: center;
@@ -13,6 +10,7 @@
 
   .region-header {
     display: flex;
-    width: 70%;
+    margin-left: auto;
+    margin-right: 3%;
   }
 }

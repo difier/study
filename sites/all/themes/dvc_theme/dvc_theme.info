@@ -9,6 +9,7 @@ screenshot = screenshot.jpg
 
 stylesheets[all][] = dist/main.min.css
 stylesheets[all][] = stylesheets/main.css
+stylesheets[all][] = node_modules/slicknav/dist/slicknav.css
 ;stylesheets[all][] = dist/main.css
 
 regions[pre_header]     = Before header

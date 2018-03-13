@@ -1,0 +1,65 @@
+.main-menu .slicknav_menu {
+  background: transparent;
+
+  .slicknav_menutxt {
+    font-size: 0;
+  }
+
+  .slicknav_btn {
+    background: transparent;
+  }
+
+  .slicknav_open .slicknav_icon-bar {
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .slicknav_open .slicknav_icon-bar:first-of-type {
+    @include rem(top, 10px);
+    transform: rotate(45deg);
+  }
+
+  .slicknav_open .slicknav_icon-bar:nth-of-type(2) {
+    display: none;
+  }
+
+  .slicknav_open .slicknav_icon-bar:last-of-type {
+    @include rem(top, 7px);
+    transform: rotate(-45deg);
+  }
+
+  .slicknav_icon-bar {
+    @include rem(margin-bottom, 6px);
+    @include rem(width, 30px);
+    border-radius: 0;
+    border: 2px solid black;
+    box-shadow: none;
+  }
+
+  .slicknav_nav {
+    background-color: rgba(110,110,110, .9);
+    left: 50%;
+    position: fixed;
+    right: 50%;
+    text-align: center;
+    top: 0;
+    transform: translate(-50%, 0);
+    width: 100%;
+    z-index: 9998;
+  }
+  .slicknav_nav a {
+    @include rem(font-size, 17px);
+    @include rem(line-height, 35px);
+    background: none;
+    border: 1px solid transparent;
+    color: #ebebed;;
+    display: inline-block;
+    font-weight: $normal;
+
+    &:hover {
+      border-radius: 0;
+      border: 1px solid #29a693;
+      color: #29a693;
+    }
+  }
+}

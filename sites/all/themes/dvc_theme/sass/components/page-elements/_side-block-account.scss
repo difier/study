@@ -1,6 +1,6 @@
 .side-block-account {
   @include rem(margin-bottom, 30px);
-  @include rem(margin-top, 47px);
+  @include rem(margin-top, 17px);
   @include rem(padding, 10px);
   background-color: #fff;
   text-align: center;
@@ -29,10 +29,13 @@
       font-weight: $normal;
   }
 }
+
   .field-name-field-pd-email a {
     color: color(text);
     text-decoration: none;
-}
+    }
+
+
   .field-name-field-pd-status,
   .field-name-field-pd-phone,
   .field-name-field-pd-email {
@@ -84,9 +87,9 @@
 
     a[href*="youtube.com"] {
       background: url('../images/icons/youtube.png') no-repeat;
-    }
   }
 }
+
 
 
 .field-name-field-pd-btn a {
@@ -104,5 +107,4 @@
   text-align: center;
   text-decoration: none;
 }
-
-
+}

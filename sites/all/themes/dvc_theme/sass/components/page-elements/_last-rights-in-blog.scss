@@ -1,10 +1,10 @@
 .view-blog .views-row {
-  @include rem(margin-bottom, 55px);
+  @include rem(margin-bottom, 49px);
 }
 
 .view-mode-teaser .field-name-title a {
-  @include rem(font-size, 21px);
-  @include rem(line-height, 27px);
+  @include rem(font-size, 19px);
+  @include rem(line-height, 15px);
   color: #29a693;
   font-weight: $bold;
   text-decoration: underline;
@@ -13,17 +13,14 @@
 .field-name-node-link a {
   @include rem(font-size, 18px);
   @include rem(line-height, 27px);
+  @include rem(margin-top, 19px);
   background-color: color(bgColorLink);
   border: 1px solid color(borderBtn);
   color: #ffffff;
-  display: block;
+  display: inline-block;
   font-weight: $light;
   padding: 8px 21px;
   text-decoration: none;
-}
-
-.group-right {
-  display: flex;
 }
 
 .group-left {
@@ -39,7 +36,8 @@
   }
 
 .group-wrapper .fieldset-wrapper {
-  @include rem(margin-left, 30px);
+  // @include rem(margin-left, 30px);
+  @include rem(margin-top, 21px);
 }
 
 .field-name-count-view {
@@ -91,7 +89,7 @@
 
 .field-name-node-link {
   bottom: 0;
-  position: absolute;
+  // position: absolute;
 }
 
 
