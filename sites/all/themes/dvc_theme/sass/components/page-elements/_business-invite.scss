@@ -1,28 +1,29 @@
 .pane-bean-blok-na-glavnoy,
 .pane-views-blog-block {
-
-  .pane-title,
-  .field-name-field-block-text
-  .even p:first-of-type {
-    font-family: $main-font;
-  }
-
   .pane-title {
     @include rem(font-size, 23px);
     @include rem(line-height, 23px);
-    @include rem(margin-bottom, 18px);
-    @include rem(margin-top, 22px);
+    @include rem(margin-bottom, 26px);
     font-weight: $bold;
   }
+}
 
-  .pane-content {
-    @include rem(margin-bottom, 22px);
-  }
-
-  .field-name-field-block-text .even p:first-of-type {
-    @include rem(font-size, 16px);
-    @include rem(line-height, 23px);
-    @include rem(margin-bottom, 17px);
-    font-weight: $normal;
+.pane-bean-blok-na-glavnoy {
+  .pane-title{
+    @include rem(margin-top, 22px);
   }
 }
+
+.pane-views-blog-block {
+  .pane-title {
+    @include rem(margin-top, 49px);
+  }
+}
+
+.field-type-text-long p:first-of-type {
+  @include rem(font-size, 16px);
+  @include rem(line-height, 23px);
+  @include rem(margin-bottom, 17px);
+  font-weight: $normal;
+}
+

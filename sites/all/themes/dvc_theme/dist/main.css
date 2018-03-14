@@ -473,6 +473,481 @@
   padding: 7px 12px;
   height: 44px; }
 
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+.select2-container{box-sizing:border-box;display:inline-block;margin:0;position:relative;vertical-align:middle}.select2-container .select2-selection--single{box-sizing:border-box;cursor:pointer;display:block;height:28px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--single .select2-selection__rendered{display:block;padding-left:8px;padding-right:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-selection--single .select2-selection__clear{position:relative}.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered{padding-right:8px;padding-left:20px}.select2-container .select2-selection--multiple{box-sizing:border-box;cursor:pointer;display:block;min-height:32px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--multiple .select2-selection__rendered{display:inline-block;overflow:hidden;padding-left:8px;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-search--inline{float:left}.select2-container .select2-search--inline .select2-search__field{box-sizing:border-box;border:none;font-size:100%;margin-top:5px;padding:0}.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-dropdown{background-color:white;border:1px solid #aaa;border-radius:4px;box-sizing:border-box;display:block;position:absolute;left:-100000px;width:100%;z-index:1051}.select2-results{display:block}.select2-results__options{list-style:none;margin:0;padding:0}.select2-results__option{padding:6px;user-select:none;-webkit-user-select:none}.select2-results__option[aria-selected]{cursor:pointer}.select2-container--open .select2-dropdown{left:0}.select2-container--open .select2-dropdown--above{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--open .select2-dropdown--below{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-search--dropdown{display:block;padding:4px}.select2-search--dropdown .select2-search__field{padding:4px;width:100%;box-sizing:border-box}.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-search--dropdown.select2-search--hide{display:none}.select2-close-mask{border:0;margin:0;padding:0;display:block;position:fixed;left:0;top:0;min-height:100%;min-width:100%;height:auto;width:auto;opacity:0;z-index:99;background-color:#fff;filter:alpha(opacity=0)}.select2-hidden-accessible{border:0 !important;clip:rect(0 0 0 0) !important;-webkit-clip-path:inset(50%) !important;clip-path:inset(50%) !important;height:1px !important;overflow:hidden !important;padding:0 !important;position:absolute !important;width:1px !important;white-space:nowrap !important}.select2-container--default .select2-selection--single{background-color:#fff;border:1px solid #aaa;border-radius:4px}.select2-container--default .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--default .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold}.select2-container--default .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--default .select2-selection--single .select2-selection__arrow{height:26px;position:absolute;top:1px;right:1px;width:20px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow{left:1px;right:auto}.select2-container--default.select2-container--disabled .select2-selection--single{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear{display:none}.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--default .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text}.select2-container--default .select2-selection--multiple .select2-selection__rendered{box-sizing:border-box;list-style:none;margin:0;padding:0 5px;width:100%}.select2-container--default .select2-selection--multiple .select2-selection__rendered li{list-style:none}.select2-container--default .select2-selection--multiple .select2-selection__placeholder{color:#999;margin-top:5px;float:left}.select2-container--default .select2-selection--multiple .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-top:5px;margin-right:10px}.select2-container--default .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{color:#999;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{color:#333}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice,.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder,.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline{float:right}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice{margin-left:5px;margin-right:auto}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--default.select2-container--focus .select2-selection--multiple{border:solid black 1px;outline:0}.select2-container--default.select2-container--disabled .select2-selection--multiple{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection__choice__remove{display:none}.select2-container--default.select2-container--open.select2-container--above .select2-selection--single,.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{border-top-left-radius:0;border-top-right-radius:0}.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--default .select2-search--dropdown .select2-search__field{border:1px solid #aaa}.select2-container--default .select2-search--inline .select2-search__field{background:transparent;border:none;outline:0;box-shadow:none;-webkit-appearance:textfield}.select2-container--default .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--default .select2-results__option[role=group]{padding:0}.select2-container--default .select2-results__option[aria-disabled=true]{color:#999}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#ddd}.select2-container--default .select2-results__option .select2-results__option{padding-left:1em}.select2-container--default .select2-results__option .select2-results__option .select2-results__group{padding-left:0}.select2-container--default .select2-results__option .select2-results__option .select2-results__option{margin-left:-1em;padding-left:2em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-2em;padding-left:3em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-3em;padding-left:4em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-4em;padding-left:5em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-5em;padding-left:6em}.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#5897fb;color:white}.select2-container--default .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic .select2-selection--single{background-color:#f7f7f7;border:1px solid #aaa;border-radius:4px;outline:0;background-image:-webkit-linear-gradient(top, #fff 50%, #eee 100%);background-image:-o-linear-gradient(top, #fff 50%, #eee 100%);background-image:linear-gradient(to bottom, #fff 50%, #eee 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic .select2-selection--single:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--classic .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-right:10px}.select2-container--classic .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--classic .select2-selection--single .select2-selection__arrow{background-color:#ddd;border:none;border-left:1px solid #aaa;border-top-right-radius:4px;border-bottom-right-radius:4px;height:26px;position:absolute;top:1px;right:1px;width:20px;background-image:-webkit-linear-gradient(top, #eee 50%, #ccc 100%);background-image:-o-linear-gradient(top, #eee 50%, #ccc 100%);background-image:linear-gradient(to bottom, #eee 50%, #ccc 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0)}.select2-container--classic .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow{border:none;border-right:1px solid #aaa;border-radius:0;border-top-left-radius:4px;border-bottom-left-radius:4px;left:1px;right:auto}.select2-container--classic.select2-container--open .select2-selection--single{border:1px solid #5897fb}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow{background:transparent;border:none}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single{border-top:none;border-top-left-radius:0;border-top-right-radius:0;background-image:-webkit-linear-gradient(top, #fff 0%, #eee 50%);background-image:-o-linear-gradient(top, #fff 0%, #eee 50%);background-image:linear-gradient(to bottom, #fff 0%, #eee 50%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0;background-image:-webkit-linear-gradient(top, #eee 50%, #fff 100%);background-image:-o-linear-gradient(top, #eee 50%, #fff 100%);background-image:linear-gradient(to bottom, #eee 50%, #fff 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0)}.select2-container--classic .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text;outline:0}.select2-container--classic .select2-selection--multiple:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--multiple .select2-selection__rendered{list-style:none;margin:0;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__clear{display:none}.select2-container--classic .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove{color:#888;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover{color:#555}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice{float:right;margin-left:5px;margin-right:auto}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--classic.select2-container--open .select2-selection--multiple{border:1px solid #5897fb}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--classic .select2-search--dropdown .select2-search__field{border:1px solid #aaa;outline:0}.select2-container--classic .select2-search--inline .select2-search__field{outline:0;box-shadow:none}.select2-container--classic .select2-dropdown{background-color:#fff;border:1px solid transparent}.select2-container--classic .select2-dropdown--above{border-bottom:none}.select2-container--classic .select2-dropdown--below{border-top:none}.select2-container--classic .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--classic .select2-results__option[role=group]{padding:0}.select2-container--classic .select2-results__option[aria-disabled=true]{color:grey}.select2-container--classic .select2-results__option--highlighted[aria-selected]{background-color:#3875d7;color:#fff}.select2-container--classic .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic.select2-container--open .select2-dropdown{border-color:#5897fb}
+
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.8
+ * (c) 2016 Josh Cope
+ * licensed under MIT
+ */
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer; }
+  .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 0.188em; }
+
+.slicknav_menu {
+  *zoom: 1; }
+  .slicknav_menu .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: left; }
+  .slicknav_menu .slicknav_icon {
+    float: left;
+    width: 1.125em;
+    height: 0.875em;
+    margin: 0.188em 0 0 0.438em; }
+    .slicknav_menu .slicknav_icon:before {
+      background: transparent;
+      width: 1.125em;
+      height: 0.875em;
+      display: block;
+      content: "";
+      position: absolute; }
+  .slicknav_menu .slicknav_no-text {
+    margin: 0; }
+  .slicknav_menu .slicknav_icon-bar {
+    display: block;
+    width: 1.125em;
+    height: 0.125em;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+  .slicknav_menu:before {
+    content: " ";
+    display: table; }
+  .slicknav_menu:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.slicknav_nav {
+  clear: both; }
+  .slicknav_nav ul {
+    display: block; }
+  .slicknav_nav li {
+    display: block; }
+  .slicknav_nav .slicknav_arrow {
+    font-size: 0.8em;
+    margin: 0 0 0 0.4em; }
+  .slicknav_nav .slicknav_item {
+    cursor: pointer; }
+    .slicknav_nav .slicknav_item a {
+      display: inline; }
+  .slicknav_nav .slicknav_row {
+    display: block; }
+  .slicknav_nav a {
+    display: block; }
+  .slicknav_nav .slicknav_parent-link a {
+    display: inline; }
+
+.slicknav_brand {
+  float: left; }
+
+.slicknav_menu {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #4c4c4c;
+  padding: 5px; }
+  .slicknav_menu * {
+    box-sizing: border-box; }
+  .slicknav_menu .slicknav_menutxt {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 1px 3px #000; }
+  .slicknav_menu .slicknav_icon-bar {
+    background-color: #fff; }
+
+.slicknav_btn {
+  margin: 5px 5px 6px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #222; }
+
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden; }
+  .slicknav_nav ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 20px; }
+  .slicknav_nav .slicknav_row {
+    padding: 5px 10px;
+    margin: 2px 5px; }
+    .slicknav_nav .slicknav_row:hover {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background: #ccc;
+      color: #fff; }
+  .slicknav_nav a {
+    padding: 5px 10px;
+    margin: 2px 5px;
+    text-decoration: none;
+    color: #fff; }
+    .slicknav_nav a:hover {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background: #ccc;
+      color: #222; }
+  .slicknav_nav .slicknav_txtnode {
+    margin-left: 15px; }
+  .slicknav_nav .slicknav_item a {
+    padding: 0;
+    margin: 0; }
+  .slicknav_nav .slicknav_parent-link a {
+    padding: 0;
+    margin: 0; }
+
+.slicknav_brand {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px; }
+
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700");
 /* line 1, sass/base/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -537,7 +1012,9 @@ a:hover {
 
 /* line 36, sass/base/_base.scss */
 .main-content {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 0 23px 33px;
+  padding: 0 1.4375rem 2.0625rem; }
 
 /* line 1, sass/base/_forms.scss */
 input,
@@ -638,9 +1115,20 @@ input[type='radio'] {
     padding-right: 15px; } }
 
 /* line 50, sass/layout/_general-layout.scss */
-.main-content {
-  padding: 0 23px;
-  padding: 0 1.4375rem; }
+header {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  background: #fff; }
+
+/* line 55, sass/layout/_general-layout.scss */
+footer {
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+  padding-top: 25px;
+  padding-top: 1.5625rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  background: #fff; }
 
 /* line 28, sass/layout/_layout-settings.scss */
 .padding {
@@ -717,42 +1205,29 @@ input[type='radio'] {
   height: auto;
   width: 100%; }
 
-/* line 1, sass/components/page-elements/_blog-page.scss */
-.page-blog .main-content > h1,
-.side-block-rubric > h2 {
-  color: #373737;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700; }
-
-/* line 8, sass/components/page-elements/_blog-page.scss */
-.page-blog .main-content > h1 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 35px;
-  line-height: 2.1875rem;
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem; }
-
-/* line 14, sass/components/page-elements/_blog-page.scss */
+/* line 1, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
+  margin-top: 15px;
+  margin-top: 0.9375rem;
   padding: 31px 30px 41px;
   padding: 1.9375rem 1.875rem 2.5625rem;
   background-color: #fff; }
 
-/* line 19, sass/components/page-elements/_blog-page.scss */
+/* line 6, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric h2 {
   font-size: 21px;
   font-size: 1.3125rem;
   line-height: 33px;
-  line-height: 2.0625rem; }
+  line-height: 2.0625rem;
+  color: #373737;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
 
-/* line 25, sass/components/page-elements/_blog-page.scss */
+/* line 15, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric .menu li {
   list-style: none;
   margin: 0;
-  padding: 0 a;
+  padding: 0 li a;
   padding-font-size: 21px;
   padding-font-size: 1.3125rem;
   padding-line-height: 33px;
@@ -765,42 +1240,34 @@ input[type='radio'] {
   padding-font-weight: 400;
   padding-text-decoration: none; }
 
-/* line 42, sass/components/page-elements/_blog-page.scss */
+/* line 32, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric .menu li a:hover {
   border-bottom: 1px solid #29a693;
   color: #56b7a9; }
 
-/* line 4, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-title,
-.pane-bean-blok-na-glavnoy .field-name-field-block-text
-.even p:first-of-type,
-.pane-views-blog-block .pane-title,
-.pane-views-blog-block .field-name-field-block-text
-.even p:first-of-type {
-  font-family: "Roboto", sans-serif; }
-
-/* line 10, sass/components/page-elements/_business-invite.scss */
+/* line 3, sass/components/page-elements/_business-invite.scss */
 .pane-bean-blok-na-glavnoy .pane-title,
 .pane-views-blog-block .pane-title {
   font-size: 23px;
   font-size: 1.4375rem;
   line-height: 23px;
   line-height: 1.4375rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
-  margin-top: 22px;
-  margin-top: 1.375rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
   font-weight: 700; }
 
-/* line 18, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-content,
-.pane-views-blog-block .pane-content {
-  margin-bottom: 22px;
-  margin-bottom: 1.375rem; }
+/* line 12, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .pane-title {
+  margin-top: 22px;
+  margin-top: 1.375rem; }
 
-/* line 22, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .field-name-field-block-text .even p:first-of-type,
-.pane-views-blog-block .field-name-field-block-text .even p:first-of-type {
+/* line 18, sass/components/page-elements/_business-invite.scss */
+.pane-views-blog-block .pane-title {
+  margin-top: 49px;
+  margin-top: 3.0625rem; }
+
+/* line 23, sass/components/page-elements/_business-invite.scss */
+.field-type-text-long p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
   line-height: 23px;
@@ -828,22 +1295,24 @@ input[type='radio'] {
   font-weight: 400;
   text-decoration: underline; }
 
-/* line 1, sass/components/page-elements/_footer.scss */
-footer {
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem;
-  padding-top: 25px;
-  padding-top: 1.5625rem;
-  margin-top: 20px;
-  margin-top: 1.25rem;
-  background: white; }
-
-/* line 7, sass/components/page-elements/_footer.scss */
-footer .region-footer {
+/* line 1, sass/components/page-elements/_footer-region.scss */
+.region-footer {
   text-align: center; }
 
-/* line 1, sass/components/page-elements/_heade-menu.scss */
-.content .menu {
+/* line 1, sass/components/page-elements/_header-inner.scss */
+.header-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* line 8, sass/components/page-elements/_header-inner.scss */
+.region-header {
+  display: flex;
+  margin-left: auto; }
+
+/* line 1, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
@@ -852,12 +1321,12 @@ footer .region-footer {
   margin-left: auto;
   display: none; }
 
-/* line 8, sass/components/page-elements/_heade-menu.scss */
-.content .menu .last collapsed {
+/* line 8, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .last collapsed {
   border: 1px solid green; }
 
-/* line 13, sass/components/page-elements/_heade-menu.scss */
-.content .menu a {
+/* line 12, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu a {
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -873,29 +1342,29 @@ footer .region-footer {
   text-align: center;
   text-decoration: none; }
 
-/* line 26, sass/components/page-elements/_heade-menu.scss */
-.content .menu a:hover {
+/* line 25, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 33, sass/components/page-elements/_heade-menu.scss */
-.content .menu ul {
+/* line 32, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu ul {
   display: flex;
   flex-wrap: wrap; }
 
-/* line 37, sass/components/page-elements/_heade-menu.scss */
-.content .menu ul li {
+/* line 36, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu ul li {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-/* line 44, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail {
+/* line 43, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail {
   position: relative; }
 
-/* line 47, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail > .menu {
+/* line 46, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail > .menu {
   padding: 5px;
   padding: 0.3125rem;
   top: 40px;
@@ -908,38 +1377,20 @@ footer .region-footer {
   position: absolute;
   z-index: 999; }
 
-/* line 60, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail:last-of-type > .menu {
+/* line 59, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail:last-of-type > .menu {
   left: auto;
   right: 0; }
 
-/* line 66, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail > .menu {
+/* line 65, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail > .menu {
   display: none; }
 
-/* line 71, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail:hover > .menu {
+/* line 70, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail:hover > .menu {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
-
-/* line 1, sass/components/page-elements/_header.scss */
-.header {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  background: white; }
-
-/* line 5, sass/components/page-elements/_header.scss */
-.header .header-inner {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-/* line 12, sass/components/page-elements/_header.scss */
-.header .region-header {
-  display: flex;
-  margin-left: auto; }
 
 /* line 1, sass/components/page-elements/_heart-block.scss */
 .heart-block {
@@ -971,18 +1422,21 @@ footer .region-footer {
   text-decoration: underline;
   text-align: center; }
 
-/* line 1, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 2, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
-  margin-bottom: 55px;
-  margin-bottom: 3.4375rem; }
+  margin-bottom: 55px; }
 
-/* line 4, sass/components/page-elements/_last-rights-in-blog.scss */
-.view-blog .views-row .views-row-3 {
+/* line 5, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .views-row:last-of-type {
+  margin-bottom: 0; }
+
+/* line 10, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .view-content {
   margin-bottom: 36px;
   margin-bottom: 2.25rem; }
 
-/* line 9, sass/components/page-elements/_last-rights-in-blog.scss */
-.view-mode-teaser .field-name-title a {
+/* line 14, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-title a {
   font-size: 19px;
   font-size: 1.1875rem;
   line-height: 15px;
@@ -991,105 +1445,84 @@ footer .region-footer {
   font-weight: 700;
   text-decoration: underline; }
 
-/* line 17, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-node-link a {
+/* line 22, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-node-link a {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 27px;
   line-height: 1.6875rem;
   margin-top: 19px;
   margin-top: 1.1875rem;
+  padding: 8px 21px;
+  padding: 0.5rem 1.3125rem;
   background-color: #29a693;
   border: 1px solid #29a693;
-  color: #ffffff;
+  color: #fff;
   display: inline-block;
   font-weight: 300;
-  padding: 8px 21px;
   text-decoration: none; }
 
-/* line 30, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-left {
+/* line 35, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-left {
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
-/* line 34, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-wrapper2 {
-  flex: none; }
-
-/* line 37, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-wrapper2 > .fieldset-wrapper {
-  position: relative; }
-
-/* line 42, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-wrapper .fieldset-wrapper {
+/* line 39, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-wrapper .fieldset-wrapper {
   margin-top: 21px;
   margin-top: 1.3125rem; }
 
-/* line 47, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-/* line 51, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-field-blog-categories {
+/* line 43, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-field-blog-categories {
   background-color: black;
   border: 1px solid black;
   color: #fff;
   position: absolute; }
 
-/* line 58, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-post-date,
-.field-name-count-view {
-  float: left; }
-
-/* line 63, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view,
-.field-name-post-date {
+/* line 50, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view,
+.view-blog .field-name-post-date {
   margin-right: 17px;
   margin-right: 1.0625rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   padding-left: 18px;
   padding-left: 1.125rem;
+  float: left;
   position: relative; }
 
-/* line 69, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view:before,
-.field-name-post-date:before {
+/* line 58, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view:before,
+.view-blog .field-name-post-date:before {
   height: 14px;
   height: 0.875rem;
   width: 14px;
   width: 0.875rem;
+  background-size: contain;
   content: "";
   display: block;
   left: 0;
   position: absolute;
   top: 0; }
 
-/* line 80, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-post-date:before {
-  background: url("../images/icons/calendar.png") no-repeat center;
-  background-size: contain; }
+/* line 70, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-post-date:before {
+  background: url("../images/icons/calendar.png") no-repeat center; }
 
-/* line 85, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view:before {
-  background: url("../images/icons/views.png") no-repeat center;
-  background-size: contain; }
+/* line 74, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view:before {
+  background: url("../images/icons/views.png") no-repeat center; }
 
-/* line 90, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-body {
+/* line 78, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-body {
   clear: left; }
 
-/* line 94, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-node-link {
-  bottom: 0; }
-
-/* line 100, sass/components/page-elements/_last-rights-in-blog.scss */
-.all-articles a {
+/* line 82, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .all-articles a {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 20px;
   line-height: 1.25rem;
-  margin-bottom: 33px;
-  margin-bottom: 2.0625rem;
   color: #29a693;
   font-weight: 400;
   text-decoration: underline; }
@@ -1134,92 +1567,6 @@ footer .region-footer {
   margin-bottom: 1.25rem;
   display: none; }
 
-/* line 1, sass/components/page-elements/_registration-page.scss */
-.breadcrumb .inline,
-.breadcrumb a {
-  color: #777; }
-
-/* line 6, sass/components/page-elements/_registration-page.scss */
-.node-type-webform h1 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 35px;
-  line-height: 2.1875rem;
-  padding-left: 53px;
-  padding-left: 3.3125rem;
-  padding-top: 28px;
-  padding-top: 1.75rem;
-  color: #373737;
-  font-weight: 700; }
-
-/* line 15, sass/components/page-elements/_registration-page.scss */
-.node-webform {
-  padding: 28px 33px 50px 53px;
-  padding: 1.75rem 2.0625rem 3.125rem 3.3125rem; }
-
-/* line 18, sass/components/page-elements/_registration-page.scss */
-.node-webform .field-name-field-before-text span {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  color: #373737;
-  font-weight: 400; }
-
-/* line 25, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--first-col input,
-.node-webform .webform-component--second-col input {
-  height: 40px;
-  height: 2.5rem;
-  padding-left: 16px;
-  padding-left: 1rem;
-  width: 240px;
-  width: 15rem; }
-
-/* line 32, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--first-col input:focus,
-.node-webform .webform-component--second-col input:focus {
-  border: 1px solid #29a693; }
-
-/* line 37, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--first-col {
-  margin-right: 29px;
-  margin-right: 1.8125rem; }
-
-/* line 41, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--second-col {
-  margin-right: 61px;
-  margin-right: 3.8125rem; }
-
-/* line 45, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-client-form-28 > div {
-  display: flex; }
-
-/* line 49, sass/components/page-elements/_registration-page.scss */
-.node-webform .form-actions .button-primary {
-  background-color: #29a693;
-  border: 1px solid #29a693;
-  color: #fff;
-  padding-left: 0; }
-
-/* line 55, sass/components/page-elements/_registration-page.scss */
-.node-webform .form-actions .button-primary:hover {
-  background-color: #56b7a9;
-  cursor: pointer;
-  transition: all .3s ease-in-out; }
-
-/* line 62, sass/components/page-elements/_registration-page.scss */
-.node-webform .field-name-field-field-after-text {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  font-weight: 400; }
-
-/* line 67, sass/components/page-elements/_registration-page.scss */
-.node-webform .field-name-field-field-after-text .field-label {
-  font-size: 0px; }
-
 /* line 1, sass/components/page-elements/_side-block-account.scss */
 .side-block-account {
   margin-top: 17px;
@@ -1262,13 +1609,9 @@ footer .region-footer {
   color: #373737;
   text-decoration: none; }
 
-/* line 42, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-status .even, .side-block-account .field-name-field-pd-status .odd, .side-block-account .field-name-field-pd-status a,
-.side-block-account .field-name-field-pd-phone .even,
-.side-block-account .field-name-field-pd-phone .odd,
-.side-block-account .field-name-field-pd-phone a,
-.side-block-account .field-name-field-pd-email .even,
-.side-block-account .field-name-field-pd-email .odd,
+/* line 37, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-status .field-item,
+.side-block-account .field-name-field-pd-phone .field-item,
 .side-block-account .field-name-field-pd-email a {
   font-size: 15px;
   font-size: 0.9375rem;
@@ -1277,29 +1620,29 @@ footer .region-footer {
   color: #373737;
   font-weight: 400; }
 
-/* line 50, sass/components/page-elements/_side-block-account.scss */
+/* line 46, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links {
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
   margin-top: 16px;
   margin-top: 1rem; }
 
-/* line 54, sass/components/page-elements/_side-block-account.scss */
+/* line 50, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
 
-/* line 60, sass/components/page-elements/_side-block-account.scss */
+/* line 56, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-item {
   margin-right: 4px;
   margin-right: 0.25rem; }
 
-/* line 63, sass/components/page-elements/_side-block-account.scss */
+/* line 59, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-item:last-of-type {
   margin-right: 0; }
 
-/* line 68, sass/components/page-elements/_side-block-account.scss */
+/* line 64, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links a {
   height: 31px;
   height: 1.9375rem;
@@ -1308,23 +1651,23 @@ footer .region-footer {
   display: block;
   font-size: 0; }
 
-/* line 75, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="vk.com"] {
+/* line 71, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="vk.com"] {
   background: url("../images/icons/vk.png") no-repeat; }
 
-/* line 79, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="instagram.com"] {
+/* line 75, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="instagram.com"] {
   background: url("../images/icons/instagram.png") no-repeat; }
 
-/* line 83, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="ok.ru"] {
+/* line 79, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="ok.ru"] {
   background: url("../images/icons/ok.png") no-repeat; }
 
-/* line 87, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="youtube.com"] {
+/* line 83, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="youtube.com"] {
   background: url("../images/icons/youtube.png") no-repeat; }
 
-/* line 94, sass/components/page-elements/_side-block-account.scss */
+/* line 88, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-btn a {
   min-height: 44px;
   min-height: 2.75rem;
@@ -1422,6 +1765,108 @@ footer .region-footer {
   border-radius: 0;
   border: 1px solid #29a693;
   color: #29a693; }
+
+/* line 1, sass/components/pages/_blog-page.scss */
+.page-blog .main-content > h1,
+.side-block-rubric > h2 {
+  color: #373737;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
+
+/* line 8, sass/components/pages/_blog-page.scss */
+.page-blog .main-content > h1 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem; }
+
+/* line 1, sass/components/pages/_registration-page.scss */
+.breadcrumb .inline,
+.breadcrumb a {
+  color: #777; }
+
+/* line 6, sass/components/pages/_registration-page.scss */
+.node-type-webform h1 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  padding-left: 53px;
+  padding-left: 3.3125rem;
+  padding-top: 28px;
+  padding-top: 1.75rem;
+  color: #373737;
+  font-weight: 700; }
+
+/* line 15, sass/components/pages/_registration-page.scss */
+.node-webform {
+  padding: 28px 33px 50px 53px;
+  padding: 1.75rem 2.0625rem 3.125rem 3.3125rem; }
+
+/* line 18, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-before-text span {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  color: #373737;
+  font-weight: 400; }
+
+/* line 25, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col input,
+.node-webform .webform-component--second-col input {
+  height: 40px;
+  height: 2.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  width: 240px;
+  width: 15rem; }
+
+/* line 32, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col input:focus,
+.node-webform .webform-component--second-col input:focus {
+  border: 1px solid #29a693; }
+
+/* line 37, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col {
+  margin-right: 29px;
+  margin-right: 1.8125rem; }
+
+/* line 41, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--second-col {
+  margin-right: 61px;
+  margin-right: 3.8125rem; }
+
+/* line 45, sass/components/pages/_registration-page.scss */
+.node-webform .webform-client-form-28 > div {
+  display: flex; }
+
+/* line 49, sass/components/pages/_registration-page.scss */
+.node-webform .form-actions .button-primary {
+  background-color: #29a693;
+  border: 1px solid #29a693;
+  color: #fff;
+  padding-left: 0; }
+
+/* line 55, sass/components/pages/_registration-page.scss */
+.node-webform .form-actions .button-primary:hover {
+  background-color: #56b7a9;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+
+/* line 62, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-field-after-text {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-weight: 400; }
+
+/* line 67, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-field-after-text .field-label {
+  font-size: 0px; }
 
 /*# sourceMappingURL=../sass */
 
@@ -1489,7 +1934,9 @@ a:hover {
 
 /* line 36, sass/base/_base.scss */
 .main-content {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 0 23px 33px;
+  padding: 0 1.4375rem 2.0625rem; }
 
 /* line 1, sass/base/_forms.scss */
 input,
@@ -1590,9 +2037,20 @@ input[type='radio'] {
     padding-right: 15px; } }
 
 /* line 50, sass/layout/_general-layout.scss */
-.main-content {
-  padding: 0 23px;
-  padding: 0 1.4375rem; }
+header {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  background: #fff; }
+
+/* line 55, sass/layout/_general-layout.scss */
+footer {
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+  padding-top: 25px;
+  padding-top: 1.5625rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  background: #fff; }
 
 /* line 28, sass/layout/_layout-settings.scss */
 .padding {
@@ -1669,42 +2127,29 @@ input[type='radio'] {
   height: auto;
   width: 100%; }
 
-/* line 1, sass/components/page-elements/_blog-page.scss */
-.page-blog .main-content > h1,
-.side-block-rubric > h2 {
-  color: #373737;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700; }
-
-/* line 8, sass/components/page-elements/_blog-page.scss */
-.page-blog .main-content > h1 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 35px;
-  line-height: 2.1875rem;
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem; }
-
-/* line 14, sass/components/page-elements/_blog-page.scss */
+/* line 1, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
+  margin-top: 15px;
+  margin-top: 0.9375rem;
   padding: 31px 30px 41px;
   padding: 1.9375rem 1.875rem 2.5625rem;
   background-color: #fff; }
 
-/* line 19, sass/components/page-elements/_blog-page.scss */
+/* line 6, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric h2 {
   font-size: 21px;
   font-size: 1.3125rem;
   line-height: 33px;
-  line-height: 2.0625rem; }
+  line-height: 2.0625rem;
+  color: #373737;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
 
-/* line 25, sass/components/page-elements/_blog-page.scss */
+/* line 15, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric .menu li {
   list-style: none;
   margin: 0;
-  padding: 0 a;
+  padding: 0 li a;
   padding-font-size: 21px;
   padding-font-size: 1.3125rem;
   padding-line-height: 33px;
@@ -1717,42 +2162,34 @@ input[type='radio'] {
   padding-font-weight: 400;
   padding-text-decoration: none; }
 
-/* line 42, sass/components/page-elements/_blog-page.scss */
+/* line 32, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric .menu li a:hover {
   border-bottom: 1px solid #29a693;
   color: #56b7a9; }
 
-/* line 4, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-title,
-.pane-bean-blok-na-glavnoy .field-name-field-block-text
-.even p:first-of-type,
-.pane-views-blog-block .pane-title,
-.pane-views-blog-block .field-name-field-block-text
-.even p:first-of-type {
-  font-family: "Roboto", sans-serif; }
-
-/* line 10, sass/components/page-elements/_business-invite.scss */
+/* line 3, sass/components/page-elements/_business-invite.scss */
 .pane-bean-blok-na-glavnoy .pane-title,
 .pane-views-blog-block .pane-title {
   font-size: 23px;
   font-size: 1.4375rem;
   line-height: 23px;
   line-height: 1.4375rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
-  margin-top: 22px;
-  margin-top: 1.375rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
   font-weight: 700; }
 
-/* line 18, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-content,
-.pane-views-blog-block .pane-content {
-  margin-bottom: 22px;
-  margin-bottom: 1.375rem; }
+/* line 12, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .pane-title {
+  margin-top: 22px;
+  margin-top: 1.375rem; }
 
-/* line 22, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .field-name-field-block-text .even p:first-of-type,
-.pane-views-blog-block .field-name-field-block-text .even p:first-of-type {
+/* line 18, sass/components/page-elements/_business-invite.scss */
+.pane-views-blog-block .pane-title {
+  margin-top: 49px;
+  margin-top: 3.0625rem; }
+
+/* line 23, sass/components/page-elements/_business-invite.scss */
+.field-type-text-long p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
   line-height: 23px;
@@ -1780,22 +2217,24 @@ input[type='radio'] {
   font-weight: 400;
   text-decoration: underline; }
 
-/* line 1, sass/components/page-elements/_footer.scss */
-footer {
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem;
-  padding-top: 25px;
-  padding-top: 1.5625rem;
-  margin-top: 20px;
-  margin-top: 1.25rem;
-  background: white; }
-
-/* line 7, sass/components/page-elements/_footer.scss */
-footer .region-footer {
+/* line 1, sass/components/page-elements/_footer-region.scss */
+.region-footer {
   text-align: center; }
 
-/* line 1, sass/components/page-elements/_heade-menu.scss */
-.content .menu {
+/* line 1, sass/components/page-elements/_header-inner.scss */
+.header-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* line 8, sass/components/page-elements/_header-inner.scss */
+.region-header {
+  display: flex;
+  margin-left: auto; }
+
+/* line 1, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
@@ -1804,12 +2243,12 @@ footer .region-footer {
   margin-left: auto;
   display: none; }
 
-/* line 8, sass/components/page-elements/_heade-menu.scss */
-.content .menu .last collapsed {
+/* line 8, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .last collapsed {
   border: 1px solid green; }
 
-/* line 13, sass/components/page-elements/_heade-menu.scss */
-.content .menu a {
+/* line 12, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu a {
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -1825,29 +2264,29 @@ footer .region-footer {
   text-align: center;
   text-decoration: none; }
 
-/* line 26, sass/components/page-elements/_heade-menu.scss */
-.content .menu a:hover {
+/* line 25, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 33, sass/components/page-elements/_heade-menu.scss */
-.content .menu ul {
+/* line 32, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu ul {
   display: flex;
   flex-wrap: wrap; }
 
-/* line 37, sass/components/page-elements/_heade-menu.scss */
-.content .menu ul li {
+/* line 36, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu ul li {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-/* line 44, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail {
+/* line 43, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail {
   position: relative; }
 
-/* line 47, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail > .menu {
+/* line 46, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail > .menu {
   padding: 5px;
   padding: 0.3125rem;
   top: 40px;
@@ -1860,38 +2299,20 @@ footer .region-footer {
   position: absolute;
   z-index: 999; }
 
-/* line 60, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail:last-of-type > .menu {
+/* line 59, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail:last-of-type > .menu {
   left: auto;
   right: 0; }
 
-/* line 66, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail > .menu {
+/* line 65, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail > .menu {
   display: none; }
 
-/* line 71, sass/components/page-elements/_heade-menu.scss */
-.content .menu .active-trail:hover > .menu {
+/* line 70, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail:hover > .menu {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
-
-/* line 1, sass/components/page-elements/_header.scss */
-.header {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  background: white; }
-
-/* line 5, sass/components/page-elements/_header.scss */
-.header .header-inner {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-/* line 12, sass/components/page-elements/_header.scss */
-.header .region-header {
-  display: flex;
-  margin-left: auto; }
 
 /* line 1, sass/components/page-elements/_heart-block.scss */
 .heart-block {
@@ -1923,18 +2344,21 @@ footer .region-footer {
   text-decoration: underline;
   text-align: center; }
 
-/* line 1, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 2, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
-  margin-bottom: 55px;
-  margin-bottom: 3.4375rem; }
+  margin-bottom: 55px; }
 
-/* line 4, sass/components/page-elements/_last-rights-in-blog.scss */
-.view-blog .views-row .views-row-3 {
+/* line 5, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .views-row:last-of-type {
+  margin-bottom: 0; }
+
+/* line 10, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .view-content {
   margin-bottom: 36px;
   margin-bottom: 2.25rem; }
 
-/* line 9, sass/components/page-elements/_last-rights-in-blog.scss */
-.view-mode-teaser .field-name-title a {
+/* line 14, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-title a {
   font-size: 19px;
   font-size: 1.1875rem;
   line-height: 15px;
@@ -1943,105 +2367,84 @@ footer .region-footer {
   font-weight: 700;
   text-decoration: underline; }
 
-/* line 17, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-node-link a {
+/* line 22, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-node-link a {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 27px;
   line-height: 1.6875rem;
   margin-top: 19px;
   margin-top: 1.1875rem;
+  padding: 8px 21px;
+  padding: 0.5rem 1.3125rem;
   background-color: #29a693;
   border: 1px solid #29a693;
-  color: #ffffff;
+  color: #fff;
   display: inline-block;
   font-weight: 300;
-  padding: 8px 21px;
   text-decoration: none; }
 
-/* line 30, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-left {
+/* line 35, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-left {
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
-/* line 34, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-wrapper2 {
-  flex: none; }
-
-/* line 37, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-wrapper2 > .fieldset-wrapper {
-  position: relative; }
-
-/* line 42, sass/components/page-elements/_last-rights-in-blog.scss */
-.group-wrapper .fieldset-wrapper {
+/* line 39, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-wrapper .fieldset-wrapper {
   margin-top: 21px;
   margin-top: 1.3125rem; }
 
-/* line 47, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-/* line 51, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-field-blog-categories {
+/* line 43, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-field-blog-categories {
   background-color: black;
   border: 1px solid black;
   color: #fff;
   position: absolute; }
 
-/* line 58, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-post-date,
-.field-name-count-view {
-  float: left; }
-
-/* line 63, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view,
-.field-name-post-date {
+/* line 50, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view,
+.view-blog .field-name-post-date {
   margin-right: 17px;
   margin-right: 1.0625rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   padding-left: 18px;
   padding-left: 1.125rem;
+  float: left;
   position: relative; }
 
-/* line 69, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view:before,
-.field-name-post-date:before {
+/* line 58, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view:before,
+.view-blog .field-name-post-date:before {
   height: 14px;
   height: 0.875rem;
   width: 14px;
   width: 0.875rem;
+  background-size: contain;
   content: "";
   display: block;
   left: 0;
   position: absolute;
   top: 0; }
 
-/* line 80, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-post-date:before {
-  background: url("../images/icons/calendar.png") no-repeat center;
-  background-size: contain; }
+/* line 70, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-post-date:before {
+  background: url("../images/icons/calendar.png") no-repeat center; }
 
-/* line 85, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-count-view:before {
-  background: url("../images/icons/views.png") no-repeat center;
-  background-size: contain; }
+/* line 74, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view:before {
+  background: url("../images/icons/views.png") no-repeat center; }
 
-/* line 90, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-body {
+/* line 78, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-body {
   clear: left; }
 
-/* line 94, sass/components/page-elements/_last-rights-in-blog.scss */
-.field-name-node-link {
-  bottom: 0; }
-
-/* line 100, sass/components/page-elements/_last-rights-in-blog.scss */
-.all-articles a {
+/* line 82, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .all-articles a {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 20px;
   line-height: 1.25rem;
-  margin-bottom: 33px;
-  margin-bottom: 2.0625rem;
   color: #29a693;
   font-weight: 400;
   text-decoration: underline; }
@@ -2086,92 +2489,6 @@ footer .region-footer {
   margin-bottom: 1.25rem;
   display: none; }
 
-/* line 1, sass/components/page-elements/_registration-page.scss */
-.breadcrumb .inline,
-.breadcrumb a {
-  color: #777; }
-
-/* line 6, sass/components/page-elements/_registration-page.scss */
-.node-type-webform h1 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 35px;
-  line-height: 2.1875rem;
-  padding-left: 53px;
-  padding-left: 3.3125rem;
-  padding-top: 28px;
-  padding-top: 1.75rem;
-  color: #373737;
-  font-weight: 700; }
-
-/* line 15, sass/components/page-elements/_registration-page.scss */
-.node-webform {
-  padding: 28px 33px 50px 53px;
-  padding: 1.75rem 2.0625rem 3.125rem 3.3125rem; }
-
-/* line 18, sass/components/page-elements/_registration-page.scss */
-.node-webform .field-name-field-before-text span {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  color: #373737;
-  font-weight: 400; }
-
-/* line 25, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--first-col input,
-.node-webform .webform-component--second-col input {
-  height: 40px;
-  height: 2.5rem;
-  padding-left: 16px;
-  padding-left: 1rem;
-  width: 240px;
-  width: 15rem; }
-
-/* line 32, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--first-col input:focus,
-.node-webform .webform-component--second-col input:focus {
-  border: 1px solid #29a693; }
-
-/* line 37, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--first-col {
-  margin-right: 29px;
-  margin-right: 1.8125rem; }
-
-/* line 41, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-component--second-col {
-  margin-right: 61px;
-  margin-right: 3.8125rem; }
-
-/* line 45, sass/components/page-elements/_registration-page.scss */
-.node-webform .webform-client-form-28 > div {
-  display: flex; }
-
-/* line 49, sass/components/page-elements/_registration-page.scss */
-.node-webform .form-actions .button-primary {
-  background-color: #29a693;
-  border: 1px solid #29a693;
-  color: #fff;
-  padding-left: 0; }
-
-/* line 55, sass/components/page-elements/_registration-page.scss */
-.node-webform .form-actions .button-primary:hover {
-  background-color: #56b7a9;
-  cursor: pointer;
-  transition: all .3s ease-in-out; }
-
-/* line 62, sass/components/page-elements/_registration-page.scss */
-.node-webform .field-name-field-field-after-text {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  font-weight: 400; }
-
-/* line 67, sass/components/page-elements/_registration-page.scss */
-.node-webform .field-name-field-field-after-text .field-label {
-  font-size: 0px; }
-
 /* line 1, sass/components/page-elements/_side-block-account.scss */
 .side-block-account {
   margin-top: 17px;
@@ -2214,13 +2531,9 @@ footer .region-footer {
   color: #373737;
   text-decoration: none; }
 
-/* line 42, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-status .even, .side-block-account .field-name-field-pd-status .odd, .side-block-account .field-name-field-pd-status a,
-.side-block-account .field-name-field-pd-phone .even,
-.side-block-account .field-name-field-pd-phone .odd,
-.side-block-account .field-name-field-pd-phone a,
-.side-block-account .field-name-field-pd-email .even,
-.side-block-account .field-name-field-pd-email .odd,
+/* line 37, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-status .field-item,
+.side-block-account .field-name-field-pd-phone .field-item,
 .side-block-account .field-name-field-pd-email a {
   font-size: 15px;
   font-size: 0.9375rem;
@@ -2229,29 +2542,29 @@ footer .region-footer {
   color: #373737;
   font-weight: 400; }
 
-/* line 50, sass/components/page-elements/_side-block-account.scss */
+/* line 46, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links {
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
   margin-top: 16px;
   margin-top: 1rem; }
 
-/* line 54, sass/components/page-elements/_side-block-account.scss */
+/* line 50, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
 
-/* line 60, sass/components/page-elements/_side-block-account.scss */
+/* line 56, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-item {
   margin-right: 4px;
   margin-right: 0.25rem; }
 
-/* line 63, sass/components/page-elements/_side-block-account.scss */
+/* line 59, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links .field-item:last-of-type {
   margin-right: 0; }
 
-/* line 68, sass/components/page-elements/_side-block-account.scss */
+/* line 64, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-social-links a {
   height: 31px;
   height: 1.9375rem;
@@ -2260,23 +2573,23 @@ footer .region-footer {
   display: block;
   font-size: 0; }
 
-/* line 75, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="vk.com"] {
+/* line 71, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="vk.com"] {
   background: url("../images/icons/vk.png") no-repeat; }
 
-/* line 79, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="instagram.com"] {
+/* line 75, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="instagram.com"] {
   background: url("../images/icons/instagram.png") no-repeat; }
 
-/* line 83, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="ok.ru"] {
+/* line 79, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="ok.ru"] {
   background: url("../images/icons/ok.png") no-repeat; }
 
-/* line 87, sass/components/page-elements/_side-block-account.scss */
-.side-block-account .field-name-field-pd-social-links a[href*="youtube.com"] {
+/* line 83, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="youtube.com"] {
   background: url("../images/icons/youtube.png") no-repeat; }
 
-/* line 94, sass/components/page-elements/_side-block-account.scss */
+/* line 88, sass/components/page-elements/_side-block-account.scss */
 .side-block-account .field-name-field-pd-btn a {
   min-height: 44px;
   min-height: 2.75rem;
@@ -2374,5 +2687,1029 @@ footer .region-footer {
   border-radius: 0;
   border: 1px solid #29a693;
   color: #29a693; }
+
+/* line 1, sass/components/pages/_blog-page.scss */
+.page-blog .main-content > h1,
+.side-block-rubric > h2 {
+  color: #373737;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
+
+/* line 8, sass/components/pages/_blog-page.scss */
+.page-blog .main-content > h1 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem; }
+
+/* line 1, sass/components/pages/_registration-page.scss */
+.breadcrumb .inline,
+.breadcrumb a {
+  color: #777; }
+
+/* line 6, sass/components/pages/_registration-page.scss */
+.node-type-webform h1 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  padding-left: 53px;
+  padding-left: 3.3125rem;
+  padding-top: 28px;
+  padding-top: 1.75rem;
+  color: #373737;
+  font-weight: 700; }
+
+/* line 15, sass/components/pages/_registration-page.scss */
+.node-webform {
+  padding: 28px 33px 50px 53px;
+  padding: 1.75rem 2.0625rem 3.125rem 3.3125rem; }
+
+/* line 18, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-before-text span {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  color: #373737;
+  font-weight: 400; }
+
+/* line 25, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col input,
+.node-webform .webform-component--second-col input {
+  height: 40px;
+  height: 2.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  width: 240px;
+  width: 15rem; }
+
+/* line 32, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col input:focus,
+.node-webform .webform-component--second-col input:focus {
+  border: 1px solid #29a693; }
+
+/* line 37, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col {
+  margin-right: 29px;
+  margin-right: 1.8125rem; }
+
+/* line 41, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--second-col {
+  margin-right: 61px;
+  margin-right: 3.8125rem; }
+
+/* line 45, sass/components/pages/_registration-page.scss */
+.node-webform .webform-client-form-28 > div {
+  display: flex; }
+
+/* line 49, sass/components/pages/_registration-page.scss */
+.node-webform .form-actions .button-primary {
+  background-color: #29a693;
+  border: 1px solid #29a693;
+  color: #fff;
+  padding-left: 0; }
+
+/* line 55, sass/components/pages/_registration-page.scss */
+.node-webform .form-actions .button-primary:hover {
+  background-color: #56b7a9;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+
+/* line 62, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-field-after-text {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-weight: 400; }
+
+/* line 67, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-field-after-text .field-label {
+  font-size: 0px; }
+
+/*# sourceMappingURL=../sass */
+
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700");
+/* line 1, sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* line 1, sass/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 1, sass/base/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 1, sass/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 1, sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, sass/base/_base.scss */
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  height: 100%; }
+
+/* line 7, sass/base/_base.scss */
+html body {
+  height: 100%; }
+
+/* line 11, sass/base/_base.scss */
+html * {
+  font-size: 14px;
+  font-size: 0.875rem;
+  box-sizing: border-box; }
+
+/* line 17, sass/base/_base.scss */
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 22, sass/base/_base.scss */
+img {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+/* line 28, sass/base/_base.scss */
+a {
+  transition: all .4s ease-in-out; }
+
+/* line 31, sass/base/_base.scss */
+a:hover {
+  transition: all .4s ease-in-out; }
+
+/* line 36, sass/base/_base.scss */
+.main-content {
+  background-color: #fff;
+  padding: 0 23px 33px;
+  padding: 0 1.4375rem 2.0625rem; }
+
+/* line 1, sass/base/_forms.scss */
+input,
+button,
+input *,
+button * {
+  appearance: none;
+  outline: none; }
+
+/* line 8, sass/base/_forms.scss */
+input:focus, input:hover, input:active,
+button:focus,
+button:hover,
+button:active,
+input *:focus,
+input *:hover,
+input *:active,
+button *:focus,
+button *:hover,
+button *:active {
+  outline: none; }
+
+/* line 28, sass/base/_forms.scss */
+select:hover {
+  cursor: pointer; }
+
+/* line 35, sass/base/_forms.scss */
+input[type='checkbox'] {
+  appearance: checkbox; }
+
+/* line 45, sass/base/_forms.scss */
+input[type='radio'] {
+  appearance: radio; }
+
+@media (min-width: 992px) {
+  /* line 14, sass/layout/_general-layout.scss */
+  .two-sidebars .first-sidebar {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 18, sass/layout/_general-layout.scss */
+  .two-sidebars .second-sidebar {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 22, sass/layout/_general-layout.scss */
+  .two-sidebars .main-content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 29, sass/layout/_general-layout.scss */
+  .sidebar-first .first-sidebar {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 33, sass/layout/_general-layout.scss */
+  .sidebar-first .main-content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 75%;
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 40, sass/layout/_general-layout.scss */
+  .sidebar-second .second-sidebar {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* line 44, sass/layout/_general-layout.scss */
+  .sidebar-second .main-content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+/* line 50, sass/layout/_general-layout.scss */
+header {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  background: #fff; }
+
+/* line 55, sass/layout/_general-layout.scss */
+footer {
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+  padding-top: 25px;
+  padding-top: 1.5625rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  background: #fff; }
+
+/* line 28, sass/layout/_layout-settings.scss */
+.padding {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 32, sass/layout/_layout-settings.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+/* line 80, sass/mixins/_default.sass */
+.row:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/* line 36, sass/layout/_layout-settings.scss */
+.container {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  /* line 36, sass/layout/_layout-settings.scss */
+  .container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 12, node_modules/susy/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 992px) {
+  /* line 36, sass/layout/_layout-settings.scss */
+  .container {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 12, node_modules/susy/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 1200px) {
+  /* line 36, sass/layout/_layout-settings.scss */
+  .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 12, node_modules/susy/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+/* line 1, sass/components/page-elements/_background.scss */
+.page-wrapper {
+  background-color: #ededef; }
+
+/* line 1, sass/components/page-elements/_baner-slider.scss */
+.baner-slider {
+  margin-left: -23px;
+  margin-left: -1.4375rem;
+  margin-right: -23px;
+  margin-right: -1.4375rem; }
+
+/* line 5, sass/components/page-elements/_baner-slider.scss */
+.baner-slider .field-items img {
+  height: auto;
+  width: 100%; }
+
+/* line 1, sass/components/page-elements/_blog-page-rubric-menu.scss */
+.side-block-rubric {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+  padding: 31px 30px 41px;
+  padding: 1.9375rem 1.875rem 2.5625rem;
+  background-color: #fff; }
+
+/* line 6, sass/components/page-elements/_blog-page-rubric-menu.scss */
+.side-block-rubric h2 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 33px;
+  line-height: 2.0625rem;
+  color: #373737;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
+
+/* line 15, sass/components/page-elements/_blog-page-rubric-menu.scss */
+.side-block-rubric .menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0 li a;
+  padding-font-size: 21px;
+  padding-font-size: 1.3125rem;
+  padding-line-height: 33px;
+  padding-line-height: 2.0625rem;
+  padding-padding-bottom: 2px;
+  padding-padding-bottom: 0.125rem;
+  padding-border-bottom: 1px solid silver;
+  padding-color: #373737;
+  padding-display: block;
+  padding-font-weight: 400;
+  padding-text-decoration: none; }
+
+/* line 32, sass/components/page-elements/_blog-page-rubric-menu.scss */
+.side-block-rubric .menu li a:hover {
+  border-bottom: 1px solid #29a693;
+  color: #56b7a9; }
+
+/* line 3, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .pane-title,
+.pane-views-blog-block .pane-title {
+  font-size: 23px;
+  font-size: 1.4375rem;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+  font-weight: 700; }
+
+/* line 12, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .pane-title {
+  margin-top: 22px;
+  margin-top: 1.375rem; }
+
+/* line 18, sass/components/page-elements/_business-invite.scss */
+.pane-views-blog-block .pane-title {
+  margin-top: 49px;
+  margin-top: 3.0625rem; }
+
+/* line 23, sass/components/page-elements/_business-invite.scss */
+.field-type-text-long p:first-of-type {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
+  font-weight: 400; }
+
+/* line 1, sass/components/page-elements/_copyrights.scss */
+.copyright {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  color: #303031;
+  font-weight: 400; }
+
+/* line 7, sass/components/page-elements/_copyrights.scss */
+.copyright .content a {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 28px;
+  line-height: 1.75rem;
+  color: #29a693;
+  font-weight: 400;
+  text-decoration: underline; }
+
+/* line 1, sass/components/page-elements/_footer-region.scss */
+.region-footer {
+  text-align: center; }
+
+/* line 1, sass/components/page-elements/_header-inner.scss */
+.header-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* line 8, sass/components/page-elements/_header-inner.scss */
+.region-header {
+  display: flex;
+  margin-left: auto; }
+
+/* line 1, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  color: #373737;
+  margin-left: auto;
+  display: none; }
+
+/* line 8, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .last collapsed {
+  border: 1px solid green; }
+
+/* line 12, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu a {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  padding: 10px 17px;
+  padding: 0.625rem 1.0625rem;
+  border: 1px solid transparent;
+  color: #373737;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-style: none;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none; }
+
+/* line 25, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu a:hover {
+  border: 1px solid #29a693;
+  color: #29a693;
+  text-align: center; }
+
+/* line 32, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu ul {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 36, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 43, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail {
+  position: relative; }
+
+/* line 46, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail > .menu {
+  padding: 5px;
+  padding: 0.3125rem;
+  top: 40px;
+  top: 2.5rem;
+  width: 200px;
+  width: 12.5rem;
+  background: #fff;
+  border: 1px solid #29a693;
+  left: 0;
+  position: absolute;
+  z-index: 999; }
+
+/* line 59, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail:last-of-type > .menu {
+  left: auto;
+  right: 0; }
+
+/* line 65, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail > .menu {
+  display: none; }
+
+/* line 70, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .active-trail:hover > .menu {
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  display: block; }
+
+/* line 1, sass/components/page-elements/_heart-block.scss */
+.heart-block {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 21px;
+  line-height: 1.3125rem;
+  color: #303031;
+  font-weight: 400; }
+
+/* line 7, sass/components/page-elements/_heart-block.scss */
+.heart-block .heart {
+  font-size: 0px;
+  height: 15px;
+  height: 0.9375rem;
+  width: 15px;
+  width: 0.9375rem;
+  background: url("../images/icons/heart.png") no-repeat center;
+  display: inline-block; }
+
+/* line 14, sass/components/page-elements/_heart-block.scss */
+.heart-block .content a {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  color: #29a693;
+  font-weight: 400;
+  text-decoration: underline;
+  text-align: center; }
+
+/* line 2, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .views-row {
+  margin-bottom: 55px; }
+
+/* line 5, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .views-row:last-of-type {
+  margin-bottom: 0; }
+
+/* line 10, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .view-content {
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem; }
+
+/* line 14, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-title a {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 15px;
+  line-height: 0.9375rem;
+  color: #29a693;
+  font-weight: 700;
+  text-decoration: underline; }
+
+/* line 22, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-node-link a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
+  margin-top: 19px;
+  margin-top: 1.1875rem;
+  padding: 8px 21px;
+  padding: 0.5rem 1.3125rem;
+  background-color: #29a693;
+  border: 1px solid #29a693;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none; }
+
+/* line 35, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-left {
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem; }
+
+/* line 39, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-wrapper .fieldset-wrapper {
+  margin-top: 21px;
+  margin-top: 1.3125rem; }
+
+/* line 43, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-field-blog-categories {
+  background-color: black;
+  border: 1px solid black;
+  color: #fff;
+  position: absolute; }
+
+/* line 50, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view,
+.view-blog .field-name-post-date {
+  margin-right: 17px;
+  margin-right: 1.0625rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding-left: 18px;
+  padding-left: 1.125rem;
+  float: left;
+  position: relative; }
+
+/* line 58, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view:before,
+.view-blog .field-name-post-date:before {
+  height: 14px;
+  height: 0.875rem;
+  width: 14px;
+  width: 0.875rem;
+  background-size: contain;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0; }
+
+/* line 70, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-post-date:before {
+  background: url("../images/icons/calendar.png") no-repeat center; }
+
+/* line 74, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-count-view:before {
+  background: url("../images/icons/views.png") no-repeat center; }
+
+/* line 78, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .field-name-body {
+  clear: left; }
+
+/* line 82, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .all-articles a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  color: #29a693;
+  font-weight: 400;
+  text-decoration: underline; }
+
+/* line 1, sass/components/page-elements/_logo.scss */
+.logo {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  padding-bottom: 14px;
+  padding-bottom: 0.875rem;
+  padding-top: 13px;
+  padding-top: 0.8125rem;
+  width: 181px;
+  width: 11.3125rem;
+  display: block; }
+
+/* line 1, sass/components/page-elements/_reg-form-rightblock.scss */
+.group-banner-link {
+  display: block;
+  position: relative; }
+
+/* line 5, sass/components/page-elements/_reg-form-rightblock.scss */
+.group-banner-link .field-name-field-field-banner-photo-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all .5s ease-in-out; }
+
+/* line 14, sass/components/page-elements/_reg-form-rightblock.scss */
+.group-banner-link:hover .field-name-field-banner-photo {
+  opacity: 0;
+  transition: all .5s ease-in-out; }
+
+/* line 19, sass/components/page-elements/_reg-form-rightblock.scss */
+.group-banner-link:hover .field-name-field-field-banner-photo-hover {
+  opacity: 1;
+  transition: all .5s ease-in-out; }
+
+/* line 26, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: none; }
+
+/* line 1, sass/components/page-elements/_side-block-account.scss */
+.side-block-account {
+  margin-top: 17px;
+  margin-top: 1.0625rem;
+  padding: 10px;
+  padding: 0.625rem;
+  background-color: #fff;
+  text-align: center; }
+
+/* line 7, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-image > .field-items > .field-item {
+  height: 138px;
+  height: 8.625rem;
+  width: 138px;
+  width: 8.625rem;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 15, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-image > .field-items > .field-item > img {
+  border-radius: 50%; }
+
+/* line 22, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-name-and-last-name .even {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  padding-bottom: 13px;
+  padding-bottom: 0.8125rem;
+  padding-top: 17px;
+  padding-top: 1.0625rem;
+  color: black;
+  font-weight: 400; }
+
+/* line 32, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-email a {
+  color: #373737;
+  text-decoration: none; }
+
+/* line 37, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-status .field-item,
+.side-block-account .field-name-field-pd-phone .field-item,
+.side-block-account .field-name-field-pd-email a {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  color: #373737;
+  font-weight: 400; }
+
+/* line 46, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  margin-top: 16px;
+  margin-top: 1rem; }
+
+/* line 50, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links .field-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* line 56, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links .field-item {
+  margin-right: 4px;
+  margin-right: 0.25rem; }
+
+/* line 59, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links .field-item:last-of-type {
+  margin-right: 0; }
+
+/* line 64, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links a {
+  height: 31px;
+  height: 1.9375rem;
+  width: 31px;
+  width: 1.9375rem;
+  display: block;
+  font-size: 0; }
+
+/* line 71, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="vk.com"] {
+  background: url("../images/icons/vk.png") no-repeat; }
+
+/* line 75, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="instagram.com"] {
+  background: url("../images/icons/instagram.png") no-repeat; }
+
+/* line 79, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="ok.ru"] {
+  background: url("../images/icons/ok.png") no-repeat; }
+
+/* line 83, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-social-links [href*="youtube.com"] {
+  background: url("../images/icons/youtube.png") no-repeat; }
+
+/* line 88, sass/components/page-elements/_side-block-account.scss */
+.side-block-account .field-name-field-pd-btn a {
+  min-height: 44px;
+  min-height: 2.75rem;
+  min-width: 180px;
+  min-width: 11.25rem;
+  padding: 5px;
+  padding: 0.3125rem;
+  align-items: center;
+  background-color: #29a693;
+  border: 1px solid #29a693;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  width: 67%; }
+
+/* line 1, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu {
+  background: transparent; }
+
+/* line 4, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_menutxt {
+  font-size: 0; }
+
+/* line 8, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_btn {
+  background-color: transparent !important; }
+
+/* line 12, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_icon {
+  background: transparent;
+  width: 30px;
+  height: 24px; }
+
+/* line 18, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_icon-bar {
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+  width: 30px !important;
+  border-radius: 0;
+  border: 2px solid black;
+  box-shadow: none; }
+
+/* line 27, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_open .slicknav_icon-bar {
+  position: absolute;
+  z-index: 9999;
+  border: 2px solid #ebebed; }
+
+/* line 33, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_open .slicknav_icon-bar:first-of-type {
+  top: 10px;
+  top: 0.625rem;
+  transform: rotate(45deg); }
+
+/* line 38, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-of-type(2) {
+  display: none; }
+
+/* line 42, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_open .slicknav_icon-bar:last-of-type {
+  top: 7px;
+  top: 0.4375rem;
+  transform: rotate(-45deg); }
+
+/* line 48, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_nav {
+  background-color: rgba(110, 110, 110, 0.9);
+  left: 50%;
+  position: fixed;
+  right: 50%;
+  text-align: center;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100%;
+  z-index: 9998; }
+
+/* line 60, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_nav a {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  background: none;
+  border: 1px solid transparent;
+  color: #ebebed;
+  display: inline-block;
+  font-weight: 400; }
+
+/* line 69, sass/components/page-elements/_slick-nav-menu.scss */
+.main-menu .slicknav_menu .slicknav_nav a:hover {
+  border-radius: 0;
+  border: 1px solid #29a693;
+  color: #29a693; }
+
+/* line 1, sass/components/pages/_blog-page.scss */
+.page-blog .main-content > h1,
+.side-block-rubric > h2 {
+  color: #373737;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
+
+/* line 8, sass/components/pages/_blog-page.scss */
+.page-blog .main-content > h1 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem; }
+
+/* line 1, sass/components/pages/_registration-page.scss */
+.breadcrumb .inline,
+.breadcrumb a {
+  color: #777; }
+
+/* line 6, sass/components/pages/_registration-page.scss */
+.node-type-webform h1 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  padding-left: 53px;
+  padding-left: 3.3125rem;
+  padding-top: 28px;
+  padding-top: 1.75rem;
+  color: #373737;
+  font-weight: 700; }
+
+/* line 15, sass/components/pages/_registration-page.scss */
+.node-webform {
+  padding: 28px 33px 50px 53px;
+  padding: 1.75rem 2.0625rem 3.125rem 3.3125rem; }
+
+/* line 18, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-before-text span {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  color: #373737;
+  font-weight: 400; }
+
+/* line 25, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col input,
+.node-webform .webform-component--second-col input {
+  height: 40px;
+  height: 2.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  width: 240px;
+  width: 15rem; }
+
+/* line 32, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col input:focus,
+.node-webform .webform-component--second-col input:focus {
+  border: 1px solid #29a693; }
+
+/* line 37, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--first-col {
+  margin-right: 29px;
+  margin-right: 1.8125rem; }
+
+/* line 41, sass/components/pages/_registration-page.scss */
+.node-webform .webform-component--second-col {
+  margin-right: 61px;
+  margin-right: 3.8125rem; }
+
+/* line 45, sass/components/pages/_registration-page.scss */
+.node-webform .webform-client-form-28 > div {
+  display: flex; }
+
+/* line 49, sass/components/pages/_registration-page.scss */
+.node-webform .form-actions .button-primary {
+  background-color: #29a693;
+  border: 1px solid #29a693;
+  color: #fff;
+  padding-left: 0; }
+
+/* line 55, sass/components/pages/_registration-page.scss */
+.node-webform .form-actions .button-primary:hover {
+  background-color: #56b7a9;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+
+/* line 62, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-field-after-text {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-weight: 400; }
+
+/* line 67, sass/components/pages/_registration-page.scss */
+.node-webform .field-name-field-field-after-text .field-label {
+  font-size: 0px; }
 
 /*# sourceMappingURL=../sass */

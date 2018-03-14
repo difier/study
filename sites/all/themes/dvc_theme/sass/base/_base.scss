@@ -34,5 +34,7 @@ a {
 }
 
 .main-content {
-  background-color: #fff;
+  background-color: color(backgroundColor);
+  @include rem(padding, 0 23px 33px);
 }
+

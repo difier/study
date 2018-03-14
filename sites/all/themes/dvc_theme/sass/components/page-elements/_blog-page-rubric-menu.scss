@@ -1,0 +1,37 @@
+.side-block-rubric {
+  @include rem(margin-top, 15px);
+  @include rem(padding, 31px 30px 41px);
+  background-color: color(backgroundColor);
+
+  h2 {
+    @include rem(font-size, 21px);
+    @include rem(line-height, 33px);
+    color: color(text);
+    font-family: $main-font;
+    font-weight: $bold;
+  }
+
+  .menu {
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0
+
+       a {
+        @include rem(font-size, 21px);
+        @include rem(line-height, 33px);
+        @include rem(padding-bottom, 2px);
+        border-bottom: 1px solid silver;
+        color: color(text);
+        display: block;
+        font-weight: $normal;
+        text-decoration: none;
+      }
+    }
+
+    li a:hover {
+      border-bottom: 1px solid color(borderColorHover);
+      color: color(textColorHover);
+    }
+  }
+}

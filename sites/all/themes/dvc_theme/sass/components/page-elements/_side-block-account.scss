@@ -26,26 +26,22 @@
       @include rem(padding-top, 17px);
       color: black;
       font-weight: $normal;
+    }
   }
-}
 
   .field-name-field-pd-email a {
     color: color(text);
     text-decoration: none;
     }
 
-
-  .field-name-field-pd-status,
-  .field-name-field-pd-phone,
-  .field-name-field-pd-email {
-
-    .even, .odd, a {
-      @include rem(font-size, 15px);
-      @include rem(line-height, 23px);
-      color: color(text);
-      font-weight: $normal;
-    }
-}
+  .field-name-field-pd-status .field-item,
+  .field-name-field-pd-phone .field-item,
+  .field-name-field-pd-email a {
+    @include rem(font-size, 15px);
+    @include rem(line-height, 23px);
+    color: color(text);
+    font-weight: $normal;
+  }
 
   .field-name-field-pd-social-links {
     @include rem(margin-bottom, 20px);
@@ -72,39 +68,37 @@
       font-size: 0;
     }
 
-    a[href*="vk.com"] {
+    [href*="vk.com"] {
       background: url('../images/icons/vk.png') no-repeat;
     }
 
-    a[href*="instagram.com"] {
+    [href*="instagram.com"] {
       background: url('../images/icons/instagram.png') no-repeat;
     }
 
-    a[href*="ok.ru"] {
+    [href*="ok.ru"] {
       background: url('../images/icons/ok.png') no-repeat;
     }
 
-    a[href*="youtube.com"] {
+    [href*="youtube.com"] {
       background: url('../images/icons/youtube.png') no-repeat;
+    }
   }
-}
 
-
-
-.field-name-field-pd-btn a {
-  @include rem(min-height, 44px);
-  @include rem(min-width, 180px);
-  @include rem(padding, 5px);
-  align-items: center;
-  background-color: color(bgColorLink);
-  border: 1px solid #29a693;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  text-decoration: none;
-  width: 67%;
-}
+  .field-name-field-pd-btn a {
+    @include rem(min-height, 44px);
+    @include rem(min-width, 180px);
+    @include rem(padding, 5px);
+    align-items: center;
+    background-color: color(bgColorLink);
+    border: 1px solid #29a693;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    width: 67%;
+  }
 }
