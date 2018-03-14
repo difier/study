@@ -1,8 +1,7 @@
 .logo{
   @include rem(margin-left, 15px);
-  margin-right: 4%;
-  width: 26%;
+  @include rem(padding-bottom, 14px);
+  @include rem(padding-top, 13px);
+  @include rem(width, 181px);
   display: block;
-  padding-top: 13px;
-  padding-bottom: 14px;
 }

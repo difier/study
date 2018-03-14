@@ -1,5 +1,9 @@
 .view-blog .views-row {
-  @include rem(margin-bottom, 49px);
+  @include rem(margin-bottom, 55px);
+
+  .views-row-3 {
+    @include rem(margin-bottom, 36px);
+  }
 }
 
 .view-mode-teaser .field-name-title a {

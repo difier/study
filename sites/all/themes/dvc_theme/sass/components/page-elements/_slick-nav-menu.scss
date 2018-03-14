@@ -6,34 +6,43 @@
   }
 
   .slicknav_btn {
+    background-color: transparent !important;
+  }
+
+  .slicknav_icon {
     background: transparent;
-  }
-
-  .slicknav_open .slicknav_icon-bar {
-    position: absolute;
-    z-index: 9999;
-  }
-
-  .slicknav_open .slicknav_icon-bar:first-of-type {
-    @include rem(top, 10px);
-    transform: rotate(45deg);
-  }
-
-  .slicknav_open .slicknav_icon-bar:nth-of-type(2) {
-    display: none;
-  }
-
-  .slicknav_open .slicknav_icon-bar:last-of-type {
-    @include rem(top, 7px);
-    transform: rotate(-45deg);
+    width: 30px;
+    height: 24px;
   }
 
   .slicknav_icon-bar {
     @include rem(margin-bottom, 6px);
-    @include rem(width, 30px);
+    width: 30px !important;
     border-radius: 0;
     border: 2px solid black;
     box-shadow: none;
+  }
+
+  .slicknav_open {
+    .slicknav_icon-bar {
+      position: absolute;
+      z-index: 9999;
+      border: 2px solid #ebebed;
+    }
+
+    .slicknav_icon-bar:first-of-type {
+      @include rem(top, 10px);
+      transform: rotate(45deg);
+    }
+
+    .slicknav_icon-bar:nth-of-type(2) {
+      display: none;
+    }
+
+    .slicknav_icon-bar:last-of-type {
+      @include rem(top, 7px);
+      transform: rotate(-45deg);
+    }
   }
 
   .slicknav_nav {
@@ -47,19 +56,20 @@
     width: 100%;
     z-index: 9998;
   }
+
   .slicknav_nav a {
     @include rem(font-size, 17px);
     @include rem(line-height, 35px);
     background: none;
     border: 1px solid transparent;
-    color: #ebebed;;
+    color: #ebebed;
     display: inline-block;
     font-weight: $normal;
 
     &:hover {
       border-radius: 0;
-      border: 1px solid #29a693;
-      color: #29a693;
+      border: 1px solid color(linkHover);
+      color: color(linkHover);
     }
   }
 }

@@ -46,3 +46,7 @@ $susy: (
     }
   }
 }
+
+.main-content {
+  @include rem(padding, 0 23px);
+}

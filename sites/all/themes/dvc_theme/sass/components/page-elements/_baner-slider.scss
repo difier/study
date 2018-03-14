@@ -1,10 +1,9 @@
 .baner-slider {
-  @include rem(margin-left, -15px);
-  @include rem(margin-right, -15px);
-  @include rem(margin-top, -29px);
+  @include rem(margin-left, -23px);
+  @include rem(margin-right, -23px);
 
-  .field-items img{
-    width: 100%;
+  .field-items img {
     height: auto;
+    width: 100%;
   }
 }

@@ -1,20 +1,28 @@
-.pane-title {
-  @include rem(font-size, 16px);
-  @include rem(line-height, 16px);
-  @include rem(margin-bottom, 18px);
-  font-family: $main-font;
-  font-weight: $bold;
-}
+.pane-bean-blok-na-glavnoy,
+.pane-views-blog-block {
 
-.pane-content {
-  @include rem(margin-bottom, 22px);
-  @include rem(padding-right, 31px);
-}
+  .pane-title,
+  .field-name-field-block-text
+  .even p:first-of-type {
+    font-family: $main-font;
+  }
 
-.field-name-field-block-text .even p:first-of-type {
-  @include rem(font-size, 16px);
-  @include rem(line-height, 23px);
-  @include rem(margin-bottom, 17px);
-  font-family: $main-font;
-  font-wieght: $normal;
+  .pane-title {
+    @include rem(font-size, 23px);
+    @include rem(line-height, 23px);
+    @include rem(margin-bottom, 18px);
+    @include rem(margin-top, 22px);
+    font-weight: $bold;
+  }
+
+  .pane-content {
+    @include rem(margin-bottom, 22px);
+  }
+
+  .field-name-field-block-text .even p:first-of-type {
+    @include rem(font-size, 16px);
+    @include rem(line-height, 23px);
+    @include rem(margin-bottom, 17px);
+    font-weight: $normal;
+  }
 }

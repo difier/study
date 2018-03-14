@@ -1,5 +1,6 @@
 .header{
-  background: color (backgroundColor);
+  @include rem(margin-bottom, 16px);
+  background: white;
 
   .header-inner {
     align-items: center;
@@ -11,6 +12,5 @@
   .region-header {
     display: flex;
     margin-left: auto;
-    margin-right: 3%;
   }
 }

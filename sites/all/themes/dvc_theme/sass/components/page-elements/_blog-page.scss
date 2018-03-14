@@ -1,51 +1,48 @@
-.not-front .main-content,
-.front .main-content {
-  @include rem(padding-left, 15px);
-  // @include rem(padding-right, 15px);
-  @include rem(padding-top, 29px);
-  @include rem(margin-top, 16px);
-}
-
-.main-content > h1 {
-  @include rem(font-size, 27px);
-  @include rem(line-height, 35px);
-  // @include rem(padding-bottom, 24px);
+.page-blog .main-content > h1,
+.side-block-rubric > h2 {
   color: color(text);
   font-family: $main-font;
   font-weight: $bold;
+}
+
+.page-blog .main-content > h1 {
+  @include rem(font-size, 27px);
+  @include rem(line-height, 35px);
+  @include rem(padding-bottom, 24px);
 }
 
 .side-block-rubric {
   @include rem(margin-bottom, 30px);
-  @include rem(padding, 31px 30px 41px 30px);
+  @include rem(padding, 31px 30px 41px);
   background-color: #fff;
-}
 
-.side-block-rubric h2 {
-  @include rem(font-size, 21px);
-  @include rem(line-height, 33px);
-  color: color(text);
-  font-family: $main-font;
-  font-weight: $bold;
-}
+  h2 {
+    @include rem(font-size, 21px);
+    @include rem(line-height, 33px);
+  }
 
-.menu .leaf {
-  list-style-image: none;
-  list-style-type: none;
-}
+  .menu {
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0
 
-.side-block-menu .menu .leaf a {
-  @include rem(font-size, 21px);
-  @include rem(line-height, 33px);
-  @include rem(padding-bottom, 2px);
-  border-bottom: 1px solid silver;
-  color: color(text);
-  display: block;
-  font-weight: $normal;
-  text-decoration: none;
+      a {
+        @include rem(font-size, 21px);
+        @include rem(line-height, 33px);
+        @include rem(padding-bottom, 2px);
+        border-bottom: 1px solid silver;
+        color: color(text);
+        display: block;
+        font-weight: $normal;
+        text-decoration: none;
+      }
+    }
 
-  &:hover {
-    border-bottom: 1px solid color(borderColorHover);
-    color: color(textColorHover);
+    li a:hover {
+      border-bottom: 1px solid color(borderColorHover);
+      color: color(textColorHover);
+    }
   }
 }
+
