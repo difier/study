@@ -14,9 +14,15 @@
   .content a {
     @include rem(font-size, 16px);
     @include rem(line-height, 23px);
-    color: #29a693;
+    color: color(colorForLink);
     font-weight: $normal;
     text-decoration: underline;
     text-align: center;
+  }
+}
+
+@include breakpoint($md) {
+  .heart-block {
+    float: right;
   }
 }

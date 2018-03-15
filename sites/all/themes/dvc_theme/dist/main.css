@@ -747,6 +747,14 @@ footer {
   height: auto;
   width: 100%; }
 
+@media (min-width: 992px) {
+  /* line 12, sass/components/page-elements/_baner-slider.scss */
+  .baner-slider {
+    margin-left: -15px;
+    margin-left: -0.9375rem;
+    margin-right: -15px;
+    margin-right: -0.9375rem; } }
+
 /* line 1, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric {
   margin-top: 15px;
@@ -850,6 +858,11 @@ footer {
   font-weight: 400;
   text-decoration: underline; }
 
+@media (min-width: 992px) {
+  /* line 17, sass/components/page-elements/_copyrights.scss */
+  .copyright {
+    float: left; } }
+
 /* line 1, sass/components/page-elements/_footer-region.scss */
 .region-footer {
   text-align: center; }
@@ -892,25 +905,25 @@ footer {
   color: #373737;
   display: block;
   font-family: "Roboto", sans-serif;
-  font-style: none;
   font-weight: 400;
   text-align: center;
   text-decoration: none; }
 
-/* line 25, sass/components/page-elements/_header-menu.scss */
+/* line 24, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 32, sass/components/page-elements/_header-menu.scss */
+/* line 31, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu ul {
   display: flex;
   flex-wrap: wrap; }
 
-/* line 36, sass/components/page-elements/_header-menu.scss */
+/* line 35, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu ul li {
   list-style-image: none;
+  list-style-type: none;
   margin: 0;
   padding: 0; }
 
@@ -999,6 +1012,11 @@ footer {
   font-weight: 400;
   text-decoration: underline;
   text-align: center; }
+
+@media (min-width: 992px) {
+  /* line 25, sass/components/page-elements/_heart-block.scss */
+  .heart-block {
+    float: right; } }
 
 /* line 2, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
@@ -1289,6 +1307,11 @@ footer {
   .side-block-account .field-name-field-pd-btn a {
     width: 25%; } }
 
+@media (min-width: 992px) {
+  /* line 111, sass/components/page-elements/_side-block-account.scss */
+  .side-block-account {
+    margin-top: 0; } }
+
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {
   background: transparent; }
@@ -1365,6 +1388,11 @@ footer {
 /* line 69, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu .slicknav_nav a:hover {
   color: #29a693; }
+
+@media (min-width: 992px) {
+  /* line 76, sass/components/page-elements/_slick-nav-menu.scss */
+  .main-menu .slicknav_menu {
+    display: none; } }
 
 /* line 1, sass/components/pages/_registration-page.scss */
 .breadcrumb .inline,
@@ -1728,6 +1756,14 @@ footer {
   height: auto;
   width: 100%; }
 
+@media (min-width: 992px) {
+  /* line 12, sass/components/page-elements/_baner-slider.scss */
+  .baner-slider {
+    margin-left: -15px;
+    margin-left: -0.9375rem;
+    margin-right: -15px;
+    margin-right: -0.9375rem; } }
+
 /* line 1, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric {
   margin-top: 15px;
@@ -1831,6 +1867,11 @@ footer {
   font-weight: 400;
   text-decoration: underline; }
 
+@media (min-width: 992px) {
+  /* line 17, sass/components/page-elements/_copyrights.scss */
+  .copyright {
+    float: left; } }
+
 /* line 1, sass/components/page-elements/_footer-region.scss */
 .region-footer {
   text-align: center; }
@@ -1873,25 +1914,25 @@ footer {
   color: #373737;
   display: block;
   font-family: "Roboto", sans-serif;
-  font-style: none;
   font-weight: 400;
   text-align: center;
   text-decoration: none; }
 
-/* line 25, sass/components/page-elements/_header-menu.scss */
+/* line 24, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 32, sass/components/page-elements/_header-menu.scss */
+/* line 31, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu ul {
   display: flex;
   flex-wrap: wrap; }
 
-/* line 36, sass/components/page-elements/_header-menu.scss */
+/* line 35, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu ul li {
   list-style-image: none;
+  list-style-type: none;
   margin: 0;
   padding: 0; }
 
@@ -1980,6 +2021,11 @@ footer {
   font-weight: 400;
   text-decoration: underline;
   text-align: center; }
+
+@media (min-width: 992px) {
+  /* line 25, sass/components/page-elements/_heart-block.scss */
+  .heart-block {
+    float: right; } }
 
 /* line 2, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
@@ -2270,6 +2316,11 @@ footer {
   .side-block-account .field-name-field-pd-btn a {
     width: 25%; } }
 
+@media (min-width: 992px) {
+  /* line 111, sass/components/page-elements/_side-block-account.scss */
+  .side-block-account {
+    margin-top: 0; } }
+
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {
   background: transparent; }
@@ -2346,6 +2397,11 @@ footer {
 /* line 69, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu .slicknav_nav a:hover {
   color: #29a693; }
+
+@media (min-width: 992px) {
+  /* line 76, sass/components/page-elements/_slick-nav-menu.scss */
+  .main-menu .slicknav_menu {
+    display: none; } }
 
 /* line 1, sass/components/pages/_registration-page.scss */
 .breadcrumb .inline,

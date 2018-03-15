@@ -7,9 +7,14 @@
   .content a {
     @include rem(font-size, 16px);
     @include rem(line-height, 28px);
-    color: #29a693;
+    color: color(colorForLink);
     font-weight: $normal;
     text-decoration: underline;
   }
 }
 
+@include breakpoint($md) {
+  .copyright {
+    float: left;
+  }
+}

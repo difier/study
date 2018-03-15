@@ -71,3 +71,9 @@
     }
   }
 }
+
+@include breakpoint($md) {
+  .main-menu .slicknav_menu {
+    display: none;
+  }
+}

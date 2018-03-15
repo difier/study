@@ -107,4 +107,8 @@
   }
 }
 
-
+@include breakpoint($md) {
+  .side-block-account {
+  @include rem(margin-top, 0);
+  }
+}

@@ -7,3 +7,10 @@
     width: 100%;
   }
 }
+
+@include breakpoint($md) {
+  .baner-slider {
+  @include rem(margin-left, -15px);
+  @include rem(margin-right, -15px);
+  }
+}
