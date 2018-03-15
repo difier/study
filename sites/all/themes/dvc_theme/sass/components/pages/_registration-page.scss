@@ -1,63 +1,41 @@
 .breadcrumb .inline,
 .breadcrumb a {
-  color: #777;
+  color: color(buttonText);
 }
 
-.node-type-webform h1 {
-  @include rem(font-size, 27px);
-  @include rem(line-height, 35px);
-  @include rem(padding-left, 53px);
-  @include rem(padding-top, 28px);
-  color: color(text);
-  font-weight: $bold;
-}
-
-.node-webform {
-  @include rem(padding, 28px 33px 50px 53px);
-
-  .field-name-field-before-text span {
+.field-name-field-before-text {
+  span {
     @include rem(font-size, 16px);
     @include rem(line-height, 26px);
     color: color(text);
     font-weight: $normal;
   }
+}
 
-  .webform-component--first-col input,
-  .webform-component--second-col input {
-    @include rem(height, 40px);
-    @include rem(padding-left, 16px);
-    @include rem(width, 240px);
+.webform-component--first-col input,
+.webform-component--second-col input {
+  @include rem(height, 40px);
+  @include rem(padding-left, 16px);
+  width: 100%;
+}
+
+.webform-component--first-col input:focus,
+.webform-component--second-col input:focus {
+  border: 1px solid color(borderInput);
+}
+
+.form-actions .button-primary {
+  background-color: color(bgColorBtn);
+  border: 1px solid color(borderBtn);
+  color: color(buttonText);
+  padding-left: 0;
+
+  &:hover {
+    background-color: color(bgColorHover);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
   }
-
-  .webform-component--first-col input:focus,
-  .webform-component--second-col input:focus {
-    border: 1px solid color(borderInput);
-  }
-
-  .webform-component--first-col {
-    @include rem(margin-right, 29px);
-  }
-
-  .webform-component--second-col {
-    @include rem(margin-right, 61px);
-  }
-
-  .webform-client-form-28 > div {
-    display: flex;
-  }
-
-  .form-actions .button-primary {
-    background-color: color(bgColorBtn);
-    border: 1px solid color(borderBtn);
-    color: color(buttonText);
-    padding-left: 0;
-
-    &:hover {
-      background-color: color(bgColorHover);
-      cursor: pointer;
-      transition: all .3s ease-in-out;
-    }
-  }
+}
 
 .field-name-field-field-after-text {
   @include rem(font-size, 16px);
@@ -65,7 +43,7 @@
   font-weight: $normal;
 
     .field-label {
-      @include rem(font-size, 0px);
-    }
+      display: none;
   }
 }
+

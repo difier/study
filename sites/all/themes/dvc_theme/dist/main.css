@@ -539,11 +539,14 @@ a:hover {
 h1 {
   padding: 15px 0;
   padding: 0.9375rem 0;
-  font-size: 23px;
-  font-size: 1.4375rem;
-  font-size: 700; }
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  font-size: 700;
+  color: #373737; }
 
-/* line 42, sass/base/_base.scss */
+/* line 44, sass/base/_base.scss */
 .main-content {
   background-color: #fff;
   padding: 0 23px 33px;
@@ -1355,28 +1358,10 @@ footer {
 /* line 1, sass/components/pages/_registration-page.scss */
 .breadcrumb .inline,
 .breadcrumb a {
-  color: #777; }
+  color: #fff; }
 
-/* line 6, sass/components/pages/_registration-page.scss */
-.node-type-webform h1 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 35px;
-  line-height: 2.1875rem;
-  padding-left: 53px;
-  padding-left: 3.3125rem;
-  padding-top: 28px;
-  padding-top: 1.75rem;
-  color: #373737;
-  font-weight: 700; }
-
-/* line 15, sass/components/pages/_registration-page.scss */
-.node-webform {
-  padding: 28px 33px 50px 53px;
-  padding: 1.75rem 2.0625rem 3.125rem 3.3125rem; }
-
-/* line 18, sass/components/pages/_registration-page.scss */
-.node-webform .field-name-field-before-text span {
+/* line 7, sass/components/pages/_registration-page.scss */
+.field-name-field-before-text span {
   font-size: 16px;
   font-size: 1rem;
   line-height: 26px;
@@ -1384,59 +1369,44 @@ footer {
   color: #373737;
   font-weight: 400; }
 
-/* line 25, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--first-col input,
-.node-webform .webform-component--second-col input {
+/* line 15, sass/components/pages/_registration-page.scss */
+.webform-component--first-col input,
+.webform-component--second-col input {
   height: 40px;
   height: 2.5rem;
   padding-left: 16px;
   padding-left: 1rem;
-  width: 240px;
-  width: 15rem; }
+  width: 100%; }
 
-/* line 32, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--first-col input:focus,
-.node-webform .webform-component--second-col input:focus {
+/* line 22, sass/components/pages/_registration-page.scss */
+.webform-component--first-col input:focus,
+.webform-component--second-col input:focus {
   border: 1px solid #29a693; }
 
-/* line 37, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--first-col {
-  margin-right: 29px;
-  margin-right: 1.8125rem; }
-
-/* line 41, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--second-col {
-  margin-right: 61px;
-  margin-right: 3.8125rem; }
-
-/* line 45, sass/components/pages/_registration-page.scss */
-.node-webform .webform-client-form-28 > div {
-  display: flex; }
-
-/* line 49, sass/components/pages/_registration-page.scss */
-.node-webform .form-actions .button-primary {
+/* line 27, sass/components/pages/_registration-page.scss */
+.form-actions .button-primary {
   background-color: #29a693;
   border: 1px solid #29a693;
   color: #fff;
   padding-left: 0; }
 
-/* line 55, sass/components/pages/_registration-page.scss */
-.node-webform .form-actions .button-primary:hover {
+/* line 33, sass/components/pages/_registration-page.scss */
+.form-actions .button-primary:hover {
   background-color: #56b7a9;
   cursor: pointer;
   transition: all .3s ease-in-out; }
 
-/* line 62, sass/components/pages/_registration-page.scss */
-.node-webform .field-name-field-field-after-text {
+/* line 40, sass/components/pages/_registration-page.scss */
+.field-name-field-field-after-text {
   font-size: 16px;
   font-size: 1rem;
   line-height: 26px;
   line-height: 1.625rem;
   font-weight: 400; }
 
-/* line 67, sass/components/pages/_registration-page.scss */
-.node-webform .field-name-field-field-after-text .field-label {
-  font-size: 0px; }
+/* line 45, sass/components/pages/_registration-page.scss */
+.field-name-field-field-after-text .field-label {
+  display: none; }
 
 /*# sourceMappingURL=../sass */
 
@@ -1506,11 +1476,14 @@ a:hover {
 h1 {
   padding: 15px 0;
   padding: 0.9375rem 0;
-  font-size: 23px;
-  font-size: 1.4375rem;
-  font-size: 700; }
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  font-size: 700;
+  color: #373737; }
 
-/* line 42, sass/base/_base.scss */
+/* line 44, sass/base/_base.scss */
 .main-content {
   background-color: #fff;
   padding: 0 23px 33px;
@@ -2322,28 +2295,10 @@ footer {
 /* line 1, sass/components/pages/_registration-page.scss */
 .breadcrumb .inline,
 .breadcrumb a {
-  color: #777; }
+  color: #fff; }
 
-/* line 6, sass/components/pages/_registration-page.scss */
-.node-type-webform h1 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 35px;
-  line-height: 2.1875rem;
-  padding-left: 53px;
-  padding-left: 3.3125rem;
-  padding-top: 28px;
-  padding-top: 1.75rem;
-  color: #373737;
-  font-weight: 700; }
-
-/* line 15, sass/components/pages/_registration-page.scss */
-.node-webform {
-  padding: 28px 33px 50px 53px;
-  padding: 1.75rem 2.0625rem 3.125rem 3.3125rem; }
-
-/* line 18, sass/components/pages/_registration-page.scss */
-.node-webform .field-name-field-before-text span {
+/* line 7, sass/components/pages/_registration-page.scss */
+.field-name-field-before-text span {
   font-size: 16px;
   font-size: 1rem;
   line-height: 26px;
@@ -2351,58 +2306,43 @@ footer {
   color: #373737;
   font-weight: 400; }
 
-/* line 25, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--first-col input,
-.node-webform .webform-component--second-col input {
+/* line 15, sass/components/pages/_registration-page.scss */
+.webform-component--first-col input,
+.webform-component--second-col input {
   height: 40px;
   height: 2.5rem;
   padding-left: 16px;
   padding-left: 1rem;
-  width: 240px;
-  width: 15rem; }
+  width: 100%; }
 
-/* line 32, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--first-col input:focus,
-.node-webform .webform-component--second-col input:focus {
+/* line 22, sass/components/pages/_registration-page.scss */
+.webform-component--first-col input:focus,
+.webform-component--second-col input:focus {
   border: 1px solid #29a693; }
 
-/* line 37, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--first-col {
-  margin-right: 29px;
-  margin-right: 1.8125rem; }
-
-/* line 41, sass/components/pages/_registration-page.scss */
-.node-webform .webform-component--second-col {
-  margin-right: 61px;
-  margin-right: 3.8125rem; }
-
-/* line 45, sass/components/pages/_registration-page.scss */
-.node-webform .webform-client-form-28 > div {
-  display: flex; }
-
-/* line 49, sass/components/pages/_registration-page.scss */
-.node-webform .form-actions .button-primary {
+/* line 27, sass/components/pages/_registration-page.scss */
+.form-actions .button-primary {
   background-color: #29a693;
   border: 1px solid #29a693;
   color: #fff;
   padding-left: 0; }
 
-/* line 55, sass/components/pages/_registration-page.scss */
-.node-webform .form-actions .button-primary:hover {
+/* line 33, sass/components/pages/_registration-page.scss */
+.form-actions .button-primary:hover {
   background-color: #56b7a9;
   cursor: pointer;
   transition: all .3s ease-in-out; }
 
-/* line 62, sass/components/pages/_registration-page.scss */
-.node-webform .field-name-field-field-after-text {
+/* line 40, sass/components/pages/_registration-page.scss */
+.field-name-field-field-after-text {
   font-size: 16px;
   font-size: 1rem;
   line-height: 26px;
   line-height: 1.625rem;
   font-weight: 400; }
 
-/* line 67, sass/components/pages/_registration-page.scss */
-.node-webform .field-name-field-field-after-text .field-label {
-  font-size: 0px; }
+/* line 45, sass/components/pages/_registration-page.scss */
+.field-name-field-field-after-text .field-label {
+  display: none; }
 
 /*# sourceMappingURL=../sass */
