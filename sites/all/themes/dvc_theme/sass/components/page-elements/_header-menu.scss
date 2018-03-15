@@ -34,7 +34,7 @@
     flex-wrap: wrap;
 
     li {
-      list-style: none;
+      list-style-image: none;
       margin: 0;
       padding: 0;
     }
@@ -71,5 +71,11 @@
       @include rem(margin-bottom, 10px);
       display: block;
     }
+  }
+}
+
+@include breakpoint($md) {
+  .header-inner .menu {
+    display: flex;
   }
 }

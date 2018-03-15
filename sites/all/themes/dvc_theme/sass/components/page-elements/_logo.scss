@@ -13,3 +13,9 @@
     @include rem(width, 266px);
   }
 }
+
+@include breakpoint($md) {
+  .logo {
+    @include rem(width, 275px);
+  }
+}

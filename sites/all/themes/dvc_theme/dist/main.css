@@ -910,7 +910,7 @@ footer {
 
 /* line 36, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu ul li {
-  list-style: none;
+  list-style-image: none;
   margin: 0;
   padding: 0; }
 
@@ -946,6 +946,11 @@ footer {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
+
+@media (min-width: 992px) {
+  /* line 78, sass/components/page-elements/_header-menu.scss */
+  .header-inner .menu {
+    display: flex; } }
 
 /* line 1, sass/components/page-elements/_header.scss */
 .header {
@@ -1124,6 +1129,12 @@ footer {
     padding-top: 1.3125rem;
     width: 266px;
     width: 16.625rem; } }
+
+@media (min-width: 992px) {
+  /* line 18, sass/components/page-elements/_logo.scss */
+  .logo {
+    width: 275px;
+    width: 17.1875rem; } }
 
 /* line 1, sass/components/page-elements/_reg-form-rightblock.scss */
 .group-banner-link {
@@ -1880,7 +1891,7 @@ footer {
 
 /* line 36, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu ul li {
-  list-style: none;
+  list-style-image: none;
   margin: 0;
   padding: 0; }
 
@@ -1916,6 +1927,11 @@ footer {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
+
+@media (min-width: 992px) {
+  /* line 78, sass/components/page-elements/_header-menu.scss */
+  .header-inner .menu {
+    display: flex; } }
 
 /* line 1, sass/components/page-elements/_header.scss */
 .header {
@@ -2094,6 +2110,12 @@ footer {
     padding-top: 1.3125rem;
     width: 266px;
     width: 16.625rem; } }
+
+@media (min-width: 992px) {
+  /* line 18, sass/components/page-elements/_logo.scss */
+  .logo {
+    width: 275px;
+    width: 17.1875rem; } }
 
 /* line 1, sass/components/page-elements/_reg-form-rightblock.scss */
 .group-banner-link {
