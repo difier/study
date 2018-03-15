@@ -1182,6 +1182,13 @@ footer {
   margin-bottom: 1.25rem;
   display: none; }
 
+@media (min-width: 992px) {
+  /* line 32, sass/components/page-elements/_reg-form-rightblock.scss */
+  .side-block-reg {
+    display: block;
+    margin-top: 32px;
+    margin-top: 2rem; } }
+
 /* line 1, sass/components/page-elements/_side-block-account.scss */
 .side-block-account {
   margin-top: 17px;
@@ -2190,6 +2197,13 @@ footer {
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
   display: none; }
+
+@media (min-width: 992px) {
+  /* line 32, sass/components/page-elements/_reg-form-rightblock.scss */
+  .side-block-reg {
+    display: block;
+    margin-top: 32px;
+    margin-top: 2rem; } }
 
 /* line 1, sass/components/page-elements/_side-block-account.scss */
 .side-block-account {

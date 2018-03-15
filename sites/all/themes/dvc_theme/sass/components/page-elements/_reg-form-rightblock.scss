@@ -27,3 +27,10 @@
   @include rem(margin-bottom, 20px);
   display: none;
 }
+
+@include breakpoint($md) {
+  .side-block-reg {
+    display: block;
+    @include rem(margin-top, 32px);
+  }
+}
