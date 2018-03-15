@@ -650,7 +650,13 @@ header {
   margin-bottom: 1rem;
   background: #fff; }
 
-/* line 55, sass/layout/_general-layout.scss */
+@media (min-width: 768px) {
+  /* line 50, sass/layout/_general-layout.scss */
+  header {
+    margin-bottom: 19px;
+    margin-bottom: 1.1875rem; } }
+
+/* line 59, sass/layout/_general-layout.scss */
 footer {
   padding-bottom: 20px;
   padding-bottom: 1.25rem;
@@ -659,12 +665,6 @@ footer {
   margin-top: 20px;
   margin-top: 1.25rem;
   background: #fff; }
-
-@media (min-width: 768px) {
-  /* line 63, sass/layout/_general-layout.scss */
-  header {
-    margin-bottom: 19px;
-    margin-bottom: 1.1875rem; } }
 
 /* line 28, sass/layout/_layout-settings.scss */
 .padding {
@@ -1602,7 +1602,13 @@ header {
   margin-bottom: 1rem;
   background: #fff; }
 
-/* line 55, sass/layout/_general-layout.scss */
+@media (min-width: 768px) {
+  /* line 50, sass/layout/_general-layout.scss */
+  header {
+    margin-bottom: 19px;
+    margin-bottom: 1.1875rem; } }
+
+/* line 59, sass/layout/_general-layout.scss */
 footer {
   padding-bottom: 20px;
   padding-bottom: 1.25rem;
@@ -1611,12 +1617,6 @@ footer {
   margin-top: 20px;
   margin-top: 1.25rem;
   background: #fff; }
-
-@media (min-width: 768px) {
-  /* line 63, sass/layout/_general-layout.scss */
-  header {
-    margin-bottom: 19px;
-    margin-bottom: 1.1875rem; } }
 
 /* line 28, sass/layout/_layout-settings.scss */
 .padding {

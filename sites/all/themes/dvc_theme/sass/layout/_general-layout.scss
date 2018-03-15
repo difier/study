@@ -50,6 +50,10 @@ $susy: (
 header {
   @include rem(margin-bottom, 16px);
   background: color(backgroundColor);
+
+  @include breakpoint($sm) {
+    @include rem(margin-bottom, 19px);
+  }
 }
 
 footer {
@@ -59,8 +63,4 @@ footer {
   background: color(backgroundColor);
 }
 
-@include breakpoint($sm) {
-  header {
-    @include rem(margin-bottom, 19px);
-  }
-}
+
