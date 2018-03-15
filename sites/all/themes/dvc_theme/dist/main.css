@@ -660,6 +660,12 @@ footer {
   margin-top: 1.25rem;
   background: #fff; }
 
+@media (min-width: 768px) {
+  /* line 63, sass/layout/_general-layout.scss */
+  header {
+    margin-bottom: 19px;
+    margin-bottom: 1.1875rem; } }
+
 /* line 28, sass/layout/_layout-settings.scss */
 .padding {
   padding-left: 15px;
@@ -926,6 +932,24 @@ footer {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
+
+/* line 1, sass/components/page-elements/_header.scss */
+.header {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  background: white; }
+
+/* line 5, sass/components/page-elements/_header.scss */
+.header .header-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* line 12, sass/components/page-elements/_header.scss */
+.header .region-header {
+  display: flex;
+  margin-left: auto; }
 
 /* line 1, sass/components/page-elements/_heart-block.scss */
 .heart-block {
@@ -1588,6 +1612,12 @@ footer {
   margin-top: 1.25rem;
   background: #fff; }
 
+@media (min-width: 768px) {
+  /* line 63, sass/layout/_general-layout.scss */
+  header {
+    margin-bottom: 19px;
+    margin-bottom: 1.1875rem; } }
+
 /* line 28, sass/layout/_layout-settings.scss */
 .padding {
   padding-left: 15px;
@@ -1854,6 +1884,24 @@ footer {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
+
+/* line 1, sass/components/page-elements/_header.scss */
+.header {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  background: white; }
+
+/* line 5, sass/components/page-elements/_header.scss */
+.header .header-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* line 12, sass/components/page-elements/_header.scss */
+.header .region-header {
+  display: flex;
+  margin-left: auto; }
 
 /* line 1, sass/components/page-elements/_heart-block.scss */
 .heart-block {
