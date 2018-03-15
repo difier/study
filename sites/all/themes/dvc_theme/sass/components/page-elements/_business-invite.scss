@@ -9,7 +9,7 @@
 }
 
 .pane-bean-blok-na-glavnoy {
-  .pane-title{
+  .pane-title {
     @include rem(margin-top, 22px);
   }
 }
@@ -27,3 +27,11 @@
   font-weight: $normal;
 }
 
+@include breakpoint($sm) {
+  .pane-bean-blok-na-glavnoy {
+    .pane-title {
+      @include rem(margin-top, 37px);
+      @include rem(line-height, 16px);
+    }
+  }
+}

@@ -817,6 +817,14 @@ footer {
   margin-bottom: 1.0625rem;
   font-weight: 400; }
 
+@media (min-width: 768px) {
+  /* line 32, sass/components/page-elements/_business-invite.scss */
+  .pane-bean-blok-na-glavnoy .pane-title {
+    margin-top: 37px;
+    margin-top: 2.3125rem;
+    line-height: 16px;
+    line-height: 1rem; } }
+
 /* line 1, sass/components/page-elements/_copyrights.scss */
 .copyright {
   font-size: 16px;
@@ -1023,8 +1031,6 @@ footer {
 
 /* line 35, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .group-left {
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem;
   width: 100%; }
 
 /* line 40, sass/components/page-elements/_last-rights-in-blog.scss */
@@ -1035,16 +1041,17 @@ footer {
 /* line 44, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .group-middle,
 .view-blog .field-name-body {
-  clear: both; }
+  clear: both;
+  width: 100% !important; }
 
-/* line 49, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 50, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-field-blog-categories {
   background-color: black;
   border: 1px solid black;
   color: #fff;
   position: absolute; }
 
-/* line 56, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 57, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view,
 .view-blog .field-name-post-date {
   margin-right: 17px;
@@ -1058,7 +1065,7 @@ footer {
   float: left;
   position: relative; }
 
-/* line 65, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 66, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before,
 .view-blog .field-name-post-date:before {
   height: 14px;
@@ -1072,15 +1079,15 @@ footer {
   position: absolute;
   top: 0; }
 
-/* line 77, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 78, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-post-date:before {
   background: url("../images/icons/calendar.png") no-repeat center; }
 
-/* line 81, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 82, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before {
   background: url("../images/icons/views.png") no-repeat center; }
 
-/* line 85, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 86, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .all-articles a {
   font-size: 18px;
   font-size: 1.125rem;
@@ -1769,6 +1776,14 @@ footer {
   margin-bottom: 1.0625rem;
   font-weight: 400; }
 
+@media (min-width: 768px) {
+  /* line 32, sass/components/page-elements/_business-invite.scss */
+  .pane-bean-blok-na-glavnoy .pane-title {
+    margin-top: 37px;
+    margin-top: 2.3125rem;
+    line-height: 16px;
+    line-height: 1rem; } }
+
 /* line 1, sass/components/page-elements/_copyrights.scss */
 .copyright {
   font-size: 16px;
@@ -1975,8 +1990,6 @@ footer {
 
 /* line 35, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .group-left {
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem;
   width: 100%; }
 
 /* line 40, sass/components/page-elements/_last-rights-in-blog.scss */
@@ -1987,16 +2000,17 @@ footer {
 /* line 44, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .group-middle,
 .view-blog .field-name-body {
-  clear: both; }
+  clear: both;
+  width: 100% !important; }
 
-/* line 49, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 50, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-field-blog-categories {
   background-color: black;
   border: 1px solid black;
   color: #fff;
   position: absolute; }
 
-/* line 56, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 57, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view,
 .view-blog .field-name-post-date {
   margin-right: 17px;
@@ -2010,7 +2024,7 @@ footer {
   float: left;
   position: relative; }
 
-/* line 65, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 66, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before,
 .view-blog .field-name-post-date:before {
   height: 14px;
@@ -2024,15 +2038,15 @@ footer {
   position: absolute;
   top: 0; }
 
-/* line 77, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 78, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-post-date:before {
   background: url("../images/icons/calendar.png") no-repeat center; }
 
-/* line 81, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 82, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before {
   background: url("../images/icons/views.png") no-repeat center; }
 
-/* line 85, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 86, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .all-articles a {
   font-size: 18px;
   font-size: 1.125rem;

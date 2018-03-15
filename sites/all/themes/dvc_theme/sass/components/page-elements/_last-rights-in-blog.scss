@@ -33,7 +33,7 @@
   }
 
   .group-left {
-    @include rem(margin-bottom, 14px);
+    // @include rem(margin-bottom, 14px);
     width: 100%;
   }
 
@@ -44,6 +44,7 @@
   .group-middle,
   .field-name-body {
     clear: both;
+    width: 100% !important;
   }
 
   .field-name-field-blog-categories {
