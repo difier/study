@@ -538,9 +538,12 @@ a:hover {
 /* line 36, sass/base/_base.scss */
 h1 {
   padding: 15px 0;
-  padding: 0.9375rem 0; }
+  padding: 0.9375rem 0;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-size: 700; }
 
-/* line 40, sass/base/_base.scss */
+/* line 42, sass/base/_base.scss */
 .main-content {
   background-color: #fff;
   padding: 0 23px 33px;
@@ -1151,8 +1154,8 @@ footer {
 .side-block-account {
   margin-top: 17px;
   margin-top: 1.0625rem;
-  padding: 10px 10px 39px;
-  padding: 0.625rem 0.625rem 2.4375rem;
+  padding: 24px 10px 39px;
+  padding: 1.5rem 0.625rem 2.4375rem;
   background-color: #fff;
   text-align: center; }
 
@@ -1502,9 +1505,12 @@ a:hover {
 /* line 36, sass/base/_base.scss */
 h1 {
   padding: 15px 0;
-  padding: 0.9375rem 0; }
+  padding: 0.9375rem 0;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-size: 700; }
 
-/* line 40, sass/base/_base.scss */
+/* line 42, sass/base/_base.scss */
 .main-content {
   background-color: #fff;
   padding: 0 23px 33px;
@@ -2115,8 +2121,8 @@ footer {
 .side-block-account {
   margin-top: 17px;
   margin-top: 1.0625rem;
-  padding: 10px 10px 39px;
-  padding: 0.625rem 0.625rem 2.4375rem;
+  padding: 24px 10px 39px;
+  padding: 1.5rem 0.625rem 2.4375rem;
   background-color: #fff;
   text-align: center; }
 

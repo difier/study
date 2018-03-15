@@ -35,6 +35,8 @@ a {
 
 h1 {
   @include rem(padding, 15px 0);
+  @include rem(font-size, 23px);
+  font-size: $bold;
 }
 
 .main-content {
