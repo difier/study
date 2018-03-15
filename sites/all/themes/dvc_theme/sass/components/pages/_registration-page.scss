@@ -41,9 +41,42 @@
   @include rem(font-size, 16px);
   @include rem(line-height, 26px);
   font-weight: $normal;
+  float: left;
 
     .field-label {
       display: none;
   }
 }
 
+@include breakpoint($sm) {
+  .webform-component--first-col,
+  .webform-component--second-col {
+    float: left;
+    @include rem(width, 240px);
+  }
+}
+
+@include breakpoint($sm) {
+  .webform-component--second-col {
+    @include rem(margin-right, 61px);
+  }
+}
+
+@include breakpoint($sm) {
+  .webform-component--first-col {
+    @include rem(margin-right, 29px);
+  }
+}
+
+@include breakpoint($sm) {
+  .webform-component--third-col {
+    clear: both;
+  }
+}
+
+@include breakpoint($md) {
+  .webform-component--third-col {
+    clear: none;
+    @include rem(padding-top, 1px);
+  }
+}

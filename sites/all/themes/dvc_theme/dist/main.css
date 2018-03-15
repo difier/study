@@ -814,7 +814,7 @@ footer {
   margin-top: 3.0625rem; }
 
 /* line 23, sass/components/page-elements/_business-invite.scss */
-.field-type-text-long p:first-of-type {
+.field-name-field-block-text p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
   line-height: 23px;
@@ -1402,11 +1402,44 @@ footer {
   font-size: 1rem;
   line-height: 26px;
   line-height: 1.625rem;
-  font-weight: 400; }
+  font-weight: 400;
+  float: left; }
 
-/* line 45, sass/components/pages/_registration-page.scss */
+/* line 46, sass/components/pages/_registration-page.scss */
 .field-name-field-field-after-text .field-label {
   display: none; }
+
+@media (min-width: 768px) {
+  /* line 52, sass/components/pages/_registration-page.scss */
+  .webform-component--first-col,
+  .webform-component--second-col {
+    float: left;
+    width: 240px;
+    width: 15rem; } }
+
+@media (min-width: 768px) {
+  /* line 60, sass/components/pages/_registration-page.scss */
+  .webform-component--second-col {
+    margin-right: 61px;
+    margin-right: 3.8125rem; } }
+
+@media (min-width: 768px) {
+  /* line 66, sass/components/pages/_registration-page.scss */
+  .webform-component--first-col {
+    margin-right: 29px;
+    margin-right: 1.8125rem; } }
+
+@media (min-width: 768px) {
+  /* line 72, sass/components/pages/_registration-page.scss */
+  .webform-component--third-col {
+    clear: both; } }
+
+@media (min-width: 992px) {
+  /* line 78, sass/components/pages/_registration-page.scss */
+  .webform-component--third-col {
+    clear: none;
+    padding-top: 1px;
+    padding-top: 0.0625rem; } }
 
 /*# sourceMappingURL=../sass */
 
@@ -1751,7 +1784,7 @@ footer {
   margin-top: 3.0625rem; }
 
 /* line 23, sass/components/page-elements/_business-invite.scss */
-.field-type-text-long p:first-of-type {
+.field-name-field-block-text p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
   line-height: 23px;
@@ -2339,10 +2372,43 @@ footer {
   font-size: 1rem;
   line-height: 26px;
   line-height: 1.625rem;
-  font-weight: 400; }
+  font-weight: 400;
+  float: left; }
 
-/* line 45, sass/components/pages/_registration-page.scss */
+/* line 46, sass/components/pages/_registration-page.scss */
 .field-name-field-field-after-text .field-label {
   display: none; }
+
+@media (min-width: 768px) {
+  /* line 52, sass/components/pages/_registration-page.scss */
+  .webform-component--first-col,
+  .webform-component--second-col {
+    float: left;
+    width: 240px;
+    width: 15rem; } }
+
+@media (min-width: 768px) {
+  /* line 60, sass/components/pages/_registration-page.scss */
+  .webform-component--second-col {
+    margin-right: 61px;
+    margin-right: 3.8125rem; } }
+
+@media (min-width: 768px) {
+  /* line 66, sass/components/pages/_registration-page.scss */
+  .webform-component--first-col {
+    margin-right: 29px;
+    margin-right: 1.8125rem; } }
+
+@media (min-width: 768px) {
+  /* line 72, sass/components/pages/_registration-page.scss */
+  .webform-component--third-col {
+    clear: both; } }
+
+@media (min-width: 992px) {
+  /* line 78, sass/components/pages/_registration-page.scss */
+  .webform-component--third-col {
+    clear: none;
+    padding-top: 1px;
+    padding-top: 0.0625rem; } }
 
 /*# sourceMappingURL=../sass */
