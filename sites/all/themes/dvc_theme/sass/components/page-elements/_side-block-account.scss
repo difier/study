@@ -1,6 +1,6 @@
 .side-block-account {
   @include rem(margin-top, 17px);
-  @include rem(padding, 10px);
+  @include rem(padding, 10px 10px 39px);
   background-color: color(backgroundColor);
   text-align: center;
 
@@ -100,5 +100,11 @@
     text-align: center;
     text-decoration: none;
     width: 67%;
+
+    @include breakpoint($sm) {
+      width: 25%;
+    }
   }
 }
+
+

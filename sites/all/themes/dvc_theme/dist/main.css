@@ -1151,8 +1151,8 @@ footer {
 .side-block-account {
   margin-top: 17px;
   margin-top: 1.0625rem;
-  padding: 10px;
-  padding: 0.625rem;
+  padding: 10px 10px 39px;
+  padding: 0.625rem 0.625rem 2.4375rem;
   background-color: #fff;
   text-align: center; }
 
@@ -1266,6 +1266,11 @@ footer {
   text-align: center;
   text-decoration: none;
   width: 67%; }
+
+@media (min-width: 768px) {
+  /* line 88, sass/components/page-elements/_side-block-account.scss */
+  .side-block-account .field-name-field-pd-btn a {
+    width: 25%; } }
 
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {
@@ -2110,8 +2115,8 @@ footer {
 .side-block-account {
   margin-top: 17px;
   margin-top: 1.0625rem;
-  padding: 10px;
-  padding: 0.625rem;
+  padding: 10px 10px 39px;
+  padding: 0.625rem 0.625rem 2.4375rem;
   background-color: #fff;
   text-align: center; }
 
@@ -2225,6 +2230,11 @@ footer {
   text-align: center;
   text-decoration: none;
   width: 67%; }
+
+@media (min-width: 768px) {
+  /* line 88, sass/components/page-elements/_side-block-account.scss */
+  .side-block-account .field-name-field-pd-btn a {
+    width: 25%; } }
 
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {
