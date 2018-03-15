@@ -67,8 +67,6 @@
     font-weight: $normal;
 
     &:hover {
-      border-radius: 0;
-      border: 1px solid color(linkHover);
       color: color(linkHover);
     }
   }

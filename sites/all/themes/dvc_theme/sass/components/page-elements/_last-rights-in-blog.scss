@@ -34,16 +34,22 @@
 
   .group-left {
     @include rem(margin-bottom, 14px);
+    width: 100%;
   }
 
   .group-wrapper .fieldset-wrapper {
     @include rem(margin-top, 21px);
   }
 
+  .group-middle,
+  .field-name-body {
+    clear: both;
+  }
+
   .field-name-field-blog-categories {
     background-color: black;
     border: 1px solid black;
-    color: #fff;
+    color: color(buttonText);
     position: absolute;
   }
 
@@ -52,6 +58,7 @@
     @include rem(margin-right, 17px);
     @include rem(margin-bottom, 24px);
     @include rem(padding-left, 18px);
+    @include rem(margin-top, 21px);
     float: left;
     position: relative;
 
@@ -73,10 +80,6 @@
 
   .field-name-count-view:before {
     background: url('../images/icons/views.png') no-repeat center;
-  }
-
-  .field-name-body {
-    clear: left;
   }
 
   .all-articles a {

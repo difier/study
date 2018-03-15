@@ -5,3 +5,11 @@
   @include rem(width, 181px);
   display: block;
 }
+
+@include breakpoint($sm) {
+  .logo {
+    @include rem(padding-bottom, 22px);
+    @include rem(padding-top, 21px);
+    @include rem(width, 266px);
+  }
+}

@@ -49,7 +49,7 @@
   .form-actions .button-primary {
     background-color: color(bgColorBtn);
     border: 1px solid color(borderBtn);
-    color: #fff;
+    color: color(buttonText);
     padding-left: 0;
 
     &:hover {

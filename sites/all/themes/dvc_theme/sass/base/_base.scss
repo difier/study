@@ -33,6 +33,10 @@ a {
   }
 }
 
+h1 {
+  @include rem(padding, 15px 0);
+}
+
 .main-content {
   background-color: color(backgroundColor);
   @include rem(padding, 0 23px 33px);

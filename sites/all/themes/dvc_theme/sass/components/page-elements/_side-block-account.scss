@@ -1,7 +1,7 @@
 .side-block-account {
   @include rem(margin-top, 17px);
   @include rem(padding, 10px);
-  background-color: #fff;
+  background-color: color(backgroundColor);
   text-align: center;
 
   .field-name-field-pd-image > .field-items > .field-item {
@@ -91,8 +91,8 @@
     @include rem(padding, 5px);
     align-items: center;
     background-color: color(bgColorLink);
-    border: 1px solid #29a693;
-    color: #fff;
+    border: 1px solid color(borderBtn);
+    color: color(buttonText);
     display: flex;
     justify-content: center;
     margin-left: auto;
