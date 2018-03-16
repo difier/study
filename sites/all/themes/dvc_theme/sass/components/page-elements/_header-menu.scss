@@ -27,7 +27,8 @@
     }
 
     .collapsed,
-    .expanded {
+    .expanded,
+    .leaf {
       list-style-type: none;
       list-style-image: none;
       margin: 0;
@@ -39,7 +40,7 @@
 
       > .menu {
         @include rem(padding, 5px);
-        @include rem(top, 40px);
+        @include rem(top, 45px);
         @include rem(width, 200px);
         background: color(backgroundColor);
         border: 1px solid color(borderBtn);

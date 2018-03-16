@@ -1,6 +1,6 @@
 .view-blog {
   .views-row {
-    margin-bottom: 55px;
+    @include rem(margin-bottom, 55px);
 
       &:last-of-type {
         margin-bottom: 0;
@@ -55,10 +55,10 @@
 
   .field-name-count-view,
   .field-name-post-date {
-    @include rem(margin-right, 17px);
     @include rem(margin-bottom, 24px);
-    @include rem(padding-left, 18px);
+    @include rem(margin-right, 17px);
     @include rem(margin-top, 21px);
+    @include rem(padding-left, 18px);
     float: left;
     position: relative;
 
@@ -93,15 +93,48 @@
 
 @include breakpoint($sm) {
   .view-blog {
+    .views-row > .view-blog {
+      display: flex;
+      @include rem(padding-top, 50px);
+      position: relative;
+    }
+
+    .group-wrapper2 {
+      position: static;
+    }
+
+    .group-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .field-name-node-link {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .field-name-body {
+      p {
+        @include rem(font-size, 16px);
+        @include rem(line-height, 23px);
+        font-weight: $normal;
+      }
+    }
+
     .group-middle {
       clear: none;
       width: 60% !important;
       float: right;
+      @include rem(padding-bottom, 50px);
+      position: relative;
     }
 
     .group-left {
-      width: 237px;
+      @include rem(width, 237px);
       float: left;
+      @include rem(margin-right, 26px);
     }
 
     .field-name-count-view,
