@@ -33,12 +33,11 @@
   }
 
   .group-left {
-    // @include rem(margin-bottom, 14px);
     width: 100%;
   }
 
-  .group-wrapper .fieldset-wrapper {
-    @include rem(margin-top, 21px);
+  .group-header{
+    @include rem(margin-bottom, 21px);
   }
 
   .group-middle,
@@ -89,5 +88,34 @@
     color: color(colorForLink);
     font-weight: $normal;
     text-decoration: underline;
+  }
+}
+
+@include breakpoint($sm) {
+  .view-blog {
+    .group-middle {
+      clear: none;
+      width: 60% !important;
+      float: right;
+    }
+
+    .group-left {
+      width: 237px;
+      float: left;
+    }
+
+    .field-name-count-view,
+    .field-name-post-date {
+      @include rem(margin-top, 0);
+    }
+  }
+}
+
+@include breakpoint($lg) {
+  .view-blog {
+
+    .group-middle {
+      width: 68% !important;
+    }
   }
 }

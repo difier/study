@@ -800,6 +800,12 @@ footer {
   border-bottom: 1px solid #29a693;
   color: #56b7a9; }
 
+@media (min-width: 992px) {
+  /* line 42, sass/components/page-elements/_blog-page-rubric-menu.scss */
+  .side-block-rubric {
+    margin-top: 32px;
+    margin-top: 2rem; } }
+
 /* line 3, sass/components/page-elements/_business-invite.scss */
 .pane-bean-blok-na-glavnoy .pane-title,
 .pane-views-blog-block .pane-title {
@@ -861,6 +867,9 @@ footer {
 @media (min-width: 992px) {
   /* line 17, sass/components/page-elements/_copyrights.scss */
   .copyright {
+    float: left; }
+  /* line 20, sass/components/page-elements/_copyrights.scss */
+  .copyright .content a {
     float: left; } }
 
 /* line 1, sass/components/page-elements/_footer-region.scss */
@@ -885,15 +894,13 @@ footer {
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
+  margin-right: 23px;
+  margin-right: 1.4375rem;
   color: #373737;
   margin-left: auto;
   display: none; }
 
-/* line 8, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .last collapsed {
-  border: 1px solid green; }
-
-/* line 12, sass/components/page-elements/_header-menu.scss */
+/* line 9, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu a {
   font-size: 17px;
   font-size: 1.0625rem;
@@ -909,29 +916,24 @@ footer {
   text-align: center;
   text-decoration: none; }
 
-/* line 24, sass/components/page-elements/_header-menu.scss */
+/* line 21, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 31, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu ul {
-  display: flex;
-  flex-wrap: wrap; }
-
-/* line 35, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu ul li {
-  list-style-image: none;
+/* line 28, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .collapsed {
   list-style-type: none;
+  list-style-image: none;
   margin: 0;
   padding: 0; }
 
-/* line 43, sass/components/page-elements/_header-menu.scss */
+/* line 35, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail {
   position: relative; }
 
-/* line 46, sass/components/page-elements/_header-menu.scss */
+/* line 38, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail > .menu {
   padding: 5px;
   padding: 0.3125rem;
@@ -945,25 +947,26 @@ footer {
   position: absolute;
   z-index: 999; }
 
-/* line 59, sass/components/page-elements/_header-menu.scss */
+/* line 51, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail:last-of-type > .menu {
   left: auto;
   right: 0; }
 
-/* line 65, sass/components/page-elements/_header-menu.scss */
+/* line 57, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail > .menu {
   display: none; }
 
-/* line 70, sass/components/page-elements/_header-menu.scss */
+/* line 62, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail:hover > .menu {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
 
 @media (min-width: 992px) {
-  /* line 78, sass/components/page-elements/_header-menu.scss */
+  /* line 70, sass/components/page-elements/_header-menu.scss */
   .header-inner .menu {
-    display: flex; } }
+    display: flex;
+    flex-wrap: wrap; } }
 
 /* line 1, sass/components/page-elements/_header.scss */
 .header {
@@ -1016,7 +1019,10 @@ footer {
 @media (min-width: 992px) {
   /* line 25, sass/components/page-elements/_heart-block.scss */
   .heart-block {
-    float: right; } }
+    float: right; }
+  /* line 28, sass/components/page-elements/_heart-block.scss */
+  .heart-block .content a {
+    float: left; } }
 
 /* line 2, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
@@ -1062,25 +1068,25 @@ footer {
 .view-blog .group-left {
   width: 100%; }
 
-/* line 40, sass/components/page-elements/_last-rights-in-blog.scss */
-.view-blog .group-wrapper .fieldset-wrapper {
-  margin-top: 21px;
-  margin-top: 1.3125rem; }
+/* line 39, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-header {
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem; }
 
-/* line 44, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 43, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .group-middle,
 .view-blog .field-name-body {
   clear: both;
   width: 100% !important; }
 
-/* line 50, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 49, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-field-blog-categories {
   background-color: black;
   border: 1px solid black;
   color: #fff;
   position: absolute; }
 
-/* line 57, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 56, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view,
 .view-blog .field-name-post-date {
   margin-right: 17px;
@@ -1094,7 +1100,7 @@ footer {
   float: left;
   position: relative; }
 
-/* line 66, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 65, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before,
 .view-blog .field-name-post-date:before {
   height: 14px;
@@ -1108,15 +1114,15 @@ footer {
   position: absolute;
   top: 0; }
 
-/* line 78, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 77, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-post-date:before {
   background: url("../images/icons/calendar.png") no-repeat center; }
 
-/* line 82, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 81, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before {
   background: url("../images/icons/views.png") no-repeat center; }
 
-/* line 86, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 85, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .all-articles a {
   font-size: 18px;
   font-size: 1.125rem;
@@ -1125,6 +1131,26 @@ footer {
   color: #29a693;
   font-weight: 400;
   text-decoration: underline; }
+
+@media (min-width: 768px) {
+  /* line 96, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .group-middle {
+    clear: none;
+    width: 60% !important;
+    float: right; }
+  /* line 102, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .group-left {
+    width: 237px;
+    float: left; }
+  /* line 107, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .field-name-count-view,
+  .view-blog .field-name-post-date {
+    margin-top: 0; } }
+
+@media (min-width: 1200px) {
+  /* line 117, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .group-middle {
+    width: 68% !important; } }
 
 /* line 1, sass/components/page-elements/_logo.scss */
 .logo {
@@ -1318,6 +1344,13 @@ footer {
   /* line 111, sass/components/page-elements/_side-block-account.scss */
   .side-block-account {
     margin-top: 0; } }
+
+@media (min-width: 992px) {
+  /* line 117, sass/components/page-elements/_side-block-account.scss */
+  .field-name-field-pd-social-links,
+  .field-name-field-pd-btn,
+  .field-name-field-pd-email {
+    display: inline-block; } }
 
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {
@@ -1816,6 +1849,12 @@ footer {
   border-bottom: 1px solid #29a693;
   color: #56b7a9; }
 
+@media (min-width: 992px) {
+  /* line 42, sass/components/page-elements/_blog-page-rubric-menu.scss */
+  .side-block-rubric {
+    margin-top: 32px;
+    margin-top: 2rem; } }
+
 /* line 3, sass/components/page-elements/_business-invite.scss */
 .pane-bean-blok-na-glavnoy .pane-title,
 .pane-views-blog-block .pane-title {
@@ -1877,6 +1916,9 @@ footer {
 @media (min-width: 992px) {
   /* line 17, sass/components/page-elements/_copyrights.scss */
   .copyright {
+    float: left; }
+  /* line 20, sass/components/page-elements/_copyrights.scss */
+  .copyright .content a {
     float: left; } }
 
 /* line 1, sass/components/page-elements/_footer-region.scss */
@@ -1901,15 +1943,13 @@ footer {
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
+  margin-right: 23px;
+  margin-right: 1.4375rem;
   color: #373737;
   margin-left: auto;
   display: none; }
 
-/* line 8, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .last collapsed {
-  border: 1px solid green; }
-
-/* line 12, sass/components/page-elements/_header-menu.scss */
+/* line 9, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu a {
   font-size: 17px;
   font-size: 1.0625rem;
@@ -1925,29 +1965,24 @@ footer {
   text-align: center;
   text-decoration: none; }
 
-/* line 24, sass/components/page-elements/_header-menu.scss */
+/* line 21, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 31, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu ul {
-  display: flex;
-  flex-wrap: wrap; }
-
-/* line 35, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu ul li {
-  list-style-image: none;
+/* line 28, sass/components/page-elements/_header-menu.scss */
+.header-inner .menu .collapsed {
   list-style-type: none;
+  list-style-image: none;
   margin: 0;
   padding: 0; }
 
-/* line 43, sass/components/page-elements/_header-menu.scss */
+/* line 35, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail {
   position: relative; }
 
-/* line 46, sass/components/page-elements/_header-menu.scss */
+/* line 38, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail > .menu {
   padding: 5px;
   padding: 0.3125rem;
@@ -1961,25 +1996,26 @@ footer {
   position: absolute;
   z-index: 999; }
 
-/* line 59, sass/components/page-elements/_header-menu.scss */
+/* line 51, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail:last-of-type > .menu {
   left: auto;
   right: 0; }
 
-/* line 65, sass/components/page-elements/_header-menu.scss */
+/* line 57, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail > .menu {
   display: none; }
 
-/* line 70, sass/components/page-elements/_header-menu.scss */
+/* line 62, sass/components/page-elements/_header-menu.scss */
 .header-inner .menu .active-trail:hover > .menu {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
 
 @media (min-width: 992px) {
-  /* line 78, sass/components/page-elements/_header-menu.scss */
+  /* line 70, sass/components/page-elements/_header-menu.scss */
   .header-inner .menu {
-    display: flex; } }
+    display: flex;
+    flex-wrap: wrap; } }
 
 /* line 1, sass/components/page-elements/_header.scss */
 .header {
@@ -2032,7 +2068,10 @@ footer {
 @media (min-width: 992px) {
   /* line 25, sass/components/page-elements/_heart-block.scss */
   .heart-block {
-    float: right; } }
+    float: right; }
+  /* line 28, sass/components/page-elements/_heart-block.scss */
+  .heart-block .content a {
+    float: left; } }
 
 /* line 2, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .views-row {
@@ -2078,25 +2117,25 @@ footer {
 .view-blog .group-left {
   width: 100%; }
 
-/* line 40, sass/components/page-elements/_last-rights-in-blog.scss */
-.view-blog .group-wrapper .fieldset-wrapper {
-  margin-top: 21px;
-  margin-top: 1.3125rem; }
+/* line 39, sass/components/page-elements/_last-rights-in-blog.scss */
+.view-blog .group-header {
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem; }
 
-/* line 44, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 43, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .group-middle,
 .view-blog .field-name-body {
   clear: both;
   width: 100% !important; }
 
-/* line 50, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 49, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-field-blog-categories {
   background-color: black;
   border: 1px solid black;
   color: #fff;
   position: absolute; }
 
-/* line 57, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 56, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view,
 .view-blog .field-name-post-date {
   margin-right: 17px;
@@ -2110,7 +2149,7 @@ footer {
   float: left;
   position: relative; }
 
-/* line 66, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 65, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before,
 .view-blog .field-name-post-date:before {
   height: 14px;
@@ -2124,15 +2163,15 @@ footer {
   position: absolute;
   top: 0; }
 
-/* line 78, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 77, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-post-date:before {
   background: url("../images/icons/calendar.png") no-repeat center; }
 
-/* line 82, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 81, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .field-name-count-view:before {
   background: url("../images/icons/views.png") no-repeat center; }
 
-/* line 86, sass/components/page-elements/_last-rights-in-blog.scss */
+/* line 85, sass/components/page-elements/_last-rights-in-blog.scss */
 .view-blog .all-articles a {
   font-size: 18px;
   font-size: 1.125rem;
@@ -2141,6 +2180,26 @@ footer {
   color: #29a693;
   font-weight: 400;
   text-decoration: underline; }
+
+@media (min-width: 768px) {
+  /* line 96, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .group-middle {
+    clear: none;
+    width: 60% !important;
+    float: right; }
+  /* line 102, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .group-left {
+    width: 237px;
+    float: left; }
+  /* line 107, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .field-name-count-view,
+  .view-blog .field-name-post-date {
+    margin-top: 0; } }
+
+@media (min-width: 1200px) {
+  /* line 117, sass/components/page-elements/_last-rights-in-blog.scss */
+  .view-blog .group-middle {
+    width: 68% !important; } }
 
 /* line 1, sass/components/page-elements/_logo.scss */
 .logo {
@@ -2334,6 +2393,13 @@ footer {
   /* line 111, sass/components/page-elements/_side-block-account.scss */
   .side-block-account {
     margin-top: 0; } }
+
+@media (min-width: 992px) {
+  /* line 117, sass/components/page-elements/_side-block-account.scss */
+  .field-name-field-pd-social-links,
+  .field-name-field-pd-btn,
+  .field-name-field-pd-email {
+    display: inline-block; } }
 
 /* line 1, sass/components/page-elements/_slick-nav-menu.scss */
 .main-menu .slicknav_menu {

@@ -112,3 +112,11 @@
   @include rem(margin-top, 0);
   }
 }
+
+@include breakpoint($md) {
+  .field-name-field-pd-social-links,
+  .field-name-field-pd-btn,
+  .field-name-field-pd-email {
+    display: inline-block;
+  }
+}

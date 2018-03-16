@@ -16,5 +16,9 @@
 @include breakpoint($md) {
   .copyright {
     float: left;
+
+    & .content a {
+      float: left;
+    }
   }
 }

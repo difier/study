@@ -38,3 +38,8 @@
   }
 }
 
+@include breakpoint($md) {
+  .side-block-rubric {
+  @include rem(margin-top, 32px);
+  }
+}

@@ -24,5 +24,9 @@
 @include breakpoint($md) {
   .heart-block {
     float: right;
+
+    & .content a {
+      float: left;
+    }
   }
 }

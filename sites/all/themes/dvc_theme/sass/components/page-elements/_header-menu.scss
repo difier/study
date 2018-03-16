@@ -1,13 +1,10 @@
 .header-inner .menu {
   @include rem(font-size, 16px);
   @include rem(line-height, 24px);
+  @include rem(margin-right, 23px);
   color: color(text);
   margin-left: auto;
   display: none;
-
-  .last collapsed {
-    border: 1px solid green;
-  }
 
   a {
     @include rem(font-size, 17px);
@@ -28,16 +25,11 @@
     }
   }
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-
-    li {
-      list-style-image: none;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+  .collapsed {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
   }
 
   .active-trail {
@@ -47,7 +39,7 @@
       @include rem(padding, 5px);
       @include rem(top, 40px);
       @include rem(width, 200px);
-      background: #fff;
+      background: color(backgroundColor);
       border: 1px solid color(borderBtn);
       left: 0;
       position: absolute;
@@ -77,5 +69,6 @@
 @include breakpoint($md) {
   .header-inner .menu {
     display: flex;
+    flex-wrap: wrap;
   }
 }
