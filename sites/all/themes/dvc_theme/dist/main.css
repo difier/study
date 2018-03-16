@@ -888,8 +888,8 @@ footer {
   display: flex;
   margin-left: auto; }
 
-/* line 1, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu {
+/* line 2, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
@@ -900,8 +900,8 @@ footer {
   margin-left: auto;
   display: none; }
 
-/* line 9, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu a {
+/* line 10, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu a {
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -916,25 +916,26 @@ footer {
   text-align: center;
   text-decoration: none; }
 
-/* line 21, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu a:hover {
+/* line 22, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 28, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .collapsed {
+/* line 29, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .collapsed,
+.main-menu .menu .expanded {
   list-style-type: none;
   list-style-image: none;
   margin: 0;
   padding: 0; }
 
-/* line 35, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail {
+/* line 37, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail {
   position: relative; }
 
-/* line 38, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail > .menu {
+/* line 40, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail > .menu {
   padding: 5px;
   padding: 0.3125rem;
   top: 40px;
@@ -947,23 +948,23 @@ footer {
   position: absolute;
   z-index: 999; }
 
-/* line 51, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail:last-of-type > .menu {
+/* line 53, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail:last-of-type > .menu {
   left: auto;
   right: 0; }
 
-/* line 57, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail > .menu {
+/* line 59, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail > .menu {
   display: none; }
 
-/* line 62, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail:hover > .menu {
+/* line 64, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail:hover > .menu {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
 
 @media (min-width: 992px) {
-  /* line 70, sass/components/page-elements/_header-menu.scss */
+  /* line 73, sass/components/page-elements/_header-menu.scss */
   .header-inner .menu {
     display: flex;
     flex-wrap: wrap; } }
@@ -1937,8 +1938,8 @@ footer {
   display: flex;
   margin-left: auto; }
 
-/* line 1, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu {
+/* line 2, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
@@ -1949,8 +1950,8 @@ footer {
   margin-left: auto;
   display: none; }
 
-/* line 9, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu a {
+/* line 10, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu a {
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -1965,25 +1966,26 @@ footer {
   text-align: center;
   text-decoration: none; }
 
-/* line 21, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu a:hover {
+/* line 22, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu a:hover {
   border: 1px solid #29a693;
   color: #29a693;
   text-align: center; }
 
-/* line 28, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .collapsed {
+/* line 29, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .collapsed,
+.main-menu .menu .expanded {
   list-style-type: none;
   list-style-image: none;
   margin: 0;
   padding: 0; }
 
-/* line 35, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail {
+/* line 37, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail {
   position: relative; }
 
-/* line 38, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail > .menu {
+/* line 40, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail > .menu {
   padding: 5px;
   padding: 0.3125rem;
   top: 40px;
@@ -1996,23 +1998,23 @@ footer {
   position: absolute;
   z-index: 999; }
 
-/* line 51, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail:last-of-type > .menu {
+/* line 53, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail:last-of-type > .menu {
   left: auto;
   right: 0; }
 
-/* line 57, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail > .menu {
+/* line 59, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail > .menu {
   display: none; }
 
-/* line 62, sass/components/page-elements/_header-menu.scss */
-.header-inner .menu .active-trail:hover > .menu {
+/* line 64, sass/components/page-elements/_header-menu.scss */
+.main-menu .menu .active-trail:hover > .menu {
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
   display: block; }
 
 @media (min-width: 992px) {
-  /* line 70, sass/components/page-elements/_header-menu.scss */
+  /* line 73, sass/components/page-elements/_header-menu.scss */
   .header-inner .menu {
     display: flex;
     flex-wrap: wrap; } }
