@@ -1,30 +1,18 @@
-.pane-bean-blok-na-glavnoy,
-.pane-views-blog-block {
+.pane-bean-blok-na-glavnoy {
   .pane-title {
     @include rem(font-size, 23px);
     @include rem(line-height, 23px);
     @include rem(margin-bottom, 26px);
+    @include rem(margin-top, 22px);
     font-weight: $bold;
   }
-}
 
-.pane-bean-blok-na-glavnoy {
-  .pane-title {
-    @include rem(margin-top, 22px);
+  .field-name-field-block-text p:first-of-type {
+    @include rem(font-size, 16px);
+    @include rem(line-height, 23px);
+    @include rem(margin-bottom, 17px);
+    font-weight: $normal;
   }
-}
-
-.pane-views-blog-block {
-  .pane-title {
-    @include rem(margin-top, 49px);
-  }
-}
-
-.field-name-field-block-text p:first-of-type {
-  @include rem(font-size, 16px);
-  @include rem(line-height, 23px);
-  @include rem(margin-bottom, 17px);
-  font-weight: $normal;
 }
 
 @include breakpoint($sm) {

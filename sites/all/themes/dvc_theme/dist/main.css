@@ -806,29 +806,20 @@ footer {
     margin-top: 32px;
     margin-top: 2rem; } }
 
-/* line 3, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-title,
-.pane-views-blog-block .pane-title {
+/* line 2, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .pane-title {
   font-size: 23px;
   font-size: 1.4375rem;
   line-height: 23px;
   line-height: 1.4375rem;
   margin-bottom: 26px;
   margin-bottom: 1.625rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
   font-weight: 700; }
 
-/* line 12, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-title {
-  margin-top: 22px;
-  margin-top: 1.375rem; }
-
-/* line 18, sass/components/page-elements/_business-invite.scss */
-.pane-views-blog-block .pane-title {
-  margin-top: 49px;
-  margin-top: 3.0625rem; }
-
-/* line 23, sass/components/page-elements/_business-invite.scss */
-.field-name-field-block-text p:first-of-type {
+/* line 10, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .field-name-field-block-text p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
   line-height: 23px;
@@ -838,7 +829,7 @@ footer {
   font-weight: 400; }
 
 @media (min-width: 768px) {
-  /* line 32, sass/components/page-elements/_business-invite.scss */
+  /* line 20, sass/components/page-elements/_business-invite.scss */
   .pane-bean-blok-na-glavnoy .pane-title {
     margin-top: 37px;
     margin-top: 2.3125rem;
@@ -1181,33 +1172,45 @@ footer {
     width: 275px;
     width: 17.1875rem; } }
 
+/* line 2, sass/components/page-elements/_main-page-blog-title.scss */
+.pane-views-blog-block .pane-title {
+  margin-top: 49px;
+  margin-top: 3.0625rem;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+  font-weight: 700; }
+
 /* line 1, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link {
+.side-block-reg {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: none; }
+
+/* line 5, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link {
   display: block;
   position: relative; }
 
-/* line 5, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link .field-name-field-field-banner-photo-hover {
+/* line 9, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link .field-name-field-field-banner-photo-hover {
   opacity: 0;
   position: absolute;
   top: 0;
   transition: all .5s ease-in-out; }
 
-/* line 14, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link:hover .field-name-field-banner-photo {
+/* line 18, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link:hover .field-name-field-banner-photo {
   opacity: 0;
   transition: all .5s ease-in-out; }
 
-/* line 19, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link:hover .field-name-field-field-banner-photo-hover {
+/* line 23, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link:hover .field-name-field-field-banner-photo-hover {
   opacity: 1;
   transition: all .5s ease-in-out; }
-
-/* line 26, sass/components/page-elements/_reg-form-rightblock.scss */
-.side-block-reg {
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem;
-  display: none; }
 
 @media (min-width: 992px) {
   /* line 32, sass/components/page-elements/_reg-form-rightblock.scss */
@@ -1856,29 +1859,20 @@ footer {
     margin-top: 32px;
     margin-top: 2rem; } }
 
-/* line 3, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-title,
-.pane-views-blog-block .pane-title {
+/* line 2, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .pane-title {
   font-size: 23px;
   font-size: 1.4375rem;
   line-height: 23px;
   line-height: 1.4375rem;
   margin-bottom: 26px;
   margin-bottom: 1.625rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
   font-weight: 700; }
 
-/* line 12, sass/components/page-elements/_business-invite.scss */
-.pane-bean-blok-na-glavnoy .pane-title {
-  margin-top: 22px;
-  margin-top: 1.375rem; }
-
-/* line 18, sass/components/page-elements/_business-invite.scss */
-.pane-views-blog-block .pane-title {
-  margin-top: 49px;
-  margin-top: 3.0625rem; }
-
-/* line 23, sass/components/page-elements/_business-invite.scss */
-.field-name-field-block-text p:first-of-type {
+/* line 10, sass/components/page-elements/_business-invite.scss */
+.pane-bean-blok-na-glavnoy .field-name-field-block-text p:first-of-type {
   font-size: 16px;
   font-size: 1rem;
   line-height: 23px;
@@ -1888,7 +1882,7 @@ footer {
   font-weight: 400; }
 
 @media (min-width: 768px) {
-  /* line 32, sass/components/page-elements/_business-invite.scss */
+  /* line 20, sass/components/page-elements/_business-invite.scss */
   .pane-bean-blok-na-glavnoy .pane-title {
     margin-top: 37px;
     margin-top: 2.3125rem;
@@ -2231,33 +2225,45 @@ footer {
     width: 275px;
     width: 17.1875rem; } }
 
+/* line 2, sass/components/page-elements/_main-page-blog-title.scss */
+.pane-views-blog-block .pane-title {
+  margin-top: 49px;
+  margin-top: 3.0625rem;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+  font-weight: 700; }
+
 /* line 1, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link {
+.side-block-reg {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: none; }
+
+/* line 5, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link {
   display: block;
   position: relative; }
 
-/* line 5, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link .field-name-field-field-banner-photo-hover {
+/* line 9, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link .field-name-field-field-banner-photo-hover {
   opacity: 0;
   position: absolute;
   top: 0;
   transition: all .5s ease-in-out; }
 
-/* line 14, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link:hover .field-name-field-banner-photo {
+/* line 18, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link:hover .field-name-field-banner-photo {
   opacity: 0;
   transition: all .5s ease-in-out; }
 
-/* line 19, sass/components/page-elements/_reg-form-rightblock.scss */
-.group-banner-link:hover .field-name-field-field-banner-photo-hover {
+/* line 23, sass/components/page-elements/_reg-form-rightblock.scss */
+.side-block-reg .group-banner-link:hover .field-name-field-field-banner-photo-hover {
   opacity: 1;
   transition: all .5s ease-in-out; }
-
-/* line 26, sass/components/page-elements/_reg-form-rightblock.scss */
-.side-block-reg {
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem;
-  display: none; }
 
 @media (min-width: 992px) {
   /* line 32, sass/components/page-elements/_reg-form-rightblock.scss */
