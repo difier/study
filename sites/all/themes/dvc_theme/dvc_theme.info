@@ -9,6 +9,8 @@ screenshot = screenshot.jpg
 
 stylesheets[all][] = dist/main.min.css
 stylesheets[all][] = stylesheets/main.css
+stylesheets[all][] = node_modules/slick-carousel/slick/slick.css
+stylesheets[all][] = node_modules/slick-carousel/slick/slick-theme.css
 stylesheets[all][] = node_modules/slicknav/dist/slicknav.css
 ;stylesheets[all][] = dist/main.css
 
@@ -39,4 +41,5 @@ features[] = secondary_menu
 settings[breadcrumbs] = 1
 
 scripts[] = dist/main.js
+scripts[] = node_modules/slick-carousel/slick/slick.js
 ;scripts[] = dist/main.min.js

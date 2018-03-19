@@ -6,13 +6,24 @@
     }
   };
 
-  Drupal.behaviors.slickMeny = {
+  Drupal.behaviors.slickMenu = {
     attach: function (context, settings) {
       this.slicknav('.main-menu .menu:first', context);
     },
     slicknav: function(el, context) {
       $(el, context).slicknav({
         appendTo: '.main-menu'
+      });
+    }
+  };
+
+  Drupal.behaviors.sliderBaner = {
+    attach: function (context, settings) {
+      $('.view-slider > .view-content', context).slick({
+         speed: 300,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         infinite: true
       });
     }
   };

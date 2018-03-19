@@ -744,16 +744,37 @@ footer {
 
 /* line 5, sass/components/page-elements/_baner-slider.scss */
 .baner-slider .field-items img {
-  height: auto;
   width: 100%; }
 
 @media (min-width: 992px) {
-  /* line 12, sass/components/page-elements/_baner-slider.scss */
+  /* line 11, sass/components/page-elements/_baner-slider.scss */
   .baner-slider {
     margin-left: -15px;
     margin-left: -0.9375rem;
     margin-right: -15px;
     margin-right: -0.9375rem; } }
+
+/* line 18, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  height: 50px;
+  width: 50px;
+  z-index: 1; }
+
+/* line 25, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+  color: #b6b6b3;
+  font-size: 50px;
+  opacity: 0.5; }
+
+/* line 32, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-prev {
+  left: 0; }
+
+/* line 36, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-next {
+  right: 0; }
 
 /* line 1, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric {
@@ -1831,16 +1852,37 @@ footer {
 
 /* line 5, sass/components/page-elements/_baner-slider.scss */
 .baner-slider .field-items img {
-  height: auto;
   width: 100%; }
 
 @media (min-width: 992px) {
-  /* line 12, sass/components/page-elements/_baner-slider.scss */
+  /* line 11, sass/components/page-elements/_baner-slider.scss */
   .baner-slider {
     margin-left: -15px;
     margin-left: -0.9375rem;
     margin-right: -15px;
     margin-right: -0.9375rem; } }
+
+/* line 18, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  height: 50px;
+  width: 50px;
+  z-index: 1; }
+
+/* line 25, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+  color: #b6b6b3;
+  font-size: 50px;
+  opacity: 0.5; }
+
+/* line 32, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-prev {
+  left: 0; }
+
+/* line 36, sass/components/page-elements/_baner-slider.scss */
+.slick-slider .slick-next {
+  right: 0; }
 
 /* line 1, sass/components/page-elements/_blog-page-rubric-menu.scss */
 .side-block-rubric {

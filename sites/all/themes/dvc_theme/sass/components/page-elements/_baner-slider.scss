@@ -3,7 +3,6 @@
   @include rem(margin-right, -23px);
 
   .field-items img {
-    height: auto;
     width: 100%;
   }
 }
@@ -12,5 +11,29 @@
   .baner-slider {
   @include rem(margin-left, -15px);
   @include rem(margin-right, -15px);
+  }
+}
+
+.slick-slider {
+  .slick-prev,
+  .slick-next {
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #b6b6b3;
+    font-size: 50px;
+    opacity: 0.5;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
   }
 }
