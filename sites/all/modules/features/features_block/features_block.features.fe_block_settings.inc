@@ -808,8 +808,25 @@ registration',
     'delta' => 2,
     'module' => 'menu_block',
     'node_types' => array(),
-    'pages' => 'blog
-blog/*',
+    'pages' => '<?php
+
+if (arg(0) == \'blog\') {
+  return TRUE;
+}
+elseif (arg(0) == \'taxonomy\') {
+  $term = taxonomy_term_load(arg(2));
+  if ($term->vid == 3 || $term->vid == 1) {
+    return TRUE;
+  }
+}
+elseif (arg(0) == \'node\') {
+  $node = node_load(arg(1));
+
+  if ($node->type == \'article\') {
+    return TRUE;
+  }
+}
+return FALSE;',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -838,7 +855,7 @@ blog/*',
       ),
     ),
     'title' => 'Рубрики блога',
-    'visibility' => 1,
+    'visibility' => 2,
   );
 
   $export['node-recent'] = array(
@@ -1389,7 +1406,7 @@ blog/*',
 
   $export['views-blog-block'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'blog',
     'custom' => 0,
     'delta' => 'blog-block',
     'module' => 'views',

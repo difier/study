@@ -18,18 +18,11 @@ function features_block_strongarm() {
     'scripts' => array(
       'ganalitics' => '',
       'metrika' => '',
-      'vk_comment' => 'Vk comments',
-      'vk_groups' => '<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-
-<!-- VK Widget -->
-<div id="vk_groups"></div>
-<script type="text/javascript">
-VK.Widgets.Group("vk_groups", {mode: 0, width: "274", height: "265", color1: \'FFFFFF\', color2: \'2B587A\', color3: \'5B7FA6\'}, 71543513);
-</script>',
+      'vk_comment' => '',
+      'vk_groups' => '',
       'social_groups' => '',
-      'share' => '<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-<script src="//yastatic.net/share2/share.js"></script>
-<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,viber,whatsapp,telegram"></div>',
+      'share' => '',
+      'js_scripts' => '',
     ),
   );
   $export['custom_admin_common_variables'] = $strongarm;
