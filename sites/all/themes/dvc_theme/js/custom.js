@@ -28,6 +28,7 @@
     }
   };
 
+
   // Drupal.behaviors.svg = {
   //   attach: function (context, settings) {
   //     this.svgParse('svg-name', '.selector' , 'dvc_theme', context);
